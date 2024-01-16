@@ -38,3 +38,7 @@ git config --global user.email "你的邮箱"
 140.82.112.3 github.com
 ```
 ![[Pasted image 20240116182717.png]]
+
+测试是否连通 `ssh -T git@github.com`
+
+![[Pasted image 20240116182746.png]]
