@@ -24,7 +24,7 @@ git config --global user.email "你的邮箱"
 
 生成的 SSH Key可以去到 `C:\Users\用户名\.ssh` 这个目录查看
 
-![[Pasted image 20240116181617.png]]
+![[Pasted image 20240116182143.png]]
 
 > 注意这个id_rsa.pub文件，里面是存储了公钥，接下来我们会将里面的内容拿到github上面去添加SSH key
 
