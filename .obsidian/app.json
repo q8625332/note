@@ -1,4 +1,5 @@
 {
   "newFileLocation": "folder",
-  "newFileFolderPath": "开发笔记/file"
+  "newFileFolderPath": "开发笔记/file",
+  "alwaysUpdateLinks": true
 }
