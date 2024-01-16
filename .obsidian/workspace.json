@@ -11,11 +11,9 @@
             "id": "2a77d609a0e731e1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "开发笔记/git/git的相关操作.md",
-                "mode": "source",
-                "source": false
+                "file": "开发笔记/png/Pasted image 20240116182746.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发笔记/git/git的相关操作.md",
+                "file": "开发笔记/png/Pasted image 20240116182746.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发笔记/git/git的相关操作.md",
+                "file": "开发笔记/png/Pasted image 20240116182746.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发笔记/git/git的相关操作.md"
+                "file": "开发笔记/png/Pasted image 20240116182746.png"
               }
             }
           }
@@ -146,20 +144,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2a77d609a0e731e1",
+  "active": "96c6d6bb2c907843",
   "lastOpenFiles": [
-    "Pasted image 20240116182746.png",
-    "Pasted image 20240116182717.png",
-    "Pasted image 20240116182715.png",
-    "Pasted image 20240116182243.png",
-    "Pasted image 20240116182235.png",
-    "Pasted image 20240116182143.png",
-    "Pasted image 20240116182056.png",
+    "开发笔记/git/git的相关操作.md",
+    "开发笔记/png",
+    "开发笔记/png/Pasted image 20240116182746.png",
+    "开发笔记/png/Pasted image 20240116182717.png",
+    "开发笔记/png/Pasted image 20240116182715.png",
+    "开发笔记/png/Pasted image 20240116182243.png",
+    "开发笔记/png/Pasted image 20240116182235.png",
+    "开发笔记/png/Pasted image 20240116182143.png",
+    "开发笔记/png/Pasted image 20240116182056.png",
     "Pasted image 20240116181509.png",
     "Pasted image 20240116181450.png",
     "Pasted image 20240116181810.png",
-    "Pasted image 20240116181254.png",
-    "开发笔记/git/git的相关操作.md",
     "开发笔记/mybatis plus/魔改page分页为三合一.md",
     "开发笔记/git",
     "开发笔记/聚合项目开发/gateway+nacos秒级上下线.md",
