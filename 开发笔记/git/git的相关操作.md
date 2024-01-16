@@ -18,5 +18,9 @@ git config --global --list
 git config --global user.name "Rodma1" 
 git config --global user.email "你的邮箱"
 ```
-然后我们通过 ```
-``` 生成SSH Key
+然后我们通过 ssh-keygen -t rsa -C "你的邮箱" 生成SSH Key
+
+![[Pasted image 20240116181450.png]]
+
+生成的 SSH Key可以去到 `C:\Users\用户名\.ssh` 这个目录查看
+
