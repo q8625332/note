@@ -31,3 +31,4 @@ git config --global user.email "你的邮箱"
 **将ssh key加入github配置中**
 
 ![[Pasted image 20240116181810.png]]
+
