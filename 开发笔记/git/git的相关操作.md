@@ -2,3 +2,6 @@
 
 > 错误如下
 
+```
+Failed to connect to github.com port 443 after 21107 ms: Timed out
+```
