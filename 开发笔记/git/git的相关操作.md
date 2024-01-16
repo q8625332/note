@@ -32,4 +32,9 @@ git config --global user.email "你的邮箱"
 
 ![[Pasted image 20240116182056.png]]
 
-**本地添加**
+**本地添加github的地址解析**
+
+```
+140.82.112.3 github.com
+```
+![[Pasted image 20240116182717.png]]
