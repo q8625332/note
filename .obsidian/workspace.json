@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/聚合项目开发/java对象转xml-个人笔记.md",
+                "file": "开发笔记/聚合项目开发/java/工厂模式加策略执行的代码-设计.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发笔记/聚合项目开发/java对象转xml-个人笔记.md",
+                "file": "开发笔记/聚合项目开发/java/工厂模式加策略执行的代码-设计.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发笔记/聚合项目开发/java对象转xml-个人笔记.md",
+                "file": "开发笔记/聚合项目开发/java/工厂模式加策略执行的代码-设计.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发笔记/聚合项目开发/java对象转xml-个人笔记.md"
+                "file": "开发笔记/聚合项目开发/java/工厂模式加策略执行的代码-设计.md"
               }
             }
           }
@@ -148,6 +148,12 @@
   },
   "active": "e2eb307149a24c2a",
   "lastOpenFiles": [
+    "开发笔记/聚合项目开发/java/CompletableFuture的再次封装.md",
+    "开发笔记/聚合项目开发/webrtc用浏览器实现逻辑-临时文档.md",
+    "开发笔记/聚合项目开发/java",
+    "开发笔记/聚合项目开发/webRtc.md",
+    "开发笔记/聚合项目开发/sql语句业务处理.md",
+    "开发笔记/聚合项目开发/java对象转xml.md",
     "开发笔记/聚合项目开发/easyexcel的使用.md",
     "开发笔记/聚合项目开发/DFA算法-关键字算法.md",
     "开发笔记/聚合项目开发/banner.txt.md",
@@ -158,25 +164,19 @@
     "开发笔记/聚合项目开发/mybatis plus/mybatis-xml个人使用笔记.md",
     "开发笔记/聚合项目开发/前端/前端-全屏.md",
     "开发笔记/聚合项目开发/ip地址工具类.md",
-    "开发笔记/聚合项目开发/webRtc-个人笔记.md",
     "开发笔记/聚合项目开发/前端",
     "开发笔记/idea/idea设置-个人笔记.md",
-    "开发笔记/聚合项目开发/webrtc用浏览器实现逻辑-临时文档.md",
     "开发笔记/idea",
     "开发笔记/运维相关笔记/KubeSphere使用的个人笔记.md",
     "开发笔记/运维相关笔记/Dockerfile-个人笔记.md",
-    "开发笔记/聚合项目开发/java对象转xml-个人笔记.md",
     "开发笔记/聚合项目开发/RedissonClient-业务解决思路.md",
     "开发笔记/聚合项目开发/okhttp-sse的使用笔记.md",
-    "开发笔记/聚合项目开发/sql语句业务处理-个人笔记.md",
     "开发笔记/聚合项目开发/springboot的自定义注解实现.md",
     "开发笔记/运维相关笔记/base_web的nacos的yml配置.md",
-    "开发笔记/聚合项目开发/CompletableFuture的再次封装.md",
     "开发笔记/运维相关笔记/KubeSphere安装redis.md",
     "开发笔记/运维相关笔记/KubeSphere安装mysql8.md",
-    "开发笔记/聚合项目开发/工厂模式加策略执行的代码-设计.md",
+    "开发笔记/聚合项目开发/java/工厂模式加策略执行的代码-设计.md",
     "开发笔记/运维相关笔记",
-    "开发笔记/git/git 统计（命令）.md",
     "开发笔记/file/Pasted image 20240117112101.png",
     "开发笔记/file/Pasted image 20240117112050.png",
     "开发笔记/file/Pasted image 20240117112004.png",
@@ -192,7 +192,6 @@
     "开发笔记/git",
     "note",
     "note/开发笔记/mybatis plus",
-    "note/开发笔记",
-    "开发笔记/聚合项目开发/mybatis plus"
+    "note/开发笔记"
   ]
 }
