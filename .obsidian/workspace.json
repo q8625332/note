@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/运维相关笔记/linux虚拟机固定IP的方法.md",
+                "file": "开发笔记/聚合项目开发/java/spark算法个人笔记(java版写法不是scala).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发笔记/运维相关笔记/linux虚拟机固定IP的方法.md",
+                "file": "开发笔记/聚合项目开发/java/spark算法个人笔记(java版写法不是scala).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发笔记/运维相关笔记/linux虚拟机固定IP的方法.md",
+                "file": "开发笔记/聚合项目开发/java/spark算法个人笔记(java版写法不是scala).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发笔记/运维相关笔记/linux虚拟机固定IP的方法.md"
+                "file": "开发笔记/聚合项目开发/java/spark算法个人笔记(java版写法不是scala).md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "e2eb307149a24c2a",
   "lastOpenFiles": [
-    "开发笔记/聚合项目开发/前端/vite的vite.config.js配置.md",
+    "开发笔记/idea/idea必装插件.md",
+    "开发笔记/聚合项目开发/java/spark算法个人笔记(java版写法不是scala).md",
     "开发笔记/运维相关笔记/linux虚拟机固定IP的方法.md",
+    "开发笔记/聚合项目开发/前端/vite的vite.config.js配置.md",
     "开发笔记/聚合项目开发/springboot/springboot-打包瘦身包.md",
     "开发笔记/聚合项目开发/计算地表距离.md",
     "开发笔记/聚合项目开发/springboot/docker+jrebel+idea的springboot热部署.md",
@@ -176,9 +178,7 @@
     "开发笔记/聚合项目开发/mybatis plus/mybatis-xml个人使用笔记.md",
     "开发笔记/聚合项目开发/前端/前端-全屏.md",
     "开发笔记/聚合项目开发/前端",
-    "开发笔记/idea/idea设置-个人笔记.md",
     "开发笔记/idea",
-    "开发笔记/运维相关笔记/KubeSphere使用的个人笔记.md",
     "开发笔记/运维相关笔记",
     "开发笔记/file/Pasted image 20240117112101.png",
     "开发笔记/file/Pasted image 20240117112050.png",
