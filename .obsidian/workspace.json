@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -146,7 +147,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e2eb307149a24c2a",
+  "active": "5728f901e436906b",
   "lastOpenFiles": [
     "开发笔记/git/git的相关操作.md",
     "开发笔记/git/github打不开的解决办法-个人笔记.md",
