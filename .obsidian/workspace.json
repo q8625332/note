@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "89fbc4a7726dec36",
+        "id": "118675e20b4e5132",
         "type": "tabs",
         "children": [
           {
-            "id": "2a77d609a0e731e1",
+            "id": "e2eb307149a24c2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,12 +146,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2a77d609a0e731e1",
+  "active": "e2eb307149a24c2a",
   "lastOpenFiles": [
+    "开发笔记/file/名称.md",
+    "开发笔记/obsidian使用/Obsidian语法笔记.md",
     "开发笔记/file/Pasted image 20240117111505.png",
     "开发笔记/file/Pasted image 20240117111342.png",
     "开发笔记/file/附件地址.md",
-    "开发笔记/obsidian使用/Obsidian语法笔记.md",
     "开发笔记/obsidian使用/obsidian的图片如何管理.md",
     "开发笔记/mybatis plus/魔改page分页为三合一.md",
     "开发笔记/git/git的相关操作.md",
@@ -168,7 +169,6 @@
     "开发笔记/file/Pasted image 20240116182243.png",
     "开发笔记/file/Pasted image 20240116182235.png",
     "开发笔记/file/Pasted image 20240116182143.png",
-    "开发笔记/file/Pasted image 20240116182056.png",
     "开发笔记/git",
     "note",
     "note/开发笔记/mybatis plus/魔改page分页为三合一.md",
