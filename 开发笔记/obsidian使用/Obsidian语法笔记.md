@@ -85,5 +85,22 @@
 居中，并指定图片宽度和高度：
 
 ```text
-
+<div align="center"><img src="图片地址" width = 500 height = 300 /></div> 
 ```
+居中，仅指定[宽度](https://www.zhihu.com/search?q=%E5%AE%BD%E5%BA%A6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22article%22%2C%22sourceId%22%3A%2280665637%22%7D)（高度按比例缩放）：
+
+```text
+<div align="center"><img src="图片地址" width = 400 /></div> 
+```
+居中，指定相对宽度（原图的百分比）：
+
+```text
+<div align=center><img src="图片地址" width = 80%/></div>
+```
+### **标签**
+
+首先在插件中打开标签管理插件，  
+然后在笔记中使用 **#**+**标签文本** 添加标签。
+
+### 任务列表 复选框
+
