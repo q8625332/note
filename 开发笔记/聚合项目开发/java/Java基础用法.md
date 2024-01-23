@@ -858,5 +858,16 @@ public boolean sortOrgPosition(List<OrgPositionSortReq> orgPositionSortReqList) 
 ## string的相关用法
 
 > 比如业务要使用补0法的话，例子： `%03d`
->  `%03d`的意思呢，是不满三位就用
+>  `%03d`的意思呢，是不满三位就用0补位。
+
+```java
+String.format("%03d", 1)
+
+//结果是 001
+
+String.format("%03d", 1)
+
+//结果是 
+
+```
 
