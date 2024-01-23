@@ -859,15 +859,20 @@ public boolean sortOrgPosition(List<OrgPositionSortReq> orgPositionSortReqList) 
 
 > 比如业务要使用补0法的话，例子： `%03d`
 >  `%03d`的意思呢，是不满三位就用0补位。
+>  超过则不会补0
 
 ```java
 String.format("%03d", 1)
 
 //结果是 001
 
-String.format("%03d", 1)
+String.format("%03d", 999)
 
-//结果是 
+//结果是 999
+
+String.format("%03d", 1000)
+
+//结果是 1000
 
 ```
 
