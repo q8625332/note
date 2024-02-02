@@ -181,3 +181,5 @@ amount as orderReceivable
 from sale_outbound so
 inner join sale_outbound_item soi on so.id = soi.outboundId
 ```
+
+>如上sql，所示
