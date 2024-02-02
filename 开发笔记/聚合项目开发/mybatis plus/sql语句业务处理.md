@@ -186,7 +186,7 @@ inner join sale_outbound_item soi on so.id = soi.outboundId
 
 *正确用法如下：*
 
->通过 `@` 符号来定临时变量，将原来的字段，赋值给临时变量，这样下一个字段才能获取到上一个字段
+>通过 `@` 符号来定临时变量，将原来的字段，赋值给临时变量，这样下一个字段才能获取到上一个字段。
 
 ```sql
 select ifnull((select count(id) from sale_outbound_item_bolt where so.id = outboundId),0) as pipeNum,  
