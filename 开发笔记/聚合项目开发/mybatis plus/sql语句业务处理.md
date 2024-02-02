@@ -182,4 +182,4 @@ from sale_outbound so
 inner join sale_outbound_item soi on so.id = soi.outboundId
 ```
 
->如上sql，所示
+>如上sql，所示：meterQuantity取值，是取的上一个字段的。但是select中直接这样取是会报错的。所以需要通过临时b
