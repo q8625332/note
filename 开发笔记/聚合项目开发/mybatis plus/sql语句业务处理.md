@@ -186,6 +186,8 @@ inner join sale_outbound_item soi on so.id = soi.outboundId
 
 *正确用法如下：*
 
+>通过 `@` 符号来定临时变量，将原来的字段，f
+
 ```sql
 select ifnull((select count(id) from sale_outbound_item_bolt where so.id = outboundId),0) as pipeNum,  
 ifnull((select sum(soib_yard.yardQuantity) from sale_outbound_item_bolt soib_yard where so.id = soib_yard.outboundId),0) as yardQuantity,  
