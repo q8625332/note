@@ -167,4 +167,10 @@ WHERE JSON_CONTAINS(your_json_column, '{"transportUser": 474}', '$')
 
 ## 临时变量的使用
 
->业务中，select中的字段，如果下一个字段需要用到s
+>业务中，select中的字段，如果下一个字段需要用到上一个字段的值的时候是不可以直接获取的
+
+*错误代码*
+
+```sql
+
+```
