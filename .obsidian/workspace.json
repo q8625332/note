@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/聚合项目开发/java/Java基础用法.md",
+                "file": "开发笔记/聚合项目开发/mybatis plus/魔改page分页为三合一.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发笔记/聚合项目开发/java/Java基础用法.md",
+                "file": "开发笔记/聚合项目开发/mybatis plus/魔改page分页为三合一.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发笔记/聚合项目开发/java/Java基础用法.md",
+                "file": "开发笔记/聚合项目开发/mybatis plus/魔改page分页为三合一.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发笔记/聚合项目开发/java/Java基础用法.md"
+                "file": "开发笔记/聚合项目开发/mybatis plus/魔改page分页为三合一.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "e2eb307149a24c2a",
   "lastOpenFiles": [
-    "开发笔记/聚合项目开发/java/生成邀请码.md",
+    "开发笔记/聚合项目开发/mybatis plus/sql语句业务处理.md",
+    "开发笔记/聚合项目开发/mybatis plus/mysql个人笔记.md",
     "开发笔记/聚合项目开发/java/Java基础用法.md",
+    "开发笔记/聚合项目开发/java/生成邀请码.md",
     "开发笔记/聚合项目开发/java/spark算法个人笔记(java版写法不是scala).md",
     "开发笔记/聚合项目开发/java/DFA算法-关键字算法.md",
     "开发笔记/聚合项目开发/java/CompletableFuture的再次封装.md",
@@ -158,7 +160,6 @@
     "开发笔记/运维相关笔记/nginx配置.md",
     "开发笔记/聚合项目开发/mybatis plus/Mybatis Plus的使用.md",
     "开发笔记/聚合项目开发/springboot/Spring Boot集成Spring Integration.md",
-    "开发笔记/聚合项目开发/mybatis plus/mysql个人笔记.md",
     "开发笔记/运维相关笔记/CentOS 使用.md",
     "开发笔记/运维相关笔记/docker安装软件.md",
     "开发笔记/聚合项目开发/springboot/压缩加水印thumbnailator.md",
@@ -173,7 +174,6 @@
     "开发笔记/聚合项目开发/计算地表距离.md",
     "开发笔记/聚合项目开发/springboot/docker+jrebel+idea的springboot热部署.md",
     "开发笔记/win/Power Shell个人使用笔记.md",
-    "开发笔记/聚合项目开发/mybatis plus/msyql随机查询-优化语句写法.md",
     "开发笔记/win",
     "开发笔记/聚合项目开发/springboot",
     "开发笔记/聚合项目开发/java",
