@@ -164,3 +164,7 @@ SELECT * FROM your_table
 WHERE JSON_CONTAINS(your_json_column, '{"transportUser": 474}', '$')
    OR JSON_CONTAINS(your_json_column, '{"transportUser": 475}', '$');
 ```
+
+## 临时变量的使用
+
+>
