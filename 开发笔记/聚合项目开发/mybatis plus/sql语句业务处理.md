@@ -169,8 +169,15 @@ WHERE JSON_CONTAINS(your_json_column, '{"transportUser": 474}', '$')
 
 >业务中，select中的字段，如果下一个字段需要用到上一个字段的值的时候是不可以直接获取的
 
-*错误代码*
+*错误代码如下：*
 
 ```sql
-
+select ifnull((select count(id) from sale_outbound_item_bolt where so.id = outboundId),0) as pipeNum,
+ifnull((select sum(soib_yard.yardQuantity) from sale_outbound_item_bolt soib_yard where so.id = soib_yard.outboundId),0) as yardQuantity,
+format(ifnull((select sum(soib_yard.yardQuantity) from sale_outbound_item_bolt soib_yard where so.id = soib_yard.outboundId),0) * 0.9144,6) as meterQuantity,
+format(meterQuantity * ifnull(soi.orderPurchasePrice,0),2) as amount,
+amount as orderAmount,
+amount as orderReceivable
+from sale_outbound so
+inner join sale_outbound_item soi on so.id = soi.outboundId
 ```
