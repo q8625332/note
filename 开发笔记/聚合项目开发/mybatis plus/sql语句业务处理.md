@@ -182,4 +182,17 @@ from sale_outbound so
 inner join sale_outbound_item soi on so.id = soi.outboundId
 ```
 
->如上sql，所示：meterQuantity取值，是取的上一个字段的。但是select中直接这样取是会报错的。所以需要通过临时b
+>如上sql，所示：meterQuantity取值，是取的上一个字段的。但是select中直接这样取是会报错的。所以需要通过临时变量，来获取数据。
+
+*正确用法如下：*
+
+```sql
+select ifnull((select count(id) from sale_outbound_item_bolt where so.id = outboundId),0) as pipeNum,  
+ifnull((select sum(soib_yard.yardQuantity) from sale_outbound_item_bolt soib_yard where so.id = soib_yard.outboundId),0) as yardQuantity,  
+@temporaryMeterQuantity := format(ifnull((select sum(soib_yard.yardQuantity) from sale_outbound_item_bolt soib_yard where so.id = soib_yard.outboundId),0) * 0.9144,6) as meterQuantity,  
+@temporaryAmount := format(@temporaryMeterQuantity * ifnull(soi.orderPurchasePrice,0),2) as amount,  
+@temporaryAmount as orderAmount,  
+@temporaryAmount as orderReceivable  
+from sale_outbound so  
+inner join sale_outbound_item soi on so.id = soi.outboundId
+```
