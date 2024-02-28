@@ -784,7 +784,12 @@ System.out.println(JSON.toJSONString(unionDailyTreeResps));
 
 //简单的倒序-（单个数组）
 hotSearchOrgSortList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+
+//# stream groupingBy 保持原顺序
+
 ```
+##
+
 
 ## 如何将list对象里面的字符串细化拆分成
 
