@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "7f953c54de3e3851",
+        "id": "a563febaefcdf098",
         "type": "tabs",
         "children": [
           {
-            "id": "a13f18942257196f",
+            "id": "239a570000cd7278",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "开发笔记/聚合项目开发/java/Java基础用法.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "开发笔记/聚合项目开发/java/Java基础用法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "开发笔记/聚合项目开发/java/Java基础用法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "开发笔记/聚合项目开发/java/Java基础用法.md"
+              }
             }
           }
         ]
@@ -138,8 +146,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a13f18942257196f",
+  "active": "239a570000cd7278",
   "lastOpenFiles": [
+    "开发笔记/聚合项目开发/java/java对象转xml.md",
     "开发笔记/聚合项目开发/java/Java基础用法.md",
     "开发笔记/file/Pasted image 20240228121212.png",
     "开发笔记/聚合项目开发/mybatis plus/sql语句业务处理.md",
