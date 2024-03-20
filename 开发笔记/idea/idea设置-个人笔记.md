@@ -54,3 +54,7 @@ User Parameters
 
 ## idea磁盘满了，解决方法
 
+> 打开自定义设置
+
+![[Pasted image 20240320105132.png]]
+
