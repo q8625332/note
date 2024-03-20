@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a563febaefcdf098",
+        "id": "4249900fc1b9146b",
         "type": "tabs",
         "children": [
           {
-            "id": "239a570000cd7278",
+            "id": "673937a6eebab807",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/idea/idea必装插件.md",
+                "file": "开发笔记/idea/idea设置-个人笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "idea",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发笔记/idea/idea必装插件.md",
+                "file": "开发笔记/idea/idea设置-个人笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发笔记/idea/idea必装插件.md",
+                "file": "开发笔记/idea/idea设置-个人笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发笔记/idea/idea必装插件.md"
+                "file": "开发笔记/idea/idea设置-个人笔记.md"
               }
             }
           }
@@ -147,8 +146,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "239a570000cd7278",
+  "active": "673937a6eebab807",
   "lastOpenFiles": [
+    "开发笔记/idea/idea必装插件.md",
     "开发笔记/聚合项目开发/java/Java基础用法.md",
     "开发笔记/聚合项目开发/java/java对象转xml.md",
     "开发笔记/file/Pasted image 20240228121212.png",
@@ -171,7 +171,6 @@
     "开发笔记/运维相关笔记/hadoop套件的安装与配置.md",
     "开发笔记/运维相关笔记/linux常用命令个人笔记.md",
     "开发笔记/聚合项目开发/大数据算法.md",
-    "开发笔记/idea/idea必装插件.md",
     "开发笔记/运维相关笔记/linux虚拟机固定IP的方法.md",
     "开发笔记/聚合项目开发/前端/vite的vite.config.js配置.md",
     "开发笔记/聚合项目开发/springboot/springboot-打包瘦身包.md",

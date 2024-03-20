@@ -52,3 +52,5 @@ User Parameters
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/50e1d47bf70a49a6a2cc5f63fc18a4cf.png)
 
+## idea磁盘满了，解决方法
+
