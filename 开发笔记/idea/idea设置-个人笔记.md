@@ -65,4 +65,6 @@ User Parameters
 ![[Pasted image 20240320105249.png]]
 
 ```java
-``
+idea.config.path=D:/.IntelliJIdea/config  
+idea.system.path=D:/.IntelliJIdea/system
+```
