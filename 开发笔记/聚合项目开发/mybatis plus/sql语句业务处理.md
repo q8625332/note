@@ -219,4 +219,6 @@ where p.id = 128;
 json_table(p.color, '$[*]' columns (col varchar(50) path '$')) as c on true
 ```
 
-*jie'ko*
+*结果如下图所示：*
+
+![[Pasted image 20240523175131.png]]
