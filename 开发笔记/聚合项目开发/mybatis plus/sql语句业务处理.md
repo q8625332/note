@@ -198,3 +198,7 @@ ifnull((select sum(soib_yard.yardQuantity) from sale_outbound_item_bolt soib_yar
 from sale_outbound so  
 inner join sale_outbound_item soi on so.id = soi.outboundId
 ```
+
+## 将字段json数组的字段，压平
+
+*![[Pasted image 20240523174449.png]]*
