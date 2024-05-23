@@ -209,5 +209,12 @@ inner join sale_outbound_item soi on so.id = soi.outboundId
 *sql如下：*
 
 ```sql
-li'z
+-- 例子
+select p.id, p.name, p.code, c.col as color, p.onShelf, p.unit, p.devType, p.images
+from product p
+left join json_table(p.color, '$[*]' columns (col varchar(50) path '$')) as c on true
+where p.id = 128;
+
+-- 核心sql是：
+json_table(p.color, '$[*]' columns (col varchar(50) path '$')) as c on true
 ```
