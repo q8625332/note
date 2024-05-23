@@ -218,3 +218,5 @@ where p.id = 128;
 -- 核心sql是：
 json_table(p.color, '$[*]' columns (col varchar(50) path '$')) as c on true
 ```
+
+*jie'ko*
