@@ -201,4 +201,5 @@ inner join sale_outbound_item soi on so.id = soi.outboundId
 
 ## 将字段json数组的字段，压平
 
-*![[Pasted image 20240523174449.png]]*
+>将color字段，由多个颜色一条数据，打成duo'tiao
+![[Pasted image 20240523174452.png]]
