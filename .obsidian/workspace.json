@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ye'w",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -159,7 +160,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "48211bacde3a60eb",
+  "active": "5728f901e436906b",
   "lastOpenFiles": [
     "开发笔记/聚合项目开发/mybatis plus/mysql个人笔记.md",
     "开发笔记/聚合项目开发/mybatis plus/sql语句业务处理.md",
