@@ -234,5 +234,9 @@ json_table(p.color, '$[*]' columns (col varchar(50) path '$')) as c on true
 
 ![[Pasted image 20240628170648.png]]
 
-> 首先我们需要一个
+> 首先我们需要一个日期生成的sql
+
+```java
+
+```
 
