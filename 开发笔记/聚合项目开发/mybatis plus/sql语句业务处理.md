@@ -251,3 +251,4 @@ select monthStartDate from  months;
 
 ![[Pasted image 20240628171227.png]]
 
+> 数据笛卡尔积的实现，为什么要这么用呢？原因是：比如
