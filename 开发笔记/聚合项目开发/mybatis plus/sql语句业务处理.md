@@ -302,7 +302,7 @@ WHERE c.tenantId = 19
   and c.potential = 0  
 GROUP BY c.tenantId
 ```
->detailsStr字段是用来将数据g'he
+>detailsStr字段是用来将数据合并串联的，整个月份都是用逗号隔开，里面的不同数据是通过 | 字符隔开。
 >效果如下：
 
 ![[Pasted image 20240628172101.png]]
