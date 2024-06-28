@@ -225,4 +225,8 @@ json_table(p.color, '$[*]' columns (col varchar(50) path '$')) as c on true
 
 ![[Pasted image 20240523175131.png]]
 
-## 当业务中出现要补充时间
+## 当业务中出现要补充时间需要怎么处理呢
+
+> 例如：要补充月份或者补充日期的处理，业务显示如下。
+> 
+
