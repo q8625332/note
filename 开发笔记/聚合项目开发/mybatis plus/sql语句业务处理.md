@@ -261,49 +261,44 @@ CROSS JOIN
 
 ```sql
 WITH RECURSIVE  
-          months AS (SELECT from_unixtime(1704038400000 / 1000, '%Y-%m-%d') AS monthStartDate  
-                     UNION ALL  
-                     SELECT DATE_ADD(monthStartDate, INTERVAL 1 MONTH)  
-                     FROM months  
-                     WHERE DATE_ADD(monthStartDate, INTERVAL 1 MONTH) <=  
-                           from_unixtime(1709308799999 / 1000, '%Y-%m-%d')),  
-          customer_months AS (SELECT c.id                                  AS customerId,  
-                                     c.tenantId,  
-                                     DATE_FORMAT(m.monthStartDate, '%Y%m') AS temporaryMonthDate  
-                              FROM maiye_saas_platform_basic.customer c  
-                                       CROSS JOIN months m),  
-          customer_stats AS (SELECT cm.customerId,  
-                                    cm.tenantId,  
-                                    cm.temporaryMonthDate    AS monthDate,  
-                                    IFNULL(SUM(d.metre), 0)  AS metre,  
-                                    IFNULL(SUM(d.yard), 0)   AS yard,  
-                                    IFNULL(SUM(d.amount), 0) AS amount  
-                             FROM customer_months cm  
-                                      INNER JOIN stat_customer_out_refund_day d ON cm.customerId = d.customerId AND  
-                                                                                   cm.temporaryMonthDate =  
-                                                                                   d.monthDate and d.tenantId = 19 and  
-                                                                                   d.dayTimeStamp between 1704038400000 and 1709308799999  
-                             GROUP BY cm.customerId, cm.temporaryMonthDate)  
-      SELECT c.tenantId                                                             tenantId,  
-             c.id                                                                   customerId,  
-             c.code                                                                 customerCode,  
-             c.`name`                                                               customerName,  
-             c.clientArea                                                           customerArea,  
-             c.customerCreditTypeId                                                 customerCreditTypeId,  
-             c.salesmanId                                                           salesmanId,  
-             c.orgId                                                                orgId,  
-             c.storeId                                                              storeId,  
-             GROUP_CONCAT(CONCAT_WS('|', ifnull(cs.monthDate, 197001), ifnull(cs.metre, 0), ifnull(cs.yard, 0),  
-                                    ifnull(cs.amount, 0)) ORDER BY cs.monthDate) AS detailsStr,  
-             row_number() over (order by c.tenantId,c.id)                           number  
-      FROM maiye_saas_platform_basic.customer c  
-               INNER JOIN customer_stats cs ON c.id = cs.customerId  
-      WHERE c.tenantId = 19  
-        and c.potential = 0  
-        and (c.salesmanId in (6752) or c.salesmanId is null or exists (select cm.customerId  
-                                                                       from maiye_saas_platform_basic.customer_merchandiser cm  
-                                                                       where cm.tenantId = 19  
-                                                                         and c.id = cm.customerId  
-                                                                         and cm.merchandiserId in (6752)))  
-      GROUP BY c.tenantId
+    months AS (SELECT from_unixtime(1704038400000 / 1000, '%Y-%m-%d') AS monthStartDate  
+               UNION ALL  
+               SELECT DATE_ADD(monthStartDate, INTERVAL 1 MONTH)  
+               FROM months  
+               WHERE DATE_ADD(monthStartDate, INTERVAL 1 MONTH) <=  
+                     from_unixtime(1709308799999 / 1000, '%Y-%m-%d')),  
+    customer_months AS (SELECT c.id                                  AS customerId,  
+                               c.tenantId,  
+                               DATE_FORMAT(m.monthStartDate, '%Y%m') AS temporaryMonthDate  
+                        FROM maiye_saas_platform_basic.customer c  
+                                 CROSS JOIN months m),  
+    customer_stats AS (SELECT cm.customerId,  
+                              cm.tenantId,  
+                              cm.temporaryMonthDate    AS monthDate,  
+                              IFNULL(SUM(d.metre), 0)  AS metre,  
+                              IFNULL(SUM(d.yard), 0)   AS yard,  
+                              IFNULL(SUM(d.amount), 0) AS amount  
+                       FROM customer_months cm  
+                                INNER JOIN stat_customer_out_refund_day d ON cm.customerId = d.customerId AND  
+                                                                             cm.temporaryMonthDate =  
+                                                                             d.monthDate and d.tenantId = 19 and  
+                                                                             d.dayTimeStamp between 1704038400000 and 1709308799999  
+                       GROUP BY cm.customerId, cm.temporaryMonthDate)  
+SELECT c.tenantId                                                             tenantId,  
+       c.id                                                                   customerId,  
+       c.code                                                                 customerCode,  
+       c.`name`                                                               customerName,  
+       c.clientArea                                                           customerArea,  
+       c.customerCreditTypeId                                                 customerCreditTypeId,  
+       c.salesmanId                                                           salesmanId,  
+       c.orgId                                                                orgId,  
+       c.storeId                                                              storeId,  
+       GROUP_CONCAT(CONCAT_WS('|', ifnull(cs.monthDate, 197001), ifnull(cs.metre, 0), ifnull(cs.yard, 0),  
+                              ifnull(cs.amount, 0)) ORDER BY cs.monthDate) AS detailsStr,  
+       row_number() over (order by c.tenantId,c.id)                           number  
+FROM maiye_saas_platform_basic.customer c  
+         INNER JOIN customer_stats cs ON c.id = cs.customerId  
+WHERE c.tenantId = 19  
+  and c.potential = 0  
+GROUP BY c.tenantId
 ```
