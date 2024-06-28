@@ -248,3 +248,6 @@ WITH RECURSIVE
 select monthStartDate from  months;
 ```
 >结果如下：
+
+![[Pasted image 20240628171227.png]]
+
