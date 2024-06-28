@@ -235,8 +235,16 @@ json_table(p.color, '$[*]' columns (col varchar(50) path '$')) as c on true
 ![[Pasted image 20240628170648.png]]
 
 > 首先我们需要一个日期生成的sql
+> 使用CTE的形式生成
 
-```java
-
+```sql
+WITH RECURSIVE  
+    months AS (SELECT from_unixtime(1704038400000 / 1000, '%Y-%m-%d') AS monthStartDate  
+    UNION ALL  
+    SELECT DATE_ADD(monthStartDate, INTERVAL 1 MONTH)  
+    FROM months  
+    WHERE DATE_ADD(monthStartDate, INTERVAL 1 MONTH) <=  
+    from_unixtime(1709308799999 / 1000, '%Y-%m-%d'))  
+select monthStartDate from  months;
 ```
-
+>结果如下：
