@@ -302,3 +302,7 @@ WHERE c.tenantId = 19
   and c.potential = 0  
 GROUP BY c.tenantId
 ```
+>detailsStr字段是用来将数据g'he
+>效果如下：
+
+![[Pasted image 20240628172101.png]]
