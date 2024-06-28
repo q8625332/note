@@ -235,7 +235,7 @@ json_table(p.color, '$[*]' columns (col varchar(50) path '$')) as c on true
 ![[Pasted image 20240628170648.png]]
 
 > 首先我们需要一个日期生成的sql
-> 使用CTE的形式生成
+> 使用CTE的形式生成（但是仅仅是mysql8.0版本才支持的函数）
 
 ```sql
 WITH RECURSIVE  
