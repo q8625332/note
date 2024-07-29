@@ -300,7 +300,7 @@ FROM maiye_saas_platform_basic.customer c
          INNER JOIN customer_stats cs ON c.id = cs.customerId  
 WHERE c.tenantId = 19  
   and c.potential = 0  
-GROUP BY c.tenantId
+GROUP BY c.tenantId,cs.monthDate;
 ```
 >detailsStr字段是用来将数据合并串联的，整个月份都是用逗号隔开，里面的不同数据是通过 | 字符隔开。
 >效果如下：
