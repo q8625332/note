@@ -306,3 +306,5 @@ GROUP BY c.id;
 >效果如下：
 
 ![[Pasted image 20240628172101.png]]
+
+## group_concat如果需要
