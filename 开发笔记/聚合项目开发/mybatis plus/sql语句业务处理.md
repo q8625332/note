@@ -309,6 +309,7 @@ GROUP BY c.id;
 
 ## group_concat如果需要去重
 
+> 例子可以在group_concat里面加上distinct去去重
 
 ```sql
 group_concat(distinct concat_ws('|',u.warehouseId, replace(u.warehouseName, ',', ' '),  
