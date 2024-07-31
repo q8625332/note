@@ -307,4 +307,13 @@ GROUP BY c.id;
 
 ![[Pasted image 20240628172101.png]]
 
-## group_concat如果需要
+## group_concat如果需要去重
+
+
+```sql
+group_concat(distinct concat_ws('|',u.warehouseId, replace(u.warehouseName, ',', ' '),  
+u.yesterdayQuantity,  
+u.quantityChange, u.quantity)  
+ORDER BY u.warehouseId  
+desc) AS detailsStr
+```
