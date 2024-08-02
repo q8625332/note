@@ -46,9 +46,19 @@ ORDER BY t1.created DESC, t1.fees_pay_id
  6. 最后按照 created 字段的倒序和 fees_pay_id 字段进行排序，得到最终结果。
 
 > 例子2：可以通过窗口函数去实现排序
+> `row_number() over (PARTITION BY dysds.warehouseId order by id desc) as rowNum`
+> chuang
 
 ```sql
-
+select dysds.*  
+from (select dysds.warehouseId as warehouseId,  
+dysds.quantity as yesterdayQuantity,  
+row_number() over (PARTITION BY dysds.warehouseId order by id desc) as rowNum  
+from dye_yarn_stock_daily_stat dysds  
+where dysds.tenantId = #{req.tenantId}  
+and dysds.createdTime &lt; #{req.startTime}) as dysds  
+where dysds.rowNum = 1  
+group by dysds.warehouseId
 ```
 
 ## 获取两级树名称
