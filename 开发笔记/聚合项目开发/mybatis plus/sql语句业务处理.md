@@ -47,7 +47,7 @@ ORDER BY t1.created DESC, t1.fees_pay_id
 
 > 例子2：可以通过窗口函数去实现排序
 > `row_number() over (PARTITION BY dysds.warehouseId order by id desc) as rowNum`
-> chuang
+> 窗口函数：`row_number() over ()` 分组函数：`PARTITION BY` 排序函数：`order by` 
 
 ```sql
 select dysds.*  
