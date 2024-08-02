@@ -45,7 +45,11 @@ ORDER BY t1.created DESC, t1.fees_pay_id
  5. 使用 GROUP BY 子句将结果按 fees_pay_id、out_trade_no 和 id 进行分组，以便保证每个 fees_pay_id 中的 out_trade_no 只选取一次，并且在 MySQL 5.7 中，对于非聚合列（即 id 和 out_trade_no），必须将其列入分组依据，否则查询会失败。
  6. 最后按照 created 字段的倒序和 fees_pay_id 字段进行排序，得到最终结果。
 
-> 例子2L
+> 例子2：可以通过窗口函数去实现排序
+
+```sql
+
+```
 
 ## 获取两级树名称
 **表**
