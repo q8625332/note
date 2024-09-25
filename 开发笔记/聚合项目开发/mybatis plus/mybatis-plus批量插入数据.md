@@ -33,3 +33,13 @@ this.saveBatch(infoList,1000);//每1000个拼接成一个sql进行提交
 ```
 jdbc:mysql://172.29.1.100:5000/bd_cloud_vehicle_dev?rewriteBatchedStatements=true
 ```
+
+
+####  然而可以重写 批量插入的方法
+
+#### InsertBatchSomeColumn（批量插入 仅适用于mysql，一次插入多条数据）
+
+> 最后会拼接为如下sql： insert into table values (x1, y1, z1), (x2, y2, z2), (x…, y…, z…);
+
+> 特点：拼接成一个sql提交
+
