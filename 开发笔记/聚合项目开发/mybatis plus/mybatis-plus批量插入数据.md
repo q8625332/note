@@ -60,3 +60,42 @@ public class MySqlInjector extends DefaultSqlInjector {
     }
 }
 ```
+
+2、将SQL注入器交给Spring容器
+
+在MybatisPlusConfig类中，将刚才创建的SQL注入器InsertBatchSqlInjector 注册为一个bean。
+
+```java
+@Configuration
+public class MybatisPlusConfig {
+
+    @Bean
+    public MySqlInjector sqlInjector() {
+        return new MySqlInjector();
+    }
+}
+```
+
+3、编写自定义MyBaseMapper继承BaseMapper，并编写insertBatchSomeColumn()方法
+
+新建MyBaseMapper类，继承BaseMapper，并在此类中配置insertBatchSomeColumn()方法。
+
+```java
+public interface MyBaseMapper<T> extends BaseMapper<T> {
+    /**
+     * 以下定义的 4个 method 其中 3 个是内置的选装件
+     */
+    int insertBatchSomeColumn(List<T> entityList);
+}
+```
+
+4、需要批量插入的Mapper继承自定义MyBaseMapper
+
+```java
+@Mapper
+public interface StudentMapper extends MyBaseMapper<Student> {
+
+    @SelectProvider(value = MySelectProvider.class, method = "getSql")
+    Student select(String sql);
+}
+```
