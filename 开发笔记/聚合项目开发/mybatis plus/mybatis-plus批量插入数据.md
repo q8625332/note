@@ -43,3 +43,6 @@ jdbc:mysql://172.29.1.100:5000/bd_cloud_vehicle_dev?rewriteBatchedStatements=tru
 
 > 特点：拼接成一个sql提交
 
+开启方式：需要我们配合SQL注入器来开启，分为三个步骤：
+
+1、自定义SQL注入器
