@@ -888,4 +888,14 @@ String.format("%03d", 1000)
 
 ## 数据去重
 
->比如对某个对象集合，进行唯一去重（针对墨迹个）
+>比如对某个对象集合，进行唯一去重（针对某几个字段）
+
+```java
+//去重的标准工艺  
+List<String> standardProcessingList = dtoList.stream()  
+        .map(ImportProcessingFactoryCraftDTO::getStandardProcessing)  
+        .filter(StrUtil::isNotBlank)  
+        .distinct()  
+        .toList();
+
+```
