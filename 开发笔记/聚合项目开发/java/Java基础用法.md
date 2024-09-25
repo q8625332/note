@@ -889,13 +889,13 @@ String.format("%03d", 1000)
 ## 数据去重
 
 >比如对某个对象集合，进行唯一去重（针对某几个字段）
+>Tuple 这个对象不是java的，是hutool工具的
 
 ```java
-//去重的标准工艺  
-List<String> standardProcessingList = dtoList.stream()  
-        .map(ImportProcessingFactoryCraftDTO::getStandardProcessing)  
-        .filter(StrUtil::isNotBlank)  
-        .distinct()  
-        .toList();
-
+//去重 
+Map<Tuple, ImportProcessingFactoryCraftDTO> deduplicationValusMap = v.stream()  
+        .collect(Collectors.toMap(itemDto ->  
+                        new Tuple(itemDto.getStandardProcessing(), itemDto.getProcessingPrice()),  
+                Function.identity(),  
+                (o1, o2) -> o1));
 ```
