@@ -46,3 +46,17 @@ jdbc:mysql://172.29.1.100:5000/bd_cloud_vehicle_dev?rewriteBatchedStatements=tru
 开启方式：需要我们配合SQL注入器来开启，分为三个步骤：
 
 1、自定义SQL注入器
+
+新建一个名为InsertBatchSqlInjector 的类，继承DefaultSqlInjector，，添加InsertBatchSomeColumn方法（当然，类名可以根据自己的喜好来）
+
+```java
+public class MySqlInjector extends DefaultSqlInjector {
+
+    @Override
+    public List<AbstractMethod> getMethodList(Class<?> mapperClass, TableInfo tableInfo) {
+        List<AbstractMethod> methodList = super.getMethodList(mapperClass, tableInfo);
+        methodList.add(new InsertBatchSomeColumn(i -> i.getFieldFill() != FieldFill.UPDATE));
+        return methodList;
+    }
+}
+```
