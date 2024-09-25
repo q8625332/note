@@ -18,3 +18,7 @@ this.saveBatch(infoList,1000);//每1000个拼接成一个sql进行提交
 
 ##### 这样会非常慢？
 
+> sqlSession.flushStatements()，看起来是没有问题，但是就是速度非常慢。查阅相关资料发现，要批量执行的话，JDBC连接URL字符串中需要新增一个参数：`rewriteBatchedStatements=true`
+> MySQL的JDBC连接的url中要加rewriteBatchedStatements参数，并保证5.1.13以上版本的驱动，才能实现高性能的批量插入。MySQL JDBC驱动在默认情况下会无视executeBatch()语句，把我们期望批量执行的一组sql语句拆散，一条一条地发给MySQL数据库，批量插入实际上是单条插入，直接造成较低的性能。  只有把rewriteBatchedStatements参数置为true, 驱动才会帮你批量执行SQL  
+另外这个选项对INSERT/UPDATE/DELETE都有效
+
