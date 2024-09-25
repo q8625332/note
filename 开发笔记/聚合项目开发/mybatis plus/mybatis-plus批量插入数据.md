@@ -99,3 +99,21 @@ public interface StudentMapper extends MyBaseMapper<Student> {
     Student select(String sql);
 }
 ```
+
+5、调用insertBatchSomeColumn()方法
+
+#### ruoyi中对BaseMapperX拓展的insertBatch
+
+> 其实就是帮我们写了个for循环，一次插入一条数据
+
+> 特点：逐条插入，适合少量数据插入，或者对性能要求不高的场景
+
+```java
+default void insertBatch(Collection<T> entities) {
+    entities.forEach(this::insert);
+}
+```
+
+#### 效率
+
+大数据量：InsertBatchSomeColumn > saveBatch > insertBatch
