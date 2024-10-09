@@ -1,6 +1,6 @@
 
 >更改一下，镜像源源头。预防超时
->配置如下，使用管理员的方式pe
+>配置如下，使用管理员的方式配置
 ```python
 python3 -m pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple --user
 ```
