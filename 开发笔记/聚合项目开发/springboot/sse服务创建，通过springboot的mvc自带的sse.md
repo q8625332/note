@@ -1,6 +1,6 @@
  **编写核心SSE Client 的service**
 
->sseEmitterMap 用于储存用户的链接，也方便yu
+>sseEmitterMap 用于储存用户的链接，也方便于通过uid查找对于的客户端链接发送消息
 
 ```java
 @Slf4j
@@ -91,3 +91,4 @@ public class SseClient {
  
 }
 ```
+
