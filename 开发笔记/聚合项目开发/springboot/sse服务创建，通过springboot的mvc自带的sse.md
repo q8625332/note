@@ -132,3 +132,39 @@ public class IndexAction {
     }
 }
 ```
+
+**前端代码**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="con"></div>
+<script>
+    let chat = document.getElementById("con");
+    if (window.EventSource) {
+        //创建sse
+         eventSource = new EventSource(`/createSse?uid=${uid}`);
+        eventSource.onopen = function (event) {
+            console.log('SSE链接成功');
+        }
+        eventSource.onmessage = function (event) {
+            if(event.data){
+                chat.innerHTML += event.data + '<br/>';
+                //console.log('后端返回的数据:', data.value);
+            }
+        }
+        eventSource.onerror = (error) => {
+            console.log('SSE链接失败');
+        };
+    } else {
+        alert("你的浏览器不支持SSE");
+    }
+</script>
+</body>
+</html>
+```
