@@ -92,3 +92,43 @@ public class SseClient {
 }
 ```
 
+**模拟演示，链接和消息推送**
+
+```java
+@Controller
+public class IndexAction {
+    @Autowired
+    private SseClient sseClient;
+    @GetMapping("/")
+    public String index(ModelMap model) {
+        String uid = IdUtil.fastUUID();
+        model.put("uid",uid);
+        return "index";
+    }
+ 
+    @CrossOrigin
+    @GetMapping("/createSse")
+    public SseEmitter createConnect(String uid) {
+        return sseClient.createSse(uid);
+    }
+    @CrossOrigin
+    @GetMapping("/sendMsg")
+    @ResponseBody
+    public String sseChat(String uid) {
+        for (int i = 0; i < 10; i++) {
+            sseClient.sendMessage(uid, "no"+i,IdUtil.fastUUID());
+        }
+        return "ok";
+    }
+ 
+    /**
+     * 关闭连接
+     */
+    @CrossOrigin
+    @GetMapping("/closeSse")
+    public void closeConnect(String uid ){
+ 
+        sseClient.closeSse(uid);
+    }
+}
+```
