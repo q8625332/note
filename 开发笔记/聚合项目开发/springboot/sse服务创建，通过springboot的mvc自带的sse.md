@@ -1,5 +1,7 @@
  **编写核心SSE Client 的service**
 
+>sseEmitterMap 用于储存用户的链接，也方便yu
+
 ```java
 @Slf4j
 @Component
