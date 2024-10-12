@@ -11,8 +11,12 @@
             "id": "992562723eb10a9f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "开发笔记/聚合项目开发/前端/webrtc用浏览器实现逻辑-临时文档.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "开发笔记/聚合项目开发/前端/webrtc用浏览器实现逻辑-临时文档.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "开发笔记/聚合项目开发/前端/webrtc用浏览器实现逻辑-临时文档.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "开发笔记/聚合项目开发/前端/webrtc用浏览器实现逻辑-临时文档.md"
+              }
             }
           }
         ]
