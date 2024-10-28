@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/聚合项目开发/springboot/okhttp-sse的使用笔记，链接其他sse服务器.md",
+                "file": "开发笔记/git/git的相关操作.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "okhttp-sse的使用笔记，链接其他sse服务器"
+              "title": "git的相关操作"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发笔记/聚合项目开发/springboot/okhttp-sse的使用笔记，链接其他sse服务器.md",
+                "file": "开发笔记/git/git的相关操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "okhttp-sse的使用笔记，链接其他sse服务器 的反向链接列表"
+              "title": "git的相关操作 的反向链接列表"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发笔记/聚合项目开发/springboot/okhttp-sse的使用笔记，链接其他sse服务器.md",
+                "file": "开发笔记/git/git的相关操作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "okhttp-sse的使用笔记，链接其他sse服务器 的出链列表"
+              "title": "git的相关操作 的出链列表"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发笔记/聚合项目开发/springboot/okhttp-sse的使用笔记，链接其他sse服务器.md"
+                "file": "开发笔记/git/git的相关操作.md"
               },
               "icon": "lucide-list",
-              "title": "okhttp-sse的使用笔记，链接其他sse服务器 的大纲"
+              "title": "git的相关操作 的大纲"
             }
           }
         ]
@@ -159,11 +159,16 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "992562723eb10a9f",
   "lastOpenFiles": [
+    "开发笔记/git/git 统计（命令）.md",
+    "开发笔记/file/附件地址.md",
+    "开发笔记/obsidian使用/obsidian的图片如何管理.md",
+    "开发笔记/聚合项目开发/springboot/okhttp-sse的使用笔记，链接其他sse服务器.md",
     "开发笔记/聚合项目开发/springboot/banner.txt.md",
     "开发笔记/聚合项目开发/python/pip安装超时怎么解决.md",
     "开发笔记/聚合项目开发/mybatis plus/sql语句业务处理.md",
@@ -186,10 +191,6 @@
     "开发笔记/运维相关笔记/Dockerfile-个人笔记.md",
     "开发笔记/运维相关笔记/hadoop套件的安装与配置.md",
     "开发笔记/聚合项目开发/springboot/sse服务创建，通过springboot的mvc自带的sse.md",
-    "开发笔记/运维相关笔记/docker安装软件.md",
-    "开发笔记/运维相关笔记/nginx配置.md",
-    "开发笔记/运维相关笔记/linux虚拟机固定IP的方法.md",
-    "开发笔记/运维相关笔记/linux常用命令个人笔记.md",
     "开发笔记/聚合项目开发/python",
     "未命名.canvas",
     "未命名 1.canvas",
