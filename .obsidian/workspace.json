@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "MQ消息重放机制"
             }
-          },
-          {
-            "id": "ab9c853f7449acfd",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.5"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.5"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,7 +163,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ab9c853f7449acfd",
+  "active": "992562723eb10a9f",
   "lastOpenFiles": [
     "开发笔记/聚合项目开发/mybatis plus/sql语句业务处理.md",
     "开发笔记/聚合项目开发/rocketMQ/MQ消息重放机制.md",
