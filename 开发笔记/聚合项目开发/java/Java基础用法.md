@@ -127,9 +127,9 @@ int dayofWeek = now .getDayOfWeek().getValue();
 // 今年是哪一年
 int dayofYear = now .getDayOfYear();
 // 取本月第1天：
-LocalDate firstDayOfThisMonth=now .with(TemporalAdjusters.firstDayOfMonth()); 
+LocalDate firstDayOfThisMonth=now.with(TemporalAdjusters.firstDayOfMonth()); 
 // 取本月第2天：
-LocalDate secondDayOfThisMonth = now .withDayOfMonth(2);
+LocalDate secondDayOfThisMonth = now.withDayOfMonth(2);
 // 取本月最后一天，再也不用计算是28，29，30还是31：
 LocalDate lastDayOfMonth=now .with(TemporalAdjusters.lastDayOfMonth()); 
 // 取下一天：
