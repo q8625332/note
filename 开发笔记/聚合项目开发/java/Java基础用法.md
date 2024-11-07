@@ -181,11 +181,12 @@ OffsetDateTime.now().getOffset();  //输出 "+08:00" 不同时区输出不同值
 //获取当天开始时间的时间戳
 LocalDateTime.of(LocalDate.now(),LocalTime.MIN).toInstant(OffsetDateTime.now().getOffset()).toEpochMilli();
 //另外的方法
-LocalDateTime min = LocalDateTime.now(ZoneOffset.UTC).with(LocalTime.MIN);  
-LocalDateTime max = LocalDateTime.now(ZoneOffset.UTC).with(LocalTime.MAX);
+LocalDateTime min = LocalDateTime.now(ZoneOffset.UTC).with(LocalTime.MIN);
 
 //获取当天结束时间的时间戳
 LocalDateTime.of(LocalDate.now(), LocalTime.MAX).toInstant(OffsetDateTime.now().getOffset()).toEpochMilli();
+//另外的方法
+LocalDateTime max = LocalDateTime.now(ZoneOffset.UTC).with(LocalTime.MAX);
 
 //时间戳转localDateTime （不需要除1000）
 Instant.ofEpochMilli(d.getTradeDate()) .atZone(ZoneOffset.ofHours(8)).toLocalDateTime();
