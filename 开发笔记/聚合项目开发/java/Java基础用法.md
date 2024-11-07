@@ -121,17 +121,17 @@ isEqual(ChronoLocalDate other)    boolean    比较两个日期对象是否相�
 // 获取今天的日期
 LocalDate now = LocalDate.now();
 // 今天是几号
-int dayofMonth = now .getDayOfMonth();
+int dayofMonth = now.getDayOfMonth();
 // 今天是周几（返回的是个枚举类型，需要再getValue()）
-int dayofWeek = now .getDayOfWeek().getValue();
+int dayofWeek = now.getDayOfWeek().getValue();
 // 今年是哪一年
-int dayofYear = now .getDayOfYear();
+int dayofYear = now.getDayOfYear();
 // 取本月第1天：
-LocalDate firstDayOfThisMonth=now.with(TemporalAdjusters.firstDayOfMonth()); 
+LocalDate firstDayOfThisMonth = now.with(TemporalAdjusters.firstDayOfMonth()); 
 // 取本月第2天：
 LocalDate secondDayOfThisMonth = now.withDayOfMonth(2);
 // 取本月最后一天，再也不用计算是28，29，30还是31：
-LocalDate lastDayOfMonth=now .with(TemporalAdjusters.lastDayOfMonth()); 
+LocalDate lastDayOfMonth= now.with(TemporalAdjusters.lastDayOfMonth()); 
 // 取下一天：
 LocalDate firstDayOfNextMonth = lastDayOfMonth.plusDays(1);
 // 取2019年1月第一个周一：
@@ -139,7 +139,7 @@ LocalDate firstMondayOf2017 = LocalDate.parse("2019-01-01").with(TemporalAdjuste
 //本月的第一天
 LocalDate monthFirstDay = LocalDate.of(now.getYear(),now.getMonth(),1);
  //本月的最后一天
-LocalDate monthLastDay =now.with(TemporalAdjusters.lastDayOfMonth());
+LocalDate monthLastDay = now.with(TemporalAdjusters.lastDayOfMonth());
 //上月的第一天
 LocalDate date = now.minusMonths(1).withDayOfMonth(1);
 //上月的最后一天
