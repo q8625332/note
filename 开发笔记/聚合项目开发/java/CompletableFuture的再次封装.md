@@ -81,7 +81,7 @@ class CompletableFutureTaskUtil extends CompletableFutureUtil {
     }
 
     private void generateFutureMap() {
-        this.futureMap = MapUtil.newHashMap();
+        this.futureMap = MapUtil.newConcurrentHashMap();
     }
 
     public <U> CompletableFuture<U> supplyAsync(Supplier<U> supplier) {
