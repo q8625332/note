@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/idea/idea必装插件.md",
+                "file": "开发笔记/聚合项目开发/rocketMQ/未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "idea必装插件"
+              "title": "未命名"
             }
           }
         ]
@@ -165,10 +165,11 @@
   },
   "active": "992562723eb10a9f",
   "lastOpenFiles": [
+    "开发笔记/idea/idea必装插件.md",
+    "开发笔记/聚合项目开发/rocketMQ/未命名.md",
     "开发笔记/file/2024-09-23.md",
     "开发笔记/file/名称.md",
     "开发笔记/file/附件地址.md",
-    "开发笔记/idea/idea必装插件.md",
     "开发笔记/file/Pasted image 20241114141422.png",
     "开发笔记/file/42c6a97bd01b20cac9882dbe7e9583ca.jpg",
     "开发笔记/运维相关笔记/linux虚拟机固定IP的方法.md",
@@ -192,7 +193,6 @@
     "开发笔记/聚合项目开发/mybatis plus/mysql个人笔记.md",
     "开发笔记/聚合项目开发/mybatis plus/sql语句业务处理.md",
     "开发笔记/聚合项目开发/java/正则校验.md",
-    "开发笔记/聚合项目开发/java/DFA算法-关键字算法.md",
     "开发笔记/聚合项目开发/rocketMQ",
     "开发笔记/聚合项目开发/python",
     "未命名.canvas",
