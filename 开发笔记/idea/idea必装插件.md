@@ -270,3 +270,8 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/4a00a043abdc4a608073aab02cebacc2.png)
 
+
+## mybatis-sql-viewer
+
+>插件主要提供能力：
+>将mybatis xml转成真实SQL语句、参数mock、SQL规范检查、SQL索引检查、SQL运行、SQL压测及Mybatis SQL语句扫描。
