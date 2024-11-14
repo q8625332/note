@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "开发笔记/聚合项目开发/rocketMQ/消息体超过4M,将使用分片消息处理.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
