@@ -276,3 +276,6 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 >插件主要提供能力：
 >将mybatis xml转成真实SQL语句、参数mock、SQL规范检查、SQL索引检查、SQL运行、SQL压测及Mybatis SQL语句扫描。
 
+XML文件中点击「sql」图标生成SQL
+
+![[Pasted image 20241114141422.png]]
