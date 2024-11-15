@@ -66,8 +66,10 @@ public class CustomAspect {
 ## 注解方法里使用其他service 的引用方式
 
 > 例子如下：
-> 可以shi'y
+> 可以使用 @ 来引入service类使用
 
 ```java
 @PreAuthorize("@ss.hasPermission('merchant:platform:record:page')")
 ```
+
+## 注解方法里使用
