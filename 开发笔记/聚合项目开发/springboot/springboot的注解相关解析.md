@@ -72,4 +72,4 @@ public class CustomAspect {
 @PreAuthorize("@ss.hasPermission('merchant:platform:record:page')")
 ```
 
-## 注解方法里使用
+## 注解方法里使用有string的参数，如何引入常量呢
