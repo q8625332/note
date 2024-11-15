@@ -79,5 +79,5 @@ public class CustomAspect {
 > 可以通过 T(类引用) 的形式获取到类数据
 
 ```java
-
+@PreAuthorize("@ss.hasAnyPermissions(T(cash.paynow.merchant.common.consts.PermissionsConst).PLATFORM_INCOME_STATEMENT_STATISTICS_DEPOSIT_INCOME)")
 ```
