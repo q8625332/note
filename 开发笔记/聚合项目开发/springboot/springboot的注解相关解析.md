@@ -76,6 +76,7 @@ public class CustomAspect {
 
 > 例子如下：
 > 业务中代码有使用到常量数据校验
+> 可以通过 T(类引用) 的形式获取到类数据
 
 ```java
 
