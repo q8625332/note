@@ -172,7 +172,13 @@ echo $PATH
 
 **再次输入which containerd命令，如图**
 
+![[Pasted image 20241125184507.png]]
 
+**为containerd创建自定义配置文件**
+
+mkdir -p /etc/containerd
+containerd config default > /etc/containerd/config.toml
+vim /etc/containerd/config.toml
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
 
 > 先设置源头
