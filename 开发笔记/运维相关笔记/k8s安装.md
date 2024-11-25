@@ -186,6 +186,9 @@ vim /etc/containerd/config.toml
 
 ![[Pasted image 20241125184621.png]]
 
+![[Pasted image 20241125184635.png]]
+
+镜像地址：`registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.10`
 
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
 
