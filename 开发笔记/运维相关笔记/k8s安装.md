@@ -128,6 +128,19 @@ containerd下载地址：[Releases · containerd/containerd · GitHub](https://g
 wget https://github.com/containerd/containerd/releases/download/v2.0.0/containerd-2.0.0-linux-amd64.tar.gz
 ```
 
+**使用如下命令将其解压到/目录下**
+
+```
+tar xf cri-containerd-1.7.22-linux-amd64.tar.gz -C /
+```
+
+**输入如下命令进行验证**
+
+```
+which containerd
+```
+
+
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
 
 > 先设置源头
