@@ -170,6 +170,7 @@ echo $PATH
 
 ![[Pasted image 20241125164807.png]]
 
+**再次输入which containerd命令，如图**
 
 
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
