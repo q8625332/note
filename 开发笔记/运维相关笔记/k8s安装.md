@@ -43,6 +43,8 @@ kubectl describe secret -n kubernetes-dashboard $(kubectl get secret -n kubernet
 
 ## Kubernetes部署环境准备
 
+
+
 ```java
 # 关闭防火墙
 
