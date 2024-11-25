@@ -152,6 +152,10 @@ vim ~/.bashrc
 
 **在最后一行加上**
 
+```
+export PATH=$PATH:/usr/local/bin:/usr/local/sbin
+```
+
 
 
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
