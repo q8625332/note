@@ -92,6 +92,31 @@ yum install ntpdate -y
 
 ntpdate time.windows.com
 ```
+
+**配置加载内核及IPv4 数据包转发**
+
+```linux
+cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+overlay
+br_netfilter
+EOF
+​
+modprobe overlay
+modprobe br_netfilter
+​
+# 设置所需的 sysctl 参数，参数在重新启动后保持不变
+cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-iptables  = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward                 = 1
+EOF
+​
+# 应用 sysctl 参数而不重新启动
+sysctl --system
+​
+# 使用以下命令验证 net.ipv4.ip_forward 是否设置为 1
+sysctl net.ipv4.ip_forward
+```
 ## Kubernetes安装具体步骤 
 [安装docker，本人的另外一篇文章 ](https://blog.csdn.net/u011767319/article/details/86627285)
 
