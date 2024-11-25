@@ -4,19 +4,19 @@
 
 #### yum源配置文件路径：
 
-```
+```linux
 /etc/yum.repos.d/CentOS-Base.repo
 ```
 
 #### 查看CentOS-Base.repo文件内容：
 
-```
+```linux
 cat /etc/yum.repos.d/CentOS-Base.repo
 ```
 
 #### 备份官方源配置：
 
-```
+```linux
 cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
 ```
 
@@ -34,4 +34,10 @@ curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-
 yum clean all
 
 yum makecache
+```
+
+#### 更新软件
+
+```linux
+yum -y update
 ```
