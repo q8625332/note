@@ -43,7 +43,17 @@ kubectl describe secret -n kubernetes-dashboard $(kubectl get secret -n kubernet
 
 ## Kubernetes部署环境准备
 
+![[Pasted image 20241125153716.png]]
 
+输入如下命令来永久开启端口
+
+```linux
+firewall-cmd --permanent --add-port=6443/tcp
+firewall-cmd --permanent --add-port=2379-2380/tcp
+firewall-cmd --permanent --add-port=10250/tcp
+firewall-cmd --permanent --add-port=10259/tcp
+firewall-cmd --permanent --add-port=10257/tcp
+```
 
 ```java
 # 关闭防火墙
