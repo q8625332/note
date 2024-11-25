@@ -156,11 +156,20 @@ vim ~/.bashrc
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin
 ```
 
+**保存后，输入如下命令使更改立刻生效**
+
+```
+source ~/.bashrc
+```
+
 **输入如下命令检查path中是否包含/usr/local/bin**
 
 ```
 echo $PATH
 ```
+
+![[Pasted image 20241125164807.png]]
+
 
 
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
