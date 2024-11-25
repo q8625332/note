@@ -22,6 +22,16 @@ cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
 
 #### 下载阿里云yum源配置文件覆盖原官方源配置文件：
 
-```
+```linux
 curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+```
+
+![[Pasted image 20241125144545.png]]
+
+#### 清理缓存并生成新的缓存：
+
+```linux
+yum clean all
+
+yum makecache
 ```
