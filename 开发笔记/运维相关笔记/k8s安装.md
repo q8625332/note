@@ -118,40 +118,6 @@ EOF
 sysctl --system
 ```
 
-**这里我们选择安装containerd作为运行时**
-
-containerd下载地址：[Releases · containerd/containerd · GitHub](https://github.com/containerd/containerd/releases "Releases · containerd/containerd · GitHub")
-
-选择了2.0
-
-```
-wget https://github.com/containerd/containerd/releases/download/v2.0.0/containerd-2.0.0-linux-amd64.tar.gz
-```
-
-**使用如下命令将其解压到/目录下**
-
-```
-tar -xvzf containerd-2.0.0-linux-amd64.tar.gz -C /usr/local/
-```
-
-**输入如下命令进行验证**
-
-```
-which containerd
-```
-
-**如果已经切换到管理员权限，一般不会报错，如果报错，如下图**
-
-![[Pasted image 20241125164213.png]]
-
-**是因为containerd默认解压到/usr/local/bin目录下，runc默认解压到/usr/local/sbin目录下，这两个目录都不在path变量中，输入如下命令来将这个目录放到path变量中**
-
-```
-vim ~/.bashrc
-```
-
-
-
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
 
 > 先设置源头
