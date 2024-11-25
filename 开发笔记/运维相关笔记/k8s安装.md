@@ -117,8 +117,13 @@ EOF
 # 重新加载 sysctl 配置以使更改立即生效
 sysctl --system
 ```
-## Kubernetes安装具体步骤 
-[安装docker，本人的另外一篇文章 ](https://blog.csdn.net/u011767319/article/details/86627285)
+
+**这里我们选择安装containerd作为运行时**
+
+containerd下载地址：[Releases · containerd/containerd · GitHub](https://github.com/containerd/containerd/releases "Releases · containerd/containerd · GitHub")
+
+选择了2.0
+
 
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
 
