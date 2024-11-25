@@ -156,6 +156,11 @@ vim ~/.bashrc
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin
 ```
 
+**输入如下命令检查path中是否包含/usr/local/bin**
+
+```
+echo $PATH
+```
 
 
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
