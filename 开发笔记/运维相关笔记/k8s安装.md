@@ -142,6 +142,16 @@ which containerd
 
 **如果已经切换到管理员权限，一般不会报错，如果报错，如下图**
 
+![[Pasted image 20241125164213.png]]
+
+**是因为containerd默认解压到/usr/local/bin目录下，runc默认解压到/usr/local/sbin目录下，这两个目录都不在path变量中，输入如下命令来将这个目录放到path变量中**
+
+```
+vim ~/.bashrc
+```
+
+**在最后一行加上**
+
 
 
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
