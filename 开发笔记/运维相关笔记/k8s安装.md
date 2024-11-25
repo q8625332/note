@@ -131,7 +131,7 @@ wget https://github.com/containerd/containerd/releases/download/v2.0.0/container
 **使用如下命令将其解压到/目录下**
 
 ```
-tar xf cri-containerd-v2.0.0-linux-amd64.tar.gz -C /
+tar xf containerd-2.0.0-linux-amd64.tar.gz -C /
 ```
 
 **输入如下命令进行验证**
