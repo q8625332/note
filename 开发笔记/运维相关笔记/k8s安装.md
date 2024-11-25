@@ -140,6 +140,9 @@ tar xf containerd-2.0.0-linux-amd64.tar.gz -C /
 which containerd
 ```
 
+**如果已经切换到管理员权限，一般不会报错，如果报错，如下图**
+
+
 
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
 
