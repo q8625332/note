@@ -150,45 +150,7 @@ which containerd
 vim ~/.bashrc
 ```
 
-**在最后一行加上**
 
-```
-export PATH=$PATH:/usr/local/bin:/usr/local/sbin
-```
-
-**保存后，输入如下命令使更改立刻生效**
-
-```
-source ~/.bashrc
-```
-
-**输入如下命令检查path中是否包含/usr/local/bin**
-
-```
-echo $PATH
-```
-
-![[Pasted image 20241125164807.png]]
-
-**再次输入which containerd命令，如图**
-
-![[Pasted image 20241125184507.png]]
-
-**为containerd创建自定义配置文件**
-
-```
-mkdir -p /etc/containerd
-containerd config default > /etc/containerd/config.toml
-vim /etc/containerd/config.toml
-```
-
-**对这个文件做部分修改，如图**
-
-![[Pasted image 20241125184621.png]]
-
-![[Pasted image 20241125184635.png]]
-
-镜像地址：`registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.10`
 
 ## 那么接下来需要搭建：kubeadm、kubelet、kubectl
 
