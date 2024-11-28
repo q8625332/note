@@ -10,8 +10,10 @@ yum remove docker docker-common docker-selinux docker-engine
 > 以CentOS为例：查看当前当前的CentOs内核版本是不是高于3.10的。
 > 查看CentOS内核命令：`uname -r`
 > 如果不是,请升级内核，命令用：`yum update`
-> 安装docker，命令：`yum install -y yum-utils device-mapper-persistent-data lvm2
->  yum install docker`
+> 安装需要的软件包， yum-util 提供yum-config-manager功能，另两个是devicemapper驱动依赖
+> `yum install -y yum-utils device-mapper-persistent-data lvm2`
+> yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+> 安装docker，命令：`yum install -y yum-utils device-mapper-persistent-data lvm2 yum install docker`
 > 启动docker，命令：`systemctl start docker`
 > 将docker服务设为开机自启，命令：`systemctl enable docker`
 > 停止docker，命令：`systemctl stop docker`
