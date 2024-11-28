@@ -13,7 +13,7 @@ yum remove docker docker-common docker-selinux docker-engine
 > 安装需要的软件包， yum-util 提供yum-config-manager功能，另两个是devicemapper驱动依赖
 > `yum install -y yum-utils device-mapper-persistent-data lvm2`
 > 设置yum源：`yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo`
-> 查询可用版本：yum list docker-ce --showduplicates | sort -r
+> 查询可用版本：`yum list docker-ce --showduplicates | sort -r`
 > 安装docker，命令：`yum install -y yum-utils device-mapper-persistent-data lvm2 yum install docker`
 > 启动docker，命令：`systemctl start docker`
 > 将docker服务设为开机自启，命令：`systemctl enable docker`
