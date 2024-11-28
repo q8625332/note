@@ -1,5 +1,9 @@
 
-删除旧的docker
+## 删除旧的docker
+
+```
+yum remove docker docker-common docker-selinux docker-engine
+```
 
 ## 安装Docker先检查
 
