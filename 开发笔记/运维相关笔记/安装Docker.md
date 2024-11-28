@@ -1,3 +1,6 @@
+
+删除旧的docker
+
 ## 安装Docker先检查
 
 > 以CentOS为例：查看当前当前的CentOs内核版本是不是高于3.10的。
