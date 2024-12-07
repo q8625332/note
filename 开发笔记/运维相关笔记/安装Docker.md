@@ -31,8 +31,8 @@ sudo service docker start
 **更新镜像地址**
 
 ```
-sudo mkdir -p /etc/docker sudo tee /etc/docker/daemon.json <<-'EOF' 
-{ 
+sudo mkdir -p /etc/docker sudo tee /etc/docker/daemon.json <<-'EOF'
+{
   "registry-mirrors": ["https://1nmg4om1.mirror.aliyuncs.com"]
 }
 EOF
