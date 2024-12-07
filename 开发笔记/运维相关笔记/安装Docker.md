@@ -14,6 +14,8 @@ yum remove docker docker-common docker-selinux docker-engine
 > 启动docker，命令：`systemctl start docker`
 > 将docker服务设为开机自启，命令：`systemctl enable docker`
 > 停止docker，命令：`systemctl stop docker`
+
+***
 ## 镜像操作
 
 > 检索（搜索）：我们常去docker hub上检索镜像的详细信息，如镜像的TAG。
