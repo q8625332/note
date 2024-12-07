@@ -33,8 +33,21 @@ sudo service docker start
 ```
 sudo mkdir -p /etc/docker sudo tee /etc/docker/daemon.json <<-'EOF' 
 { 
-"registry-mirrors": ["https://1nmg4om1.mirror.aliyuncs.com"] 
-} 
+"registry-mirrors": ["https://1nmg4om1.mirror.aliyuncs.com"]
+"dns" : [
+    "114.114.114.114",
+    "8.8.8.8"
+  ],
+  "proxies": {
+    "http-proxy": "http://127.0.0.1:7890",
+    "https-proxy": "http://127.0.0.1:7890"
+  },
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "200m"
+  }
+}
 EOF 
 sudo systemctl daemon-reload 
 sudo systemctl restart docker
