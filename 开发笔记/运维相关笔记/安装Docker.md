@@ -48,7 +48,7 @@ sudo mkdir -p /etc/docker sudo tee /etc/docker/daemon.json <<-'EOF'
     "max-size": "200m"
   }
 }
-EOF 
+EOF
 sudo systemctl daemon-reload 
 sudo systemctl restart docker
 ```
