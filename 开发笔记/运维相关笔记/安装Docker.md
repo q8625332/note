@@ -28,6 +28,17 @@ sudo yum makecache fast sudo yum -y install docker-ce
 sudo service docker start
 ```
 
+**更新镜像地址**
+
+```
+sudo mkdir -p /etc/docker sudo tee /etc/docker/daemon.json <<-'EOF' 
+{ 
+"registry-mirrors": ["https://1nmg4om1.mirror.aliyuncs.com"] 
+} EOF 
+sudo systemctl daemon-reload 
+sudo systemctl restart docker
+```
+
 ## 镜像操作
 
 > 检索（搜索）：我们常去docker hub上检索镜像的详细信息，如镜像的TAG。
