@@ -15,7 +15,17 @@ yum remove docker docker-common docker-selinux docker-engine
 > 将docker服务设为开机自启，命令：`systemctl enable docker`
 > 停止docker，命令：`systemctl stop docker`
 
-***
+**建议使用阿里的环境安装**
+
+```java
+# step 1: 安装必要的一些系统工具 
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2 
+# Step 2: 添加软件源信息 
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo 
+# Step 3: 更新并安装 Docker-CE 
+sudo yum makecache fast sudo yum -y install docker-ce # Step 4: 开启Docker服务 sudo service docker start
+```
+
 ## 镜像操作
 
 > 检索（搜索）：我们常去docker hub上检索镜像的详细信息，如镜像的TAG。
