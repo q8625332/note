@@ -34,7 +34,8 @@ sudo service docker start
 sudo mkdir -p /etc/docker sudo tee /etc/docker/daemon.json <<-'EOF' 
 { 
 "registry-mirrors": ["https://1nmg4om1.mirror.aliyuncs.com"] 
-} EOF 
+} 
+EOF 
 sudo systemctl daemon-reload 
 sudo systemctl restart docker
 ```
