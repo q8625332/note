@@ -33,8 +33,8 @@ sudo service docker start
 ```
 sudo mkdir -p /etc/docker sudo tee /etc/docker/daemon.json <<-'EOF' 
 { 
-"registry-mirrors": ["https://1nmg4om1.mirror.aliyuncs.com"]
-"dns" : [
+  "registry-mirrors": ["https://1nmg4om1.mirror.aliyuncs.com"]
+  "dns" : [
     "114.114.114.114",
     "8.8.8.8"
   ],
