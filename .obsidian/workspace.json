@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/运维相关笔记/linux常用命令个人笔记.md",
+                "file": "开发笔记/聚合项目开发/springboot/RedissonClient-业务解决思路.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "linux常用命令个人笔记"
+              "title": "RedissonClient-业务解决思路"
             }
           }
         ]
@@ -165,6 +165,7 @@
   },
   "active": "d5c4cfdcc719ee7c",
   "lastOpenFiles": [
+    "开发笔记/运维相关笔记/linux常用命令个人笔记.md",
     "开发笔记/win/Power Shell个人使用笔记.md",
     "开发笔记/file/vfox 官网.md",
     "开发笔记/file/[vfox 官网.md",
@@ -185,7 +186,6 @@
     "开发笔记/运维相关笔记/hadoop套件的安装与配置.md",
     "开发笔记/运维相关笔记/Dockerfile-个人笔记.md",
     "开发笔记/运维相关笔记/linux虚拟机固定IP的方法.md",
-    "开发笔记/运维相关笔记/linux常用命令个人笔记.md",
     "开发笔记/file/Pasted image 20241125184635.png",
     "开发笔记/file/Pasted image 20241125184621.png",
     "开发笔记/file/Pasted image 20241125184507.png",
