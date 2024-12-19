@@ -10,7 +10,19 @@
 
 > 配置系统变量
 
+![[Pasted image 20241219160429.png]]
+
 ```
 VISUAL_STUDIO
 D:\VisualStudio\VS\VC\Tools\MSVC\14.42.34433
+
+
+//第二个
+
+Path 环境变量
+
+%VISUAL_STUDIO%\bin
+
+
 ```
+
