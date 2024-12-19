@@ -4,4 +4,13 @@
 
 ![[Pasted image 20241219160102.png]]
 
-> 记住这个地址，等下设置系统变量的时候
+> 记住这个地址，等下设置系统变量的时候要使用到
+
+![[Pasted image 20241219160325.png]]
+
+> 配置系统变量
+
+```
+VISUAL_STUDIO
+D:\VisualStudio\VS\VC\Tools\MSVC\14.42.34433
+```
