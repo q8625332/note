@@ -25,9 +25,15 @@ Path 环境变量
 
 //第三个
 
+记住 10.0.22621.0 bu't
+
 INCLUDE 环境变量
 
-%VISUAL_STUDIO%\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\winrt;
+%VISUAL_STUDIO%\include;
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared;
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt;
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um;
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;
 
 ```
 
