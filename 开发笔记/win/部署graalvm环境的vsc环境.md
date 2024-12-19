@@ -37,10 +37,12 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt;
 
 //第四个
 
-lib环境变量
+记住 10.0.22621.0 不同版本名字不一样
+
+lib 环境变量
 %VISUAL_STUDIO%\lib\x64;
-C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22000.0\um\x64;
-C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22000.0\ucrt\x64;
+C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\um\x64;
+C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\ucrt\x64;
 
 ```
 

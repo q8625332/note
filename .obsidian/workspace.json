@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/win/部署graalvm环境.md",
+                "file": "开发笔记/win/部署graalvm环境的vsc环境.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "部署graalvm环境"
+              "title": "部署graalvm环境的vsc环境"
             }
           }
         ]
@@ -169,7 +169,7 @@
     "开发笔记/file/Pasted image 20241219160325.png",
     "开发笔记/file/Pasted image 20241219160102.png",
     "开发笔记/win/vfox 环境版本管理工具.md",
-    "开发笔记/win/部署graalvm环境.md",
+    "开发笔记/win/部署graalvm环境的vsc环境.md",
     "开发笔记/聚合项目开发/java/Java基础用法.md",
     "开发笔记/聚合项目开发/java/spark算法个人笔记(java版写法不是scala).md",
     "开发笔记/运维相关笔记/base_web的nacos的yml配置.md",
