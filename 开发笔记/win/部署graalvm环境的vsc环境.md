@@ -6,6 +6,8 @@
 gu install native-image
 ```
 
+**出现下面这个就是安装成功了**
+
 ![[Pasted image 20241219232516.png]]
 
 > 下载 vsc的微软软件
