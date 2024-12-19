@@ -1,5 +1,12 @@
->用vfox
+>用vfox安装java环境后
 
+**下载native-image**
+
+```
+gu install native-image
+```
+
+![[Pasted image 20241219232516.png]]
 
 > 下载 vsc的微软软件
 > 然后安装 c++ 编译
