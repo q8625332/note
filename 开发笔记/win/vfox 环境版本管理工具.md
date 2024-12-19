@@ -12,4 +12,6 @@ vfox install java@x.y.z-graal # Use graalvm as distribution.
 vfox search java all # view all java sdks
 vfox search java # view all for openjdk
 vfox search java graal # view all for graalvm
+
+vfox use 
 ```
