@@ -42,3 +42,14 @@ sudo apt install docker-ce
 
 ### 验证 Docker 是否安装成功
 
+```
+sudo systemctl status docker
+```
+
+### 启动 Docker 服务
+
+```
+sudo systemctl start docker
+```
+
+### zi'd
