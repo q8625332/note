@@ -1,4 +1,4 @@
-*强烈**-**建议使用**-**阿里云的docker加速镜像**。不然拉取镜像的速度太慢了*
+**强烈**-**建议使用**-**阿里云的docker加速镜像**。不然拉取镜像的速度太慢了*
 
 > win电脑安装docker出现pull不下来的问题
 > 报错：`no matching manifest for windows/amd64 10.0.18362 in the manifest list entries`
@@ -696,4 +696,11 @@ docker run -d --name nginx -p 80:80 --restart=always \
 -v /root/nginx/html:/usr/share/nginx/html \
 nginx
 
+```
+
+
+**单机部署tidb**
+
+```
+docker pull xuxuclassmate/tidb
 ```
