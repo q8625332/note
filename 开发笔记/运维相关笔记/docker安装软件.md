@@ -713,5 +713,23 @@ docker run --name tidb -d --privileged=true -p 4000:4000 xuxuclassmate/tidb
 mysql -h 127.0.0.1 -P 4000 --prompt="tidb> "
 
 
+#创建数据库
 
+CREATE DATABASE demo CHARACTER;
+#创建数据库登录用户
+
+CREATE USER 'test'@'%' IDENTIFIED BY 'test';
+GRANT ALL PRIVILEGES ON demo.* TO 'test'@'%';
+FLUSH PRIVILEGES;
+# 更新登录密码
+
+use mysql
+
+update user set authentication_string = password('123456') where User = 'root';
+
+FLUSH PRIVILEGES;
+
+退出数据库，再次登录（使用设置的账号和密码）
+
+mysql -h 127.0.0.1 -P 4000 -u root -p --prompt="tidb> "
 ```
