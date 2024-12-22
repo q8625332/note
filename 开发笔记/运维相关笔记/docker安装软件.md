@@ -707,3 +707,9 @@ docker pull xuxuclassmate/tidb
 docker run --name tidb -d --privileged=true -p 4000:4000 xuxuclassmate/tidb
 ```
 
+进入容器
+
+```
+mysql -h 127.0.0.1 -P 4000 --prompt="tidb> "
+
+```
