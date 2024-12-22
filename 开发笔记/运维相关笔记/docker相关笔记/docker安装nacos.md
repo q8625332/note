@@ -7,5 +7,5 @@ docker pull nacos/nacos-server
 docker run --env MODE=standalone --name nacos -d -p 8848:8848 nacos/nacos-server
 
 #设置内存 -e JVM_XMS=512m -e JVM_XMX=1024m
-docker run -d --name nacos-server -e MODE=standalone -e JVM_XMS=512m -e JVM_XMX=1024m -p 8848:8848 nacos/nacos-server:latest
+docker run --env MODE=standalone -e JVM_XMS=512m -e JVM_XMX=1024m --name nacos -d -p 8848:8848 nacos/nacos-server
 ```
