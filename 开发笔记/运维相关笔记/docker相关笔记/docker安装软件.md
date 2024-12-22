@@ -107,16 +107,6 @@ docker ps | grep gitlab
 本人已经装过英文版和中文版
 例子（中文版）
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200430150243255.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE3NjczMTk=,size_16,color_FFFFFF,t_70)
-## 安装 nacos
-
-```
-#拉取镜像
-docker pull nacos/nacos-server
-#启动镜像
-docker run --env MODE=standalone --name nacos -d -p 8848:8848 nacos/nacos-server
-```
-## 安装 redis
-
 
 ## 安装go-fastdfs教程
 **拉取镜像到本地**
