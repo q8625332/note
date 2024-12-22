@@ -703,4 +703,7 @@ nginx
 
 ```
 docker pull xuxuclassmate/tidb
+
+docker run --name tidb -d --privileged=true -p 4000:4000 xuxuclassmate/tidb
 ```
+
