@@ -712,4 +712,6 @@ docker run --name tidb -d --privileged=true -p 4000:4000 xuxuclassmate/tidb
 ```
 mysql -h 127.0.0.1 -P 4000 --prompt="tidb> "
 
+
+
 ```
