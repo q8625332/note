@@ -52,4 +52,8 @@ sudo systemctl status docker
 sudo systemctl start docker
 ```
 
-### zi'd
+### 自动启动
+
+```
+sudo systemctl enable docker
+```
