@@ -117,12 +117,7 @@ docker run --env MODE=standalone --name nacos -d -p 8848:8848 nacos/nacos-server
 ```
 ## 安装 redis
 
-```
-#拉取镜像
-docker pull redis:latest
-#启动镜像
-docker run -itd --name redis -p 6379:6379 redis
-```
+
 ## 安装go-fastdfs教程
 **拉取镜像到本地**
 
