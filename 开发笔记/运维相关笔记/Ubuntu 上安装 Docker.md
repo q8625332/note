@@ -15,12 +15,13 @@ lsb_release -a
 ```
 sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 ```
-```
 
 ### 添加 Docker 的官方 GPG 密钥
 
 ```
+```text
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
 ```
 
 ### 添加 Docker 的 APT 源
