@@ -13,7 +13,8 @@ lsb_release -a
 ## 安装 Docker
 
 ```
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
+sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+```
 ```
 
 ### 添加 Docker 的官方 GPG 密钥
