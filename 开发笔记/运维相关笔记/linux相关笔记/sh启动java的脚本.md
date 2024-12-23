@@ -1,4 +1,6 @@
 
+>注意如果在wins
+
 **start.sh**
 
 ```sh
@@ -58,3 +60,22 @@ else
 fi
 ```
 
+**log.sh**
+
+```sh
+#!/bin/bash
+
+# 设置日志文件的路径
+APP_NAME="gateway-0.0.1-SNAPSHOT"
+LOG_FILE=$APP_NAME.log
+
+# 检查日志文件是否存在
+if [ ! -f "$LOG_FILE" ]; then
+    echo "日志文件不存在：$LOG_FILE"
+    exit 1
+fi
+
+# 使用 tail 命令查看日志文件的内容
+echo "显示日志文件内容：$LOG_FILE"
+tail -f $LOG_FILE
+```
