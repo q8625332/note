@@ -15,8 +15,8 @@ docker run -d --name nacos \
   -e JVM_XMS=60m \
   -e JVM_XMX=80m \
   -e SPRING_DATASOURCE_PLATFORM=mysql \
-  -e MYSQL_SERVICE_HOST=host.docker.internal \
-  -e MYSQL_SERVICE_PORT=3306 \
+  -e MYSQL_SERVICE_HOST=127.0.0.1 \
+  -e MYSQL_SERVICE_PORT=4000 \
   -e MYSQL_SERVICE_DB_NAME=nacos_config \
   -e MYSQL_SERVICE_USER=root \
   -e MYSQL_SERVICE_PASSWORD=root \
