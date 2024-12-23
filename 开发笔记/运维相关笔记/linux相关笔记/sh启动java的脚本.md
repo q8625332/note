@@ -29,4 +29,32 @@ echo $! > $PID_FILE
 echo "服务启动成功 (PID: $!)"
 ```
 
-****
+**stop.sh**
+
+```sh
+#!/bin/bash
+
+# 设置 PID 文件的路径
+APP_NAME="gateway-0.0.1-SNAPSHOT"
+PID_FILE=$APP_NAME.pid
+
+# 检查 PID 文件是否存在
+if [ ! -f "$PID_FILE" ]; then
+    echo "PID 文件不存在，服务可能未启动"
+    exit 1
+fi
+
+# 获取 PID 并关闭服务
+PID=$(cat "$PID_FILE")
+echo "停止服务 (PID: $PID)..."
+kill $PID
+
+# 检查服务是否成功停止
+if kill -0 $PID 2>/dev/null; then
+    echo "服务未能停止，请手动检查"
+else
+    echo "服务已成功停止"
+    rm -f "$PID_FILE"
+fi
+```
+
