@@ -1,9 +1,10 @@
 
 >注意如果在win上编译过文件，在linux上的格式会异常，所以需要转换一下。
 
-在基于 Debian 的系统上，例如 Ubuntu，你可以使用以下命令安装：
-
-```
+```linux
+#安装转换器，在基于 Debian 的系统上，例如 Ubuntu，你可以使用以下命令安装：
+sudo apt-get install dos2unix
+#安装转换器，在基于 Red Hat 的系统上，例如 CentOS，你可以使用以下命令安装：
 
 ```
 
