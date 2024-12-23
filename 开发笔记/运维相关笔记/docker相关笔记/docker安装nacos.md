@@ -19,7 +19,7 @@ docker run -d --name nacos \
   -e MYSQL_SERVICE_PORT=4000 \
   -e MYSQL_SERVICE_DB_NAME=nacos_config \
   -e MYSQL_SERVICE_USER=root \
-  -e MYSQL_SERVICE_PASSWORD=root \
+  -e MYSQL_SERVICE_PASSWORD=123456 \
   -p 8848:8848 \
   -p 9848:9848 \
   nacos/nacos-server
