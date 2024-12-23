@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/运维相关笔记/docker相关笔记/安装Docker.md",
+                "file": "开发笔记/运维相关笔记/docker相关笔记/dockre部署tidb.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "安装Docker"
+              "title": "dockre部署tidb"
             }
           }
         ]
@@ -165,6 +165,7 @@
   },
   "active": "423889981b5d4a9d",
   "lastOpenFiles": [
+    "开发笔记/运维相关笔记/docker相关笔记/安装Docker.md",
     "开发笔记/运维相关笔记/docker相关笔记/dockre部署tidb.md",
     "开发笔记/idea/idea必装插件.md",
     "开发笔记/idea/idea设置-个人笔记.md",
@@ -176,7 +177,6 @@
     "开发笔记/运维相关笔记/docker相关笔记/docker安装软件.md",
     "开发笔记/运维相关笔记/docker相关笔记",
     "开发笔记/运维相关笔记/未命名.md",
-    "开发笔记/运维相关笔记/docker相关笔记/安装Docker.md",
     "开发笔记/运维相关笔记/docker相关笔记/docker可用的镜像源（2024）.md",
     "开发笔记/运维相关笔记/CentOS 使用.md",
     "开发笔记/运维相关笔记/Ubuntu 上安装 Docker.md",
