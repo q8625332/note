@@ -5,7 +5,10 @@
 #安装转换器，在基于 Debian 的系统上，例如 Ubuntu，你可以使用以下命令安装：
 sudo apt-get install dos2unix
 #安装转换器，在基于 Red Hat 的系统上，例如 CentOS，你可以使用以下命令安装：
+sudo yum install dos2unix
 
+#转换
+dos2unix start.sh
 ```
 
 **start.sh**
