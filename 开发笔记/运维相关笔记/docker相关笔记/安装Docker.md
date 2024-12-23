@@ -115,6 +115,8 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}'  容器ID
 ## 如何进入容器内部
 ```java
 docker exec -it kibana容器id /bin/bash
+#或者使用 sh
+ocker exec -it kibana容器id /bin/sh
 ```
 ## 完美拷贝本地文件到docker容器
 [完美拷贝本地文件到docker容器](https://blog.csdn.net/qq_27295403/article/details/100579631)
