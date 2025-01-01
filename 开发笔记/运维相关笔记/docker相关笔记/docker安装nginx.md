@@ -58,7 +58,52 @@ docker run -d \
 ## 部署一个网站
 
 >注意事项：
+>第一，要给文件赋予读写权限
+>第二，
+
 
 ```nginx
+events { }
 
+http {
+
+    types {
+        text/html                             html htm shtml;
+        text/css                              css;
+        text/xml                              xml;
+        image/gif                             gif;
+        image/jpeg                            jpeg jpg;
+        application/javascript                js;
+        application/atom+xml                  atom;
+        application/rss+xml                   rss;
+
+        # Add additional MIME types here if needed
+        application/javascript                js;
+        application/json                      json;
+        application/ld+json                   jsonld;
+        application/xml                       xml;
+        text/plain                            txt;
+        # etc.
+    }
+
+    default_type  application/octet-stream;
+
+    server {
+        listen 80;
+        server_name _;
+
+        location / {
+            root /usr/share/nginx/html;
+            index index.html index.htm;
+        }
+
+        location /base.web/ {
+            alias /usr/share/nginx/html/base.web/;
+            index index.html index.htm;
+        }
+
+        error_log /var/log/nginx/error.log;
+        access_log /var/log/nginx/access.log;
+    }
+}
 ```
