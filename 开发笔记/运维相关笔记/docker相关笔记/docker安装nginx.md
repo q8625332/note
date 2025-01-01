@@ -41,6 +41,8 @@ EOL
 echo '<h1>Hello, Nginx from Docker!</h1>' > /home/nginx/html/index.html
 ```
 
+**运行**
+
 ```
 docker run -d \
   --name nginx \
