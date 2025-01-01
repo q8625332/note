@@ -25,6 +25,8 @@
     unzip archive.zip
     ```
 
+### `tar` 命令
+
 `tar` 命令可以处理 `.tar`, `.tar.gz`, `.tgz`, `.tar.bz2`, `.tar.xz` 等格式。
 
 - 解压 `.tar` 文件：
