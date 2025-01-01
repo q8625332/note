@@ -46,7 +46,7 @@ echo '<h1>Hello, Nginx from Docker!</h1>' > /home/nginx/html/index.html
 ```
 docker run -d \
   --name nginx \
-  
+  --restart unless-stopped \
   -p 80:80 \
   -v /home/nginx/conf/nginx.conf:/etc/nginx/nginx.conf:ro \
   -v /home/nginx/html:/usr/share/nginx/html:ro \
