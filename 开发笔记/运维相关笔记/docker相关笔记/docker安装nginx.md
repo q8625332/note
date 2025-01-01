@@ -53,3 +53,12 @@ docker run -d \
   -v /home/nginx/logs:/var/log/nginx \
   nginx
 ```
+
+
+## 部署一个网站
+
+>注意事项：
+
+```nginx
+
+```
