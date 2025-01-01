@@ -27,7 +27,7 @@ conf  html  log
 >因为挂载时，如果宿主机挂载目录为空，则可能会将容器中挂载的目录给覆盖
 
 ```
-docker run -d nginx
+docker run -d nginx:1.25
 ```
 
 **获取挂载文件**
