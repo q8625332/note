@@ -35,6 +35,11 @@ http {
 EOL
 ```
 
+**创建一个 HTML 文件**
+
+```
+echo '<h1>Hello, Nginx from Docker!</h1>' > /home/nginx/html/index.html
+```
 
 
 **将所需文件在容器中复制出来**
