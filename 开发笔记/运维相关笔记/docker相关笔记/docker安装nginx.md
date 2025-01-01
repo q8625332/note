@@ -15,7 +15,6 @@ mkdir -p /home/nginx/{conf,html,logs}
 **创建nginx.conf**
 
 ```
-sudo mkdir -p /home/nginx/conf
 cat <<EOL | sudo tee /home/nginx/conf/nginx.conf
 events { }
 
@@ -35,6 +34,7 @@ http {
 }
 EOL
 ```
+
 
 
 **将所需文件在容器中复制出来**
