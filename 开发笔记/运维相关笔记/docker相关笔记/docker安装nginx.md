@@ -13,10 +13,10 @@ docker pull nginx
 docker run -d -p 80:80 \
 --name nginx --privileged \
 --restart always \
--v /root/nginx/conf/nginx.conf:/etc/nginx/nginx.conf \
--v /root/nginx/conf/conf.d:/etc/nginx/conf.d \
--v /root/nginx/html:/usr/share/nginx/html \
--v /root/nginx/log:/var/log/nginx \
-docker.io/nginx:1.25
+-v /home/nginx/conf/nginx.conf:/etc/nginx/nginx.conf \
+-v /home/nginx/conf/conf.d:/etc/nginx/conf.d \
+-v /home/nginx/html:/usr/share/nginx/html \
+-v /home/nginx/log:/var/log/nginx \
+nginx
 
 ```
