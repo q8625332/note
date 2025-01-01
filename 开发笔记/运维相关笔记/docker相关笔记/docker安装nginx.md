@@ -26,7 +26,21 @@ conf  html  log
 
 >因为挂载时，如果宿主机挂载目录为空，则可能会将容器中挂载的目录给覆盖
 
+```
+docker run -d nginx
+```
 
+**获取挂载文件**
+
+```
+//将容器nginx.conf文件复制到宿主机
+[root@192 nginx]# docker cp 容器id:/etc/nginx/nginx.conf /root/nginx/conf/nginx.conf
+//将容器conf.d文件夹复制到宿主机
+[root@192 nginx]# docker cp 容器id:/etc/nginx/conf.d /root/nginx/conf/conf.d
+//将容器静态文件夹html复制到宿主机
+[root@192 html]# docker cp 容器id:/usr/share/nginx/html/ /root/nginx
+
+```
 
 **运行nginx**
 
