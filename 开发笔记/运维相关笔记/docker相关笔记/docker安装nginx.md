@@ -2,24 +2,13 @@
 **拉取镜像**
 
 ```
-docker pull nginx:1.25
+docker pull nginx
 ```
 
 **创建本地挂载目录**
 
 ```
-// 先创建nginx目录（以下是示例路径）
-[root@192 home]# mkdir nginx
-[root@192 home]# cd nginx/
-// 创建配置文件挂载
-[root@192 nginx]# mkdir conf
-// 创建静态文件挂载
-[root@192 nginx]# mkdir html
-// 创建日志文件挂载
-[root@192 nginx]# mkdir log
-// 列出目录
-[root@192 nginx]# ls
-conf  html  log
+mkdir -p /home/nginx/{conf,html,logs}
 ```
 
 **将所需文件在容器中复制出来**
