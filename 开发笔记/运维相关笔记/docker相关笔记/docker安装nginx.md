@@ -2,7 +2,7 @@
 **拉取镜像**
 
 ```
-docker pull nginx
+docker pull nginx:1.25
 ```
 
 **创建本地挂载目录**
