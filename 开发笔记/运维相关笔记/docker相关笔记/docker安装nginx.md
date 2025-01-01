@@ -11,6 +11,9 @@ docker pull nginx
 mkdir -p /home/nginx/{conf,html,logs}
 ```
 
+
+****
+
 **将所需文件在容器中复制出来**
 
 >因为挂载时，如果宿主机挂载目录为空，则可能会将容器中挂载的目录给覆盖
