@@ -46,24 +46,10 @@ echo '<h1>Hello, Nginx from Docker!</h1>' > /home/nginx/html/index.html
 ```
 docker run -d \
   --name nginx \
+  
   -p 80:80 \
   -v /home/nginx/conf/nginx.conf:/etc/nginx/nginx.conf:ro \
   -v /home/nginx/html:/usr/share/nginx/html:ro \
   -v /home/nginx/logs:/var/log/nginx \
   nginx
-```
-
-
-**运行nginx**
-
-```
-docker run -d -p 80:80 \
---name nginx \
---privileged \
---restart always \
--v /home/nginx/conf/nginx.conf:/etc/nginx/nginx.conf \
--v /home/nginx/conf/conf.d:/etc/nginx/conf.d \
--v /home/nginx/html:/usr/share/nginx/html \
--v /home/nginx/log:/var/log/nginx \
-nginx:1.25
 ```

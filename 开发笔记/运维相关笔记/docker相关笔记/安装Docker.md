@@ -64,6 +64,16 @@ docker system prune -a
 |容器日志|docker logs container-name/container-id||
 |进入容器|docker exec -it container-name/container-id bash|进入容器bash并进入container-name/container-id命令行|
 
+1. **`--restart always`**：
+    
+    - 无论容器是因为失败还是正常停止，Docker 都会尝试重新启动该容器。
+    - 即使 Docker 守护进程重启（例如系统重启），容器也会自动重新启动。
+    - 唯一不重启容器的情况是你手动停止 Docker 守护进程或容器。
+2. **`--restart unless-stopped`**：
+    
+    - 该选项类似于 `--restart always`，但有一个例外：如果容器是手动停止的，它将不会自动重启。
+    - 如果 Docker 守护进程重启（例如系统重启），容器会自动重新启动，前提是它没有被手动停止过。
+
 ## 更换镜像源
 新版的 Docker 推荐使用 json 配置文件的方式，默认为 /etc/docker/daemon.json，非默认路径需要修改 dockerd 的 –config-file，在该文件中加入如下内容
 
