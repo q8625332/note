@@ -64,5 +64,5 @@ docker run -d -p 80:80 \
 -v /home/nginx/conf/conf.d:/etc/nginx/conf.d \
 -v /home/nginx/html:/usr/share/nginx/html \
 -v /home/nginx/log:/var/log/nginx \
-nginx
+nginx:1.25
 ```
