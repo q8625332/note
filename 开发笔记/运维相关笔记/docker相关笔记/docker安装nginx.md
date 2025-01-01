@@ -34,11 +34,23 @@ docker run -d nginx
 
 ```
 //将容器nginx.conf文件复制到宿主机
-[root@192 nginx]# docker cp 容器id:/etc/nginx/nginx.conf /home/nginx/conf/nginx.conf
+docker cp 容器id:/etc/nginx/nginx.conf /home/nginx/conf/nginx.conf
+
 //将容器conf.d文件夹复制到宿主机
 docker cp 容器id:/etc/nginx/conf.d /home/nginx/conf/conf.d
+
 //将容器静态文件夹html复制到宿主机
 docker cp 容器id:/usr/share/nginx/html/ /home/nginx
+```
+
+**停止容器，并删除**
+
+```
+// 停止容器，ce869a为容器id
+docker stop 容器id
+
+//删除容器
+docker rm 容器id
 ```
 
 **运行nginx**
