@@ -56,3 +56,11 @@
     ```
     tar -xvJf archive.tar.xz
     ```
+
+## 给予权限
+
+```
+sudo chmod -R 755 /home/nginx/html
+
+sudo chown -R www-data:www-data /home/nginx/html
+```
