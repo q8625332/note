@@ -12,7 +12,30 @@ mkdir -p /home/nginx/{conf,html,logs}
 ```
 
 
-****
+**创建nginx.conf**
+
+```
+sudo mkdir -p /home/nginx/conf
+cat <<EOL | sudo tee /home/nginx/conf/nginx.conf
+events { }
+
+http {
+    server {
+        listen 80;
+        server_name localhost;
+
+        location / {
+            root /usr/share/nginx/html;
+            index index.html index.htm;
+        }
+
+        error_log /var/log/nginx/error.log;
+        access_log /var/log/nginx/access.log;
+    }
+}
+EOL
+```
+
 
 **将所需文件在容器中复制出来**
 
