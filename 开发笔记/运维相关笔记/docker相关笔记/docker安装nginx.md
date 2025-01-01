@@ -34,12 +34,11 @@ docker run -d nginx
 
 ```
 //将容器nginx.conf文件复制到宿主机
-[root@192 nginx]# docker cp 容器id:/etc/nginx/nginx.conf /root/nginx/conf/nginx.conf
+[root@192 nginx]# docker cp 容器id:/etc/nginx/nginx.conf /home/nginx/conf/nginx.conf
 //将容器conf.d文件夹复制到宿主机
-[root@192 nginx]# docker cp 容器id:/etc/nginx/conf.d /root/nginx/conf/conf.d
+docker cp 容器id:/etc/nginx/conf.d /home/nginx/conf/conf.d
 //将容器静态文件夹html复制到宿主机
-[root@192 html]# docker cp 容器id:/usr/share/nginx/html/ /root/nginx
-
+docker cp 容器id:/usr/share/nginx/html/ /home/nginx
 ```
 
 **运行nginx**
