@@ -108,4 +108,16 @@ http {
 }
 ```
 
-**添加**
+**添加svg的访问支持**
+
+>放在server里面，和location同级
+
+```nginx
+# 添加以下 `location` 块来处理 SVG 文件
+    	location ~* \.svg$ {
+        	root   /usr/share/nginx/html;  # 修改为你的实际文件路径
+        	add_header Content-Type image/svg+xml;
+        	expires 30d;
+    	}
+
+```
