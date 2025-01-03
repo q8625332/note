@@ -10,7 +10,8 @@ Spring Boot应用打包机制充分利用了Maven或Gradle构建工具的强大�
 
 ## mavem配置
 
-> 
+> 简单描述一下打包的配置。
+> includes 需要保留的jar包。一般会选择变动bi
 
 ```xml
 <build>  
