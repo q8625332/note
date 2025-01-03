@@ -41,6 +41,10 @@ echo $! > $PID_FILE
 echo "服务启动成功 (PID: $!)"
 ```
 
+**拆包后的启动sh**
+
+> 将
+
 **stop.sh**
 
 ```sh
