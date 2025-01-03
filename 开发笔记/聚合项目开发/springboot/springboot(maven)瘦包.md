@@ -12,7 +12,8 @@ Spring Boot应用打包机制充分利用了Maven或Gradle构建工具的强大�
 
 > 简单描述一下打包的配置。
 > includes 需要保留的jar包。一般会选择变动比较大的包。试试需要maven更新的包就需要放到这个地方。
-> maven-dependency-plugin这个打包是jia
+> maven-dependency-plugin这个打包是将包分离出去。
+> outputDirectory 这个指定分离出去的包需要放哪里。
 
 ```xml
 <build>  
@@ -81,3 +82,6 @@ Spring Boot应用打包机制充分利用了Maven或Gradle构建工具的强大�
     </plugins>  
 </build>
 ```
+
+## jar包启动命令
+
