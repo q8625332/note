@@ -10,55 +10,48 @@ Spring Boot应用打包机制充分利用了Maven或Gradle构建工具的强大�
 
 ## mavem配置
 
+> 
+
 ```xml
 <build>  
-    <resources>  
-        <resource>  
-            <directory>src/main/resources</directory>  
-            <includes>  
-                <include>**/*</include>  
-            </includes>  
-            <filtering>true</filtering>  
-        </resource>  
-    </resources>  
     <plugins>  
         <plugin>  
             <groupId>org.springframework.boot</groupId>  
             <artifactId>spring-boot-maven-plugin</artifactId>  
             <version>${spring-boot.version}</version>  
-          <configuration>  
-                <!--启动类配置-->  
-                <mainClass>com.ljq.auth.AuthApplication</mainClass>  
-                <!--解决windows命令行窗口中文乱码-->  
-                <jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>  
-                <!-- 瘦包 -->  
-                <layout>ZIP</layout>  
-                <!--保留的包-->  
-                <includes>  
-                    <include>  
-                        <groupId>com.ljq</groupId>  
-                        <artifactId>common</artifactId>  
-                    </include>  
-                    <include>  
-                        <groupId>com.ljq</groupId>  
-                        <artifactId>framework-database-starter</artifactId>  
-                    </include>  
-                    <include>  
-                        <groupId>com.ljq</groupId>  
-                        <artifactId>>framework-redis-starter</artifactId>  
-                    </include>  
-                    <include>  
-                        <groupId>com.ljq</groupId>  
-                        <artifactId>framework-security-starter</artifactId>  
-                    </include>  
-                </includes>  
-                <excludes>  
-                    <exclude>  
-                        <groupId>org.projectlombok</groupId>  
-                        <artifactId>lombok</artifactId>  
-                    </exclude>  
-                </excludes>  
-            </configuration>  
+			<configuration>  
+				<!--启动类配置-->  
+				<mainClass>com.ljq.auth.AuthApplication</mainClass>  
+				<!--解决windows命令行窗口中文乱码-->  
+				<jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>  
+				<!-- 瘦包 -->  
+				<layout>ZIP</layout>  
+				<!--保留的包-->  
+				<includes>  
+					<include>  
+						<groupId>com.ljq</groupId>  
+						<artifactId>common</artifactId>  
+					</include>  
+					<include>  
+						<groupId>com.ljq</groupId>  
+						<artifactId>framework-database-starter</artifactId>  
+					</include>  
+					<include>  
+						<groupId>com.ljq</groupId>  
+						<artifactId>>framework-redis-starter</artifactId>  
+					</include>  
+					<include>  
+						<groupId>com.ljq</groupId>  
+						<artifactId>framework-security-starter</artifactId>  
+					</include>  
+				</includes>  
+				<excludes>  
+					<exclude>  
+						<groupId>org.projectlombok</groupId>  
+						<artifactId>lombok</artifactId>  
+					</exclude>  
+				</excludes>  
+			</configuration>  
         </plugin>  
         <!--外包指定-->  
         <plugin>  
@@ -82,24 +75,6 @@ Spring Boot应用打包机制充分利用了Maven或Gradle构建工具的强大�
                     </configuration>  
                 </execution>  
             </executions>  
-        </plugin>  
-        <!-- docker构建插件 -->  
-        <plugin>  
-            <groupId>com.spotify</groupId>  
-            <artifactId>docker-maven-plugin</artifactId>  
-            <version>${docker-maven-plugin.version}</version>  
-            <configuration>  
-                <!-- 生成的docker镜像名称  -->  
-                <!--suppress UnresolvedMavenProperty -->                <imageName>${docker.image.prefix}/${project.artifactId}:${project.version}</imageName>  
-                <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>  
-                <resources>  
-                    <resource>  
-                        <targetPath>/</targetPath>  
-                        <directory>${project.build.directory}</directory>  
-                        <include>${project.build.finalName}.jar</include>  
-                    </resource>  
-                </resources>  
-            </configuration>  
         </plugin>  
     </plugins>  
 </build>
