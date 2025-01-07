@@ -8,7 +8,8 @@ docker pull jeessy/ddns-go
 **运行**
 
 ```
-docker run -d --name ddns-go \
+docker run -d \
+--name ddns-go \
 --restart=always \
 -p 9876:9876 \
 -v /home/ddns-go:/root \
