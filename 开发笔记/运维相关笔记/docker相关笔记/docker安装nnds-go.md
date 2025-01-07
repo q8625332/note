@@ -11,6 +11,13 @@ docker pull jeessy/ddns-go
 docker run -d --name ddns-go \
 --restart=always \
 -p 9876:9876 \
--v /opt/ddns-go:/root \
+-v /home/ddns-go:/root \
 jeessy/ddns-go
+```
+
+**重置密码**
+
+```
+docker exec ddns-go ./ddns-go -resetPassword 123456
+docker restart ddns-go
 ```
