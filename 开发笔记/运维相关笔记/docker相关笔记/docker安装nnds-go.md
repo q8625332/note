@@ -11,7 +11,7 @@ docker pull jeessy/ddns-go
 docker run -d \
 --name ddns-go \
 --restart=always \
--p 9876:9876 \
+--net=host \
 -v /home/ddns-go:/root \
 jeessy/ddns-go
 ```
