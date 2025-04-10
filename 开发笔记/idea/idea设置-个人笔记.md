@@ -68,3 +68,6 @@ User Parameters
 idea.config.path=D:/.IntelliJIdea/config  
 idea.system.path=D:/.IntelliJIdea/system
 ```
+
+## 按键冲突了的解决办法
+
