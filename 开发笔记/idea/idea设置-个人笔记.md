@@ -71,3 +71,4 @@ idea.system.path=D:/.IntelliJIdea/system
 
 ## 按键冲突了的解决办法
 
+![[Pasted image 20250410165812.png]]
