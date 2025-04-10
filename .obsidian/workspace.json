@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/idea/idea设置-个人笔记.md",
+                "file": "开发笔记/idea/idea的todo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "idea设置-个人笔记"
+              "title": "idea的todo"
             }
           }
         ]
@@ -177,8 +177,9 @@
   },
   "active": "126ec1ef1be22657",
   "lastOpenFiles": [
-    "未命名.canvas",
     "开发笔记/idea/idea设置-个人笔记.md",
+    "开发笔记/idea/idea的todo.md",
+    "未命名.canvas",
     "开发笔记/file/Pasted image 20250410165812.png",
     "开发笔记/聚合项目开发/mybatis plus/sql语句业务处理.md",
     "开发笔记/聚合项目开发/mybatis plus/mysql个人笔记.md",
