@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "开发笔记/idea/idea设置-个人笔记.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -152,11 +152,12 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -176,10 +177,11 @@
   },
   "active": "126ec1ef1be22657",
   "lastOpenFiles": [
+    "未命名.canvas",
+    "开发笔记/idea/idea设置-个人笔记.md",
     "开发笔记/file/Pasted image 20250410165812.png",
     "开发笔记/聚合项目开发/mybatis plus/sql语句业务处理.md",
     "开发笔记/聚合项目开发/mybatis plus/mysql个人笔记.md",
-    "开发笔记/idea/idea设置-个人笔记.md",
     "开发笔记/idea/idea必装插件.md",
     "开发笔记/运维相关笔记/linux相关笔记/nginx配置.md",
     "开发笔记/运维相关笔记/linux相关笔记/ubuntu常用命令.md",
@@ -216,10 +218,8 @@
     "开发笔记/file/Pasted image 20241125184635.png",
     "开发笔记/file/Pasted image 20241125184621.png",
     "开发笔记/file/Pasted image 20241125184507.png",
-    "开发笔记/file/Pasted image 20241125164807.png",
     "开发笔记/聚合项目开发/rocketMQ",
     "开发笔记/聚合项目开发/python",
-    "未命名.canvas",
     "未命名 1.canvas",
     "开发笔记/win",
     "开发笔记/聚合项目开发/springboot",
