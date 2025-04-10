@@ -19,3 +19,10 @@
 >todo中增加筛选条件
 
 ![[Pasted image 20250410172800.png]]
+
+![[Pasted image 20250410172911.png]]
+
+```
+\bljq todo\b.*
+```
+
