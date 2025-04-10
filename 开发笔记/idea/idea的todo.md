@@ -8,9 +8,14 @@
 //ljq todo $date$
 ```
 
->shi
+>适用范围全部勾选
+
+![[Pasted image 20250410172738.png]]
 
 >编辑变量
 
 ![[Pasted image 20250410172643.png]]
 
+>todo中增加筛选条件
+
+![[Pasted image 20250410172800.png]]
