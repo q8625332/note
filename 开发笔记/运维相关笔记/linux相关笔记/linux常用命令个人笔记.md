@@ -94,6 +94,10 @@ tail -fn 200 nohup.out
 head -n 200 nohup.out
 
 # 查看jar是否已经启动
+ps -ef | grep -i
+
+#强制关闭
+kill 9 578   //9578是上面查询出来的端口
 
 ```
 
