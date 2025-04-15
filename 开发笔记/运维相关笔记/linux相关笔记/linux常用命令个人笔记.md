@@ -87,6 +87,9 @@ netstat -nlp|grep 8089
 # 运行jar包
 nohup java -jar xxx.jar &
 
+#temp.out的意思是将日志输出重定向到temp.out文件，使用ctrl+c中断或者关闭窗口都不会中断程序的执行
+nohup java -jar XXX.jar >temp.out &
+
 # 查看日志（循实时查看尾部200行的日志）
 tail -fn 200 nohup.out
 
@@ -97,7 +100,7 @@ head -n 200 nohup.out
 ps -ef | grep -i
 
 #强制关闭
-kill 9 578   //9578是上面查询出来的端口
+kill 9 进程号
 
 ```
 
