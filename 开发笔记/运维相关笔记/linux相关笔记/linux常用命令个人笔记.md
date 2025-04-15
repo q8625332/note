@@ -84,4 +84,9 @@ COMMAND　　 命令名
 
 netstat -nlp|grep 8089
 
+# 运行jar包
+nohup java -jar xxx.jar &
+
+
 ```
+
