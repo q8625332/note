@@ -23,7 +23,7 @@
 ![[Pasted image 20250410172911.png]]
 
 ```
-\bljq todo\b.*
+\bljq TODO\b.*
 ```
 
 >选择后加个筛选
