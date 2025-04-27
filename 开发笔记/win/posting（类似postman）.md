@@ -19,3 +19,10 @@ uv tool install --python 3.13 posting
 
 > 现在您可以通过命令行运行Posting：
 
+```cmd
+posting
+```
+
+## 效果
+
+![[Pasted image 20250427115957.png]]
