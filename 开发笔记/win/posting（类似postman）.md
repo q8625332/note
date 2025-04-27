@@ -3,7 +3,9 @@
 
 [posting的github地址]([https://github.com/darrenburns/posting](https://github.com/darrenburns/posting))
 
-[[guo'n]]
+[[国内镜像地址，gitecode]][[]]
+
+[]()
 
 > win下安装uv
 
