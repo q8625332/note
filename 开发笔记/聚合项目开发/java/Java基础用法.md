@@ -915,4 +915,4 @@ Map<Tuple, ImportProcessingFactoryCraftDTO> deduplicationValusMap = v.stream()
 ## LinkedBlockingQueue
 
 > `LinkedBlockingQueue` 是 Java 并发包 (`java.util.concurrent`) 中的一个线程安全的阻塞队列实现。它基于链表结构，支持先进先出（FIFO）的队列操作，并且提供了阻塞式的插入和移除操作，适用于多线程环境下的生产者-消费者模型。
-> 业务上：数据需要累计异步
+> 业务上：数据需要累计异步处理的时候，可以使用。
