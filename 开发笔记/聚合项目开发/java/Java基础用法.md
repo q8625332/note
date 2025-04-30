@@ -912,3 +912,6 @@ Map<Tuple, ImportProcessingFactoryCraftDTO> deduplicationValusMap = v.stream()
 > 可以在头部尾部插入数据。
 > 业务上：有队列数据或者有更改头尾的情况可以使用这个数据
 
+## LinkedBlockingQueue
+
+> 
