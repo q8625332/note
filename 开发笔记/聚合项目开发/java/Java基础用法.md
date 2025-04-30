@@ -905,3 +905,7 @@ Map<Tuple, ImportProcessingFactoryCraftDTO> deduplicationValusMap = v.stream()
                 Function.identity(),  
                 (o1, o2) -> o1));
 ```
+
+## ConcurrentLinkedDeque
+
+> 
