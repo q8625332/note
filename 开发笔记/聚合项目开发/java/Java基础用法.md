@@ -908,4 +908,5 @@ Map<Tuple, ImportProcessingFactoryCraftDTO> deduplicationValusMap = v.stream()
 
 ## ConcurrentLinkedDeque
 
-> 
+> ConcurrentLinkedDeque 是 Java 并发包 (java.util.concurrent) 中的一个线程安全的双端队列（Deque）实现。它基于链表结构，支持高效的并发操作，适用于多线程环境下的非阻塞式数据处理。
+> 可以在头部尾部插入数据，
