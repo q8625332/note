@@ -22,10 +22,11 @@
 Trie trie = Trie.builder().build();
 
 Trie trie = 
+list<String> strList = new ArrayList<>();
 Trie.TrieBuilder tb = Trie.builder();  
 tb.onlyWholeWords();  
 tb.ignoreCase();  
-for(BadWord bw : config){  
+for(String bw : strList){  
     tb.addKeyword(bw.getBadWord());  
 }  
 trie = tb.build();
