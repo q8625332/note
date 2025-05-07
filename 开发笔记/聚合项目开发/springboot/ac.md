@@ -18,6 +18,16 @@
 
 ```java
 
+//例子
+Trie trie = Trie.builder().build();
+
 Trie trie = 
+Trie.TrieBuilder tb = Trie.builder();  
+tb.onlyWholeWords();  
+tb.ignoreCase();  
+for(BadWord bw : config){  
+    tb.addKeyword(bw.getBadWord());  
+}  
+trie = tb.build();
 
 ```
