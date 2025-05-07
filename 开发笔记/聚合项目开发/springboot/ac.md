@@ -4,4 +4,18 @@
 > 所以可以使用自动机来匹配
 > 场景有使用脏词配匹配，或者敏感词匹配
 
-## dao'ba
+## 导包
+
+```xml
+<dependency>
+    <groupId>org.ahocorasick</groupId>
+    <artifactId>ahocorasick</artifactId>
+    <version>0.3.1</version>
+</dependency>
+```
+
+## 使用
+
+```java
+
+```
