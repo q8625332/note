@@ -23,12 +23,16 @@ Trie trie = Trie.builder().build();
 
 Trie trie = 
 list<String> strList = new ArrayList<>();
-Trie.TrieBuilder tb = Trie.builder();  
-tb.onlyWholeWords();  
-tb.ignoreCase();  
-for(String bw : strList){  
-    tb.addKeyword(bw.getBadWord());  
+Trie.TrieBuilder tb = Trie.builder();
+//关键字全匹配
+tb.onlyWholeWords();
+//忽略大小写
+tb.ignoreCase();
+for(String s : strList){  
+    tb.addKeyword(s);  
 }  
 trie = tb.build();
 
+
+//
 ```
