@@ -35,5 +35,5 @@ trie = tb.build();
 
 
 //获取文本中命中了多少关键字可以使用 parseText
-Collection<Emit> de
+Collection<Emit> 的大小，就是命中的关键字多少。
 ```
