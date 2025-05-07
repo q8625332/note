@@ -34,5 +34,6 @@ for(String s : strList){
 trie = tb.build();
 
 
-//
+//获取文本中命中了多少关键字可以使用 parseText
+Collection<Emit> de
 ```
