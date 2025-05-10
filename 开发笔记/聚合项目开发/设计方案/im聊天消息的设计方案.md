@@ -25,6 +25,8 @@
 | id          | id    |
 | group_id    | 群id   |
 | form_id     | 发送人id |
+|             |       |
 | create_time | 创建时间  |
 | update_time | 更新时间  |
+|             |       |
 **未签收表**
