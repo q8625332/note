@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "ob好用的插件"
             }
+          },
+          {
+            "id": "2f2fa6dc93230fea",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,7 +188,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "35b3f330362099a7",
+  "active": "2f2fa6dc93230fea",
   "lastOpenFiles": [
     "开发笔记/obsidian使用/主题.md",
     "开发笔记/obsidian使用/Obsidian语法笔记.md",
