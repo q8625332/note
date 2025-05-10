@@ -23,7 +23,7 @@
 
 ![[14d450330e1e132e8e3aef9a579e778dd59395bf.gif]]
 
-## cMenu
+##  obsidian-editing-toolbar Plugin
 > 菜单栏
 
 ![[Pasted image 20250510155030.png]]
