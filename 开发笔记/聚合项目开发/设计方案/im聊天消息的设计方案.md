@@ -36,6 +36,5 @@
 | id          | id    |
 | group_id    | 群id   |
 | to_id       | 收取人id |
-|             |       |
-|             |       |
+| msg_id      | 消息id  |
 | create_time | 创建时间  |
