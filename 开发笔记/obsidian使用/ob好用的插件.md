@@ -26,7 +26,7 @@
 ##  obsidian-editing-toolbar Plugin
 > 菜单栏
 
-
+[github地址](https://github.com/PKM-er/obsidian-editing-toolbar)
 
 ![[Pasted image 20250510155840.png]]
 
