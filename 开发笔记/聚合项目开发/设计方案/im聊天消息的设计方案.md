@@ -35,8 +35,7 @@
 | ----------- | ----- |
 | id          | id    |
 | group_id    | 群id   |
-| to_id       | 发送人id |
-| content     | 内容    |
-| ext         | 扩展数据  |
+| to_id       | 收取人id |
+|             |       |
+|             |       |
 | create_time | 创建时间  |
-| update_time | 更新时间  |
