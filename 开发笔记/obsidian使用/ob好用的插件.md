@@ -26,4 +26,8 @@
 ##  obsidian-editing-toolbar Plugin
 > 菜单栏
 
-![[Pasted image 20250510155030.png]]
+
+
+![[Pasted image 20250510155840.png]]
+
+
