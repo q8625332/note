@@ -11,9 +11,8 @@
 
 > 标题的级别越高，线越长
 
-[github地址](https://github.com/curtgrimes/obsidian-floating-toc-plugin)
 
-![[910a7354e4568bf7acf4a25f52df2f67d28f3a20 2.gif]]
+![[Pasted image 20250510161609.png]]
 
 ## Markdown Table Editor
 
