@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/win/Power Shell个人使用笔记.md",
-                "mode": "preview",
+                "file": "开发笔记/win/未命名.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Power Shell个人使用笔记"
+              "title": "未命名"
             }
           }
         ]
@@ -177,9 +177,12 @@
   "active": "35b3f330362099a7",
   "lastOpenFiles": [
     "开发笔记/win/posting（类似postman）.md",
+    "开发笔记/win/未命名.md",
+    "开发笔记/win/Power Shell个人使用笔记.md",
+    "开发笔记/win/部署graalvm环境的vsc环境.md",
+    "开发笔记/win/vfox 环境版本管理工具.md",
     "开发笔记/win/msvcp120.dll却是的解决办法.md",
     "开发笔记/win/删除文件夹说被另外一个程序打开着，如何解决.md",
-    "开发笔记/win/部署graalvm环境的vsc环境.md",
     "开发笔记/聚合项目开发/设计方案/中大型聊天室《消息》设计方案.md",
     "开发笔记/file/deepseek_mermaid_20250510_f565d9.png",
     "开发笔记/file/deepseek_mermaid_20250510_16e390.png",
@@ -209,10 +212,7 @@
     "开发笔记/聚合项目开发/java/java对象转xml.md",
     "开发笔记/运维相关笔记/linux相关笔记/linux常用命令个人笔记.md",
     "开发笔记/运维相关笔记/linux相关笔记/linux虚拟机固定IP的方法.md",
-    "开发笔记/运维相关笔记/linux相关笔记/sh启动java的脚本.md",
-    "开发笔记/运维相关笔记/linux相关笔记/nginx配置.md",
     "开发笔记/聚合项目开发/设计方案",
-    "开发笔记/file/[国内镜像地址，gitecode.md",
     "未命名.canvas",
     "开发笔记/聚合项目开发/协议相关",
     "开发笔记/聚合项目开发/算法相关",
