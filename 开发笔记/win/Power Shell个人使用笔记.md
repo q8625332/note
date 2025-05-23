@@ -7,3 +7,9 @@ get-ExecutionPolicy
 Set-ExecutionPolicy -Scope CurrentUser
 RemoteSigned
 ```
+
+> 查看接口监听
+
+```win
+netstat -ano | findstr "8888"
+```
