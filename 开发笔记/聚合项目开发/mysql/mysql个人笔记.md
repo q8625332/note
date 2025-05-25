@@ -196,3 +196,5 @@ table_name='masses_face_database' #表
 ```java
 truncate table 表;
 ```
+
+## 查询sq
