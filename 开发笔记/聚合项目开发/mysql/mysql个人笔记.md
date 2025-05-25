@@ -198,7 +198,7 @@ truncate table 表;
 ```
 
 ##  sql查询数据竖着展示
-> 记住
+> 记住 \G 前后不能有;
 
 ```mysql
 select * from table where email = 'raeekaparker@gmail.com' \G
