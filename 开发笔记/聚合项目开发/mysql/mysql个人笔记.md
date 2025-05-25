@@ -198,8 +198,8 @@ truncate table 表;
 ```
 
 ##  sql查询数据竖着展示
-> 记住 \G 前后不能有;
+> 记住 \G 前后不能有 ; 要有也必须加空格隔开。
 
 ```mysql
-select * from table where email = 'raeekaparker@gmail.com' \G
+select * from table where email = 'raeekaparker@gmail.com' \G ;
 ```
