@@ -197,4 +197,9 @@ table_name='masses_face_database' #表
 truncate table 表;
 ```
 
-## 查询sq
+##  sql查询数据竖着展示
+> 记住
+
+```mysql
+select * from table where email = 'raeekaparker@gmail.com' \G
+```
