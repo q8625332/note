@@ -22,3 +22,21 @@
 
 ![[Pasted image 20250526121500.png]]
 
+### 第二步：确认手机设备证书安装
+
+![[Pasted image 20250526121518.png]]
+
+点击charles，Help-->SSL Proxy--> Install charles root certificate on a Mobile Device or remote browser…，打开浏览器登录网址：chls.pro/ssl 安装证书。
+
+打开手机：设置-->通用-->描述文件与设备管理，安装charles证书即可。
+
+备注：如果浏览器访问地址chls.pro/ssl无法下载时，可打开链接https://www.charlesproxy.com/assets/legacy-ssl/charles.crt下载charles证书
+
+![[Pasted image 20250526121536.png]]
+
+再画个重点，本人问题就出在此安装完并没有信任证书，于是访问http协议接口出现红色unknown，设置路径：**通用-关于本机里面设置信任该证书**。
+
+### 第三步：设置ssl proxy Setting中的ssl proxying的代理网址
+
+如果上述操作已完成还是unknown，接下来要检查下SSL Proxying Settings是否设置允许访问的域名、端口，设置允许所有的443的端口访问，因为https访问的端口号是443，或者直接输入*，允许所有域名、端口访问
+
