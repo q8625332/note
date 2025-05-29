@@ -2,9 +2,9 @@
 
 
 ```java
-package com.lovense.remote.common.util;  
+package com.ljq.common.util;  
   
-public class RemoteVersionComparisonUtil {  
+public class VersionComparisonUtil {  
   
   
     /**  
@@ -33,11 +33,11 @@ public class RemoteVersionComparisonUtil {
     }  
   
     /**  
-     * 版本号比较    
-*  
-     * @param version1 版本号1 格式6.1.2    
-* @param version2 版本号2 格式6.1.2    
-* @return 1 版本号1‘大于’版本号2； -1 版本号1‘小于’版本号2； 0 版本号1‘等于’版本号2    
+     * 版本号比较  
+     *  
+     * @param version1 版本号1 格式6.1.2  
+     * @param version2 版本号2 格式6.1.2  
+     * @return 1 版本号1‘大于’版本号2； -1 版本号1‘小于’版本号2； 0 版本号1‘等于’版本号2  
      */public static int compareVersions(String version1, String version2) {  
         String[] arr1 = version1.split("\\.");  
         String[] arr2 = version2.split("\\.");  
