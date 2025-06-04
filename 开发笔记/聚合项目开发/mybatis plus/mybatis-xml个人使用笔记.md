@@ -172,3 +172,6 @@ public class AdminPageCircleReq extends ApiPageReq {
 2023-02-03 14:34:27.558 DEBUG 18964 --- [           main]  c.u.c.s.c.m.CcaCircleMapper.adminPage    : ==> Parameters: 0(Long), 0(Long)
 2023-02-03 14:34:27.564 DEBUG 18964 --- [           main]  c.u.c.s.c.m.CcaCircleMapper.adminPage    : <==      Total: 0
 ```
+
+需要返回 boolean类型
+
