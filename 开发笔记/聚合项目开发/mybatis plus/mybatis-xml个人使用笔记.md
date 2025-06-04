@@ -175,3 +175,10 @@ public class AdminPageCircleReq extends ApiPageReq {
 
 需要返回 boolean类型
 
+
+```xml
+<select id="isExists" resultType="boolean">  
+    SELECT EXISTS(SELECT 1  
+                  FROM table WHERE username = #{username})  
+</select>
+```
