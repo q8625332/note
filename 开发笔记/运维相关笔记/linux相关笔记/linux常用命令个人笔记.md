@@ -93,6 +93,9 @@ nohup java -jar XXX.jar >temp.out &
 # 查看日志（循实时查看尾部200行的日志）
 tail -fn 200 nohup.out
 
+# 查看日志（循实时查看尾部200行的日志）
+tail -fn 200 nohup.out
+
 # 查看日志（从头部查看200行日志，不怎么使用，日志输出短可以使用）
 head -n 200 nohup.out
 
