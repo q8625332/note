@@ -189,3 +189,34 @@ public class MultiLevelOnlineStatus {
 |RedisBloom|低|有误判|大规模|低|
 |Redisson布隆|低|有误判|大规模|低|
 |多级缓存|中|精确|各种规模|高|
+
+## 生产建议
+
+1. **纯Java环境**：使用Redisson布隆过滤器（方案3）
+    
+2. **需要最高性能**：分片Bitmap（方案1）+ 本地缓存
+    
+3. **需要精确判断**：多级缓存策略（方案4）
+    
+4. **简单实现**：RedisBloom（方案2）
+
+对于千万级用户在线系统，推荐组合方案：
+
+
+```java
+// 初始化
+RedissonClient redisson = Redisson.create();
+RBloomFilter<String> bloomFilter = redisson.getBloomFilter("online_users");
+bloomFilter.tryInit(10_000_000, 0.01); // 1000万容量
+
+// 使用
+public boolean isUserOnline(UUID userId) {
+    // 先检查布隆过滤器
+    if (!bloomFilter.contains(userId.toString())) {
+        return false;
+    }
+    
+    // 再检查精确存储
+    return jedis.exists("online_exact:" + userId);
+}
+```
