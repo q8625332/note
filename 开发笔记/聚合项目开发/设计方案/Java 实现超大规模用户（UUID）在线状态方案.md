@@ -99,21 +99,37 @@ public class BloomFilterOnlineStatus {
 
 
 ```java
+import org.redisson.Redisson;
+import org.redisson.api.RBloomFilter;
+import org.redisson.api.RedissonClient;
+import java.util.UUID;
 
+public class RedissonBloomFilter {
+    private final RBloomFilter<String> bloomFilter;
+    
+    public RedissonBloomFilter() {
+        RedissonClient redisson = Redisson.create();
+        bloomFilter = redisson.getBloomFilter("online_users");
+        bloomFilter.tryInit(100_000_000, 0.01); // 1亿容量，1%误判率
+    }
+    
+    public void setOnline(UUID userId) {
+        bloomFilter.add(userId.toString());
+    }
+    
+    public boolean isOnline(UUID userId) {
+        return bloomFilter.contains(userId.toString());
+    }
+}
 ```
 
 **依赖**：
 
-xml
 
-复制
-
-下载
-
-运行
-
+```xml
 <dependency>
     <groupId>org.redisson</groupId>
     <artifactId>redisson</artifactId>
     <version>3.17.7</version>
 </dependency>
+```
