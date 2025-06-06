@@ -133,3 +133,59 @@ public class RedissonBloomFilter {
     <version>3.17.7</version>
 </dependency>
 ```
+
+## 方案4：多级缓存策略
+
+
+```java
+import redis.clients.jedis.Jedis;
+import java.util.UUID;
+import java.util.concurrent.TimeUnit;
+
+public class MultiLevelOnlineStatus {
+    private final Jedis jedis;
+    private final Cache<UUID, Boolean> localCache;
+    
+    public MultiLevelOnlineStatus(Jedis jedis) {
+        this.jedis = jedis;
+        this.localCache = Caffeine.newBuilder()
+            .expireAfterWrite(10, TimeUnit.SECONDS)
+            .maximumSize(100_000)
+            .build();
+    }
+    
+    public void setOnline(UUID userId) {
+        // 1. 本地缓存
+        localCache.put(userId, true);
+        
+        // 2. Redis短期精确存储
+        jedis.setex("online_exact:" + userId, 30, "1");
+        
+        // 3. 布隆过滤器
+        jedis.bfAdd("online_bloom", userId.toString());
+    }
+    
+    public boolean isOnline(UUID userId) {
+        // 1. 检查本地缓存
+        Boolean cached = localCache.getIfPresent(userId);
+        if (cached != null) return cached;
+        
+        // 2. 检查Redis精确存储
+        if (jedis.exists("online_exact:" + userId)) {
+            return true;
+        }
+        
+        // 3. 检查布隆过滤器
+        return jedis.bfExists("online_bloom", userId.toString());
+    }
+}
+```
+
+## 性能对比
+
+|方案|内存占用|精确性|适合规模|实现复杂度|
+|---|---|---|---|---|
+|分片Bitmap|极低|可能有冲突|超大规模|中|
+|RedisBloom|低|有误判|大规模|低|
+|Redisson布隆|低|有误判|大规模|低|
+|多级缓存|中|精确|各种规模|高|
