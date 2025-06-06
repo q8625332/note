@@ -2,17 +2,17 @@
 > 业务场景，字符串数据比较庞大，一般需要考虑到存储和传输的性能问题，我们都会优先考虑使用gzip的形式进行压缩
 
 
+
+
 ```java
 package com.ljq;  
   
 import org.apache.commons.codec.binary.Base64;  
-import org.apache.commons.io.FileUtils;  
 import org.slf4j.Logger;  
 import org.slf4j.LoggerFactory;  
   
 import java.io.ByteArrayInputStream;  
-import java.io.ByteArrayOutputStream;  
-import java.io.File;  
+import java.io.ByteArrayOutputStream;   
 import java.io.IOException;  
 import java.nio.charset.StandardCharsets;  
 import java.util.zip.GZIPInputStream;  
