@@ -54,54 +54,53 @@ public class BitmapOnlineStatus {
 ## 方案2：RedisBloom 布隆过滤器（需要Redis模块）
 
 
+```java
+import redis.clients.jedis.Jedis;
+import java.util.UUID;
+
+public class BloomFilterOnlineStatus {
+    private final Jedis jedis;
+    
+    public BloomFilterOnlineStatus(Jedis jedis) {
+        this.jedis = jedis;
+    }
+    
+    public void setOnline(UUID userId) {
+        // 需要RedisBloom模块支持
+        jedis.sendCommand(
+            "BF.ADD", "online_users", userId.toString()
+        );
+    }
+    
+    public boolean isOnline(UUID userId) {
+        // 返回1表示可能存在，0表示肯定不存在
+        return jedis.sendCommand(
+            "BF.EXISTS", "online_users", userId.toString()
+        ).equals(1L);
+    }
+}
+```
+
 
 
 **依赖**：
 
-xml
 
-复制
-
-下载
-
-运行
-
+```xml
 <dependency>
     <groupId>redis.clients</groupId>
     <artifactId>jedis</artifactId>
     <version>4.3.1</version>
 </dependency>
+```
+
 
 ## 方案3：Redisson 分布式布隆过滤器
 
-java
 
-复制
+```java
 
-下载
-
-import org.redisson.Redisson;
-import org.redisson.api.RBloomFilter;
-import org.redisson.api.RedissonClient;
-import java.util.UUID;
-
-public class RedissonBloomFilter {
-    private final RBloomFilter<String> bloomFilter;
-    
-    public RedissonBloomFilter() {
-        RedissonClient redisson = Redisson.create();
-        bloomFilter = redisson.getBloomFilter("online_users");
-        bloomFilter.tryInit(100_000_000, 0.01); // 1亿容量，1%误判率
-    }
-    
-    public void setOnline(UUID userId) {
-        bloomFilter.add(userId.toString());
-    }
-    
-    public boolean isOnline(UUID userId) {
-        return bloomFilter.contains(userId.toString());
-    }
-}
+```
 
 **依赖**：
 
