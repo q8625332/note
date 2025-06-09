@@ -99,9 +99,11 @@ docker run -d --name=loki -p 3100:3100 grafana/loki:2.6.1
 #挂载运行
 # -v $(pwd)/loki-config.yaml:/etc/loki/loki.yaml`：挂载自定义配置文件。
 # -v /path/to/loki-data:/data/loki`：持久化存储（避免容器重启后数据丢失）。
+# -v /path/to/loki-data:/data/loki \  # 持久化存储（可选）
+
 docker run -d --name=loki -p 3100:3100 \
   -v /path/to/loki-config.yaml:/etc/loki/loki.yaml \
-  -v /path/to/loki-data:/data/loki \  # 持久化存储（可选）
+  -v /path/to/loki-data:/data/loki \
   grafana/loki:2.6.1 \
   -config.file=/etc/loki/loki.yaml
 ```
