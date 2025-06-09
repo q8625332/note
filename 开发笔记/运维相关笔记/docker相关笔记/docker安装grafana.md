@@ -1,5 +1,7 @@
 > 安装grafana
-> 暂时未写
+> Grafana 9.0.1 对应的promtail和loki是2.9.1版本。需要配置对应版本
+
+**暂时未写**
 
 ## 安装promtail
 > docker安装
@@ -57,3 +59,7 @@ docker pull grafana/loki:2.9.1
 
 **运行代码**
 
+```linux
+# 运行 Loki（单机模式）
+docker run -d --name=loki -p 3100:3100 grafana/loki:2.6.1
+```
