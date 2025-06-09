@@ -97,6 +97,9 @@ table_manager:
 docker run -d --name=loki -p 3100:3100 grafana/loki:2.6.1
 
 #挂载运行
+mkdir -p /path/to/loki-data/{chunks,index}
+chmod -R 777 /path/to/loki-data  # 开放权限（或调整为更严格的属主）
+
 # -v $(pwd)/loki-config.yaml:/etc/loki/loki.yaml`：挂载自定义配置文件。
 # -v /path/to/loki-data:/data/loki`：持久化存储（避免容器重启后数据丢失）。
 # -v /path/to/loki-data:/data/loki \  # 持久化存储（可选）
