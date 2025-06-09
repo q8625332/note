@@ -107,8 +107,7 @@ chmod -R 777 /path/to/loki-data  # 开放权限（或调整为更严格的属主
 docker run -d --name=loki -p 3100:3100 \
   --user=root \
   -v /path/to/loki-config.yaml:/etc/loki/loki.yaml \
-  -v /path/to/loki-data/chunks:/data/loki/chunks \
-  -v /path/to/loki-data/index:/data/loki/index \
+  -v /path/to/loki-data/:/data/loki/ \
   grafana/loki:2.6.1 \
   -config.file=/etc/loki/loki.yaml
 ```
