@@ -65,14 +65,22 @@ docker pull grafana/loki:2.9.1
 
 ```yaml
 auth_enabled: false
+
 server:
   http_listen_port: 3100
 
-storage_config:
-  boltdb:
-    directory: /path/to/loki-data/index  # 索引存储位置
-  filesystem:
-    directory: /path/to/loki-data/chunks # 日志块存储位置
+ingester:
+  lifecycler:
+    address: 127.0.0.1
+    ring:
+      kvstore:
+        store: inmemory
+      replication_factor: 1
+    final_sleep: 0s
+  chunk_idle_period: 1h
+  max_chunk_age: 1h
+  chunk_target_size: 1536000
+  chunk_retain_period: 30s
 
 schema_config:
   configs:
@@ -83,6 +91,26 @@ schema_config:
       index:
         prefix: index_
         period: 24h
+
+storage_config:
+  boltdb_shipper:
+    active_index_directory: /data/loki/index
+    cache_location: /data/loki/cache
+    cache_ttl: 24h
+    shared_store: filesystem
+  filesystem:
+    directory: /data/loki/chunks
+
+compactor:
+  working_directory: /data/loki/compactor
+  shared_store: filesystem
+
+limits_config:
+  reject_old_samples: true
+  reject_old_samples_max_age: 168h
+
+chunk_store_config:
+  max_look_back_period: 0s
 
 table_manager:
   retention_deletes_enabled: true    # 启用日志删除
