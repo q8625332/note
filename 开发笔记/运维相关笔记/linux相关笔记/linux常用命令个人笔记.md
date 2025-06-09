@@ -39,6 +39,11 @@ j ：工作的格式 (jobs format)
 -f ：做一个更为完整的输出。
 //例子查询nginx的路径及信息
 ps -ef|grep nginx
+
+# 查看系统磁盘数据
+df -h
+
+
 ```
 ## 查看linux基本信息
 
