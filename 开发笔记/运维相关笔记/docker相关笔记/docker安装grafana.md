@@ -5,8 +5,30 @@
 > docker安装
 > /path/to/promtail-config.yaml 是系统路径的配置文件
 
-/path/to/promtail-config.yaml
+**/path/to/promtail-config.yaml**
 
+```yaml
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /tmp/positions.yaml
+
+clients:
+  - url: http://192.168.1.99:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: persistence-service
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: persistence-logs
+          __path__: /hytto/deploy/gfw/rpc_services/logs/persistance-service/stdout.log
+```
+
+**运行代码**
 
 ```linux
 docker run -d --name=promtail \
