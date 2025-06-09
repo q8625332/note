@@ -70,3 +70,4 @@ docker run -d --name=loki -p 3100:3100 grafana/loki:2.6.1
 ## grafana配置loki
 
 ![[Pasted image 20250609142224.png]]
+![[Pasted image 20250609142858.png]]
