@@ -104,7 +104,8 @@ docker run -d --name=loki -p 3100:3100 grafana/loki:2.6.1
 docker run -d --name=loki -p 3100:3100 \
   --user=root \
   -v /path/to/loki-config.yaml:/etc/loki/loki.yaml \
-  -v /path/to/loki-data:/data/loki \
+  -v /path/to/loki-data/chunks:/data/loki/chunks \
+  -v /path/to/loki-data/index:/data/loki/index \
   grafana/loki:2.6.1 \
   -config.file=/etc/loki/loki.yaml
 ```
