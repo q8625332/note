@@ -3,6 +3,17 @@
 
 ## 安装promtail
 > docker安装
+
+
+```linux
+# 拉取 Loki 单二进制镜像
+docker pull grafana/loki:2.9.1
+
+# 拉取 Promtail 镜像
+docker pull grafana/promtail:2.9.1
+```
+
+
 > /path/to/promtail-config.yaml 是系统路径的配置文件
 
 **/path/to/promtail-config.yaml**
