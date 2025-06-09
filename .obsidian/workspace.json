@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/运维相关笔记/docker相关笔记/docker安装grafana.md",
+                "file": "开发笔记/运维相关笔记/linux相关笔记/linux常用命令个人笔记.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker安装grafana"
+              "title": "linux常用命令个人笔记"
             }
           }
         ]
@@ -176,8 +176,8 @@
   },
   "active": "a03d251b713dbf0c",
   "lastOpenFiles": [
-    "开发笔记/运维相关笔记/docker相关笔记/安装Docker.md",
     "开发笔记/运维相关笔记/docker相关笔记/docker安装grafana.md",
+    "开发笔记/运维相关笔记/docker相关笔记/安装Docker.md",
     "开发笔记/file/Pasted image 20250609142858.png",
     "开发笔记/运维相关笔记/docker相关笔记/docker安装软件.md",
     "开发笔记/file/Pasted image 20250609142224.png",

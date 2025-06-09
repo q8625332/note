@@ -14,10 +14,16 @@ systemctl disable firewalld.service
 
 //创建文件
 mkdir
+
 //查询端口
 netstat -tln|grep 80(端口)
+
 //查看端口是否被占用
 lsof -i :80(端口)
+
+# 查看80端口是否被监听
+ss -tlnp | grep ':80'
+
 //查看当前所在地址
 pwd
 //ps系列的命令
