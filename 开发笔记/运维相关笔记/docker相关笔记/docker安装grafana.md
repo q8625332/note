@@ -102,6 +102,7 @@ docker run -d --name=loki -p 3100:3100 grafana/loki:2.6.1
 # -v /path/to/loki-data:/data/loki \  # 持久化存储（可选）
 
 docker run -d --name=loki -p 3100:3100 \
+  --user=root \
   -v /path/to/loki-config.yaml:/etc/loki/loki.yaml \
   -v /path/to/loki-data:/data/loki \
   grafana/loki:2.6.1 \
