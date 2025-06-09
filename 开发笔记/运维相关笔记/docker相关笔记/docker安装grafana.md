@@ -70,9 +70,9 @@ server:
 
 storage_config:
   boltdb:
-    directory: /data/loki/index  # 索引存储位置
+    directory: /path/to/loki-data/index  # 索引存储位置
   filesystem:
-    directory: /data/loki/chunks # 日志块存储位置
+    directory: /path/to/loki-data/chunks # 日志块存储位置
 
 schema_config:
   configs:
