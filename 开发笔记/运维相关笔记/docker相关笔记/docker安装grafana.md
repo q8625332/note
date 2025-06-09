@@ -60,6 +60,36 @@ docker run -d --name=promtail \
 docker pull grafana/loki:2.9.1
 ```
 
+**配置文件**
+
+
+```yaml
+auth_enabled: false
+server:
+  http_listen_port: 3100
+
+storage_config:
+  boltdb:
+    directory: /data/loki/index  # 索引存储位置
+  filesystem:
+    directory: /data/loki/chunks # 日志块存储位置
+
+schema_config:
+  configs:
+    - from: 2020-10-24
+      store: boltdb-shipper
+      object_store: filesystem
+      schema: v11
+      index:
+        prefix: index_
+        period: 24h
+
+table_manager:
+  retention_deletes_enabled: true    # 启用日志删除
+  retention_period: 24h             # 保留24小时（1天）
+```
+
+
 **运行代码**
 
 ```linux
