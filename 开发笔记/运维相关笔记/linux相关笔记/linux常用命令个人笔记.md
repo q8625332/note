@@ -3,22 +3,22 @@
 
 > 如果用的是ubuntu 请在命令前面加**sudo**
 
-```java
+```linux
 
-//查看防火墙状态 
+# 查看防火墙状态 
 systemctl status firewalld.service
-//关闭防火墙
+# 关闭防火墙
 systemctl stop firewalld.service
-//禁止防火墙服务器（一旦重启操作系统，防火墙就自动开启了，该怎么设置才能永久关闭防火墙呢？）
+# 禁止防火墙服务器（一旦重启操作系统，防火墙就自动开启了，该怎么设置才能永久关闭防火墙呢？）
 systemctl disable firewalld.service
 
-//创建文件
+# 创建文件
 mkdir
 
-//查询端口
+# 查询端口
 netstat -tln|grep 80(端口)
 
-//查看端口是否被占用
+# 查看端口是否被占用
 lsof -i :80(端口)
 
 # 查看80端口是否被监听
