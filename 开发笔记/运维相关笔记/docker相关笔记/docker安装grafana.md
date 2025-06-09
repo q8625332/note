@@ -6,9 +6,6 @@
 
 
 ```linux
-# 拉取 Loki 单二进制镜像
-docker pull grafana/loki:2.9.1
-
 # 拉取 Promtail 镜像
 docker pull grafana/promtail:2.9.1
 ```
@@ -49,3 +46,14 @@ docker run -d --name=promtail \
  grafana/promtail:2.6.1 \
  -config.file=/etc/promtail/config.yml
 ```
+
+## 安装loki
+> 安装loki
+
+```linux
+# 拉取 Loki 单二进制镜像
+docker pull grafana/loki:2.9.1
+```
+
+**运行代码**
+
