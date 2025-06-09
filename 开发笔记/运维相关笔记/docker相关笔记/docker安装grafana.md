@@ -14,6 +14,7 @@ docker pull grafana/promtail:2.9.1
 
 
 > /path/to/promtail-config.yaml 是系统路径的配置文件
+> scrape_configs 是爬取的任务。任务名字（job_name）：persistence-service，文件路径：__path__
 
 **/path/to/promtail-config.yaml**
 
