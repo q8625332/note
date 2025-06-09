@@ -16,7 +16,7 @@ docker pull grafana/promtail:2.9.1
 > /path/to/promtail-config.yaml 是系统路径的配置文件
 > scrape_configs 是爬取的任务。
 > 任务名字（job_name）：persistence-service。
-> 文件路径：`__path__`,docker镜像的，需要访问wai'b
+> 文件路径：`__path__`,docker镜像的，需要访问系统文件需要挂载带容器中
 
 **/path/to/promtail-config.yaml**
 
@@ -66,3 +66,6 @@ docker pull grafana/loki:2.9.1
 # 运行 Loki（单机模式）
 docker run -d --name=loki -p 3100:3100 grafana/loki:2.6.1
 ```
+
+## grafana配置loki
+
