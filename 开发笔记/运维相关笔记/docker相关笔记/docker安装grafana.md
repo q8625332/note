@@ -147,7 +147,113 @@ docker run -d --name=loki -p 3100:3100 \
   -config.file=/etc/loki/loki.yaml
 ```
 
-查询loki文件da
+**查询loki文件大小，检测sh**
+
+
+```sh
+#!/bin/bash
+
+echo "=== Loki 2.6.1 数据保留功能验证 ==="
+
+LOKI_CONTAINER_NAME="loki"
+LOKI_DATA_PATH="/path/to/loki-data"
+
+# 1. 验证配置文件内容
+echo "1. 验证配置文件中的关键设置..."
+echo "retention_enabled 配置:"
+docker exec $LOKI_CONTAINER_NAME grep -A5 -B5 "retention_enabled" /etc/loki/loki.yaml
+
+echo "retention_period 配置:"
+docker exec $LOKI_CONTAINER_NAME grep -A5 -B5 "retention_period" /etc/loki/loki.yaml
+
+# 2. 检查 compactor 启动日志
+echo ""
+echo "2. 检查 compactor 启动和 retention 相关日志..."
+echo "=== Compactor 启动日志 ==="
+docker logs $LOKI_CONTAINER_NAME 2>&1 | grep -i "compactor\|retention" | tail -10
+
+# 3. 检查是否有 retention 处理日志
+echo ""
+echo "=== 查找 retention 处理日志 ==="
+docker logs $LOKI_CONTAINER_NAME 2>&1 | grep -i "retention.*delete\|retention.*process\|retention.*apply" | tail -5
+
+# 4. 检查数据目录的文件时间戳
+echo ""
+echo "3. 检查数据文件的时间戳分布..."
+echo "最新的 chunk 文件:"
+find $LOKI_DATA_PATH/chunks -type f -name "*.gz" -exec ls -lt {} \; | head -5
+
+echo "最旧的 chunk 文件:"
+find $LOKI_DATA_PATH/chunks -type f -name "*.gz" -exec ls -lt {} \; | tail -5
+
+# 5. 计算文件年龄
+echo ""
+echo "4. 分析文件年龄分布..."
+echo "超过 24 小时的文件数量:"
+find $LOKI_DATA_PATH/chunks -type f -name "*.gz" -mtime +1 | wc -l
+
+echo "最近 24 小时内的文件数量:"
+find $LOKI_DATA_PATH/chunks -type f -name "*.gz" -mtime -1 | wc -l
+
+# 6. 检查 compactor 的工作目录
+echo ""
+echo "5. 检查 compactor 工作状态..."
+if [ -d "$LOKI_DATA_PATH/compactor" ]; then
+    echo "Compactor 工作目录内容:"
+    ls -la $LOKI_DATA_PATH/compactor/
+else
+    echo "Compactor 工作目录不存在"
+fi
+
+# 7. 测试实际的查询API以确认数据范围
+echo ""
+echo "6. 测试数据时间范围..."
+
+# 查询最近 6 小时的数据
+START_6H=$(date -d '6 hours ago' '+%s')000000000
+END_NOW=$(date '+%s')000000000
+RESULT_6H=$(curl -G -s "http://localhost:3100/loki/api/v1/query_range" \
+  --data-urlencode "query={}" \
+  --data-urlencode "start=${START_6H}" \
+  --data-urlencode "end=${END_NOW}" \
+  --data-urlencode "limit=1" | jq -r '.data.result | length' 2>/dev/null || echo "0")
+
+# 查询 30 小时前的数据
+START_30H=$(date -d '30 hours ago' '+%s')000000000
+END_25H=$(date -d '25 hours ago' '+%s')000000000
+RESULT_30H=$(curl -G -s "http://localhost:3100/loki/api/v1/query_range" \
+  --data-urlencode "query={}" \
+  --data-urlencode "start=${START_30H}" \
+  --data-urlencode "end=${END_25H}" \
+  --data-urlencode "limit=1" | jq -r '.data.result | length' 2>/dev/null || echo "0")
+
+echo "最近 6 小时有数据: $RESULT_6H 条记录"
+echo "30 小时前的数据: $RESULT_30H 条记录"
+
+if [ "$RESULT_30H" = "0" ] && [ "$RESULT_6H" != "0" ]; then
+    echo "✅ 数据保留策略可能已生效"
+elif [ "$RESULT_6H" = "0" ]; then
+    echo "⚠️  可能没有日志数据，或日志还未到达"
+else
+    echo "❌ 数据保留策略可能未生效，或数据还未达到保留期限"
+fi
+
+# 8. 显示当前时间和建议
+echo ""
+echo "7. 状态总结..."
+echo "当前时间: $(date)"
+echo "数据目录大小: $(du -sh $LOKI_DATA_PATH/chunks | cut -f1)"
+echo ""
+echo "建议："
+echo "1. 如果是刚刚重启的容器，等待 10-15 分钟让 compactor 开始工作"
+echo "2. 继续监控数据目录大小变化"
+echo "3. 检查是否有持续的日志流入"
+
+# 9. 显示下次检查的建议时间
+NEXT_CHECK=$(date -d '+2 hours' '+%Y-%m-%d %H:%M')
+echo "建议下次检查时间: $NEXT_CHECK"
+```
+
 
 ## grafana配置loki
 
