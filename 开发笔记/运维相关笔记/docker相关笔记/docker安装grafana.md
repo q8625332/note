@@ -65,7 +65,6 @@ docker pull grafana/loki:2.9.1
 
 ```yaml
 auth_enabled: false
-
 server:
   http_listen_port: 3100
 
@@ -101,20 +100,28 @@ storage_config:
   filesystem:
     directory: /data/loki/chunks
 
+# compactor 配置（在 2.6.1 中用于 boltdb-shipper 的清理）
 compactor:
   working_directory: /data/loki/compactor
   shared_store: filesystem
+  compaction_interval: 10m
+  retention_enabled: true        # 启用保留策略
+  retention_delete_delay: 2h     # 删除延迟
+  retention_delete_worker_count: 150
 
+# 全局限制配置
 limits_config:
   reject_old_samples: true
   reject_old_samples_max_age: 168h
+  retention_period: 24h          # 全局保留期 24 小时
 
 chunk_store_config:
   max_look_back_period: 0s
 
+# table_manager 在 2.6.1 中仍然存在，但对 boltdb-shipper 作用有限
 table_manager:
-  retention_deletes_enabled: true    # 启用日志删除
-  retention_period: 24h             # 保留24小时（1天）
+  retention_deletes_enabled: false  # 对 boltdb-shipper 无效，设为 false
+  retention_period: 0s              # 不使用 table_manager 的保留策略
 ```
 
 
@@ -139,6 +146,8 @@ docker run -d --name=loki -p 3100:3100 \
   grafana/loki:2.6.1 \
   -config.file=/etc/loki/loki.yaml
 ```
+
+查询loki文件da
 
 ## grafana配置loki
 
