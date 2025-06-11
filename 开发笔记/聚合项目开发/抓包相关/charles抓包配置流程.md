@@ -58,6 +58,6 @@
 
 3.如果是原来可以链接，突然不行，可删除证书后重新下载安装可纠正操作；
 
-## 手机连接so
+## 手机连接socks5的app
 
 [SocksDroid.apk](https://package.huashengdaili.com/SocksDroid.apk)
