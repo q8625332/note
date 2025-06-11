@@ -57,3 +57,7 @@
 2.另不知道什么原因，原8888端口无法使用，可换下端口号尝试；
 
 3.如果是原来可以链接，突然不行，可删除证书后重新下载安装可纠正操作；
+
+## 手机连接so
+
+[SocksDroid.apk](https://package.huashengdaili.com/SocksDroid.apk)
