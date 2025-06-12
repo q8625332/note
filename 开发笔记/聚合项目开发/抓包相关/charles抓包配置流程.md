@@ -61,3 +61,8 @@
 ## 手机连接socks5的app
 
 [SocksDroid.apk](https://package.huashengdaili.com/SocksDroid.apk)
+
+
+## vmos pro安装证书
+
+> 安装
