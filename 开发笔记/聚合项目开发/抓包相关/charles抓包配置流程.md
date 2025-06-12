@@ -69,3 +69,23 @@
 
 花瓶的证书，导出pem的证书文件。
 
+Charles 进入 `Help > SSL Proxying > Save Charles Root Certificate`, 导出 pem 格式证书.
+
+```powershell
+openssl x509 -subject_hash_old -in charles-proxy-ssl-proxying-certificate.pem
+```
+
+> charles-proxy-ssl-proxying-certificate.pem 是导出的证书文件
+
+上面输出的结果类似于:
+
+```abnf
+faf57fe3
+-----BEGIN CERTIFICATE-----
+MIIFMDCCBBigAwIBAgIGAXWqowQPMA0GCSqGSIb3DQEBCwUAMIGbMSwwKgYDVQQD
+....
+aXDrm30UE6+dWdQ3n0ePVLNcHV+ZrIqwka94M/t8HavZpm4y
+-----END CERTIFICATE-----
+```
+
+然后将 `charles-proxy-ssl-proxying-certificate.pem 文件重命名`为 `faf57fe3.0`(`faf57fe3`需要根据你自己生成 的结果进行调整)
