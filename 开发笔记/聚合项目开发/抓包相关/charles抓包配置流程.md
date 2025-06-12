@@ -77,6 +77,8 @@ openssl x509 -subject_hash_old -in charles-proxy-ssl-proxying-certificate.pem
 
 > charles-proxy-ssl-proxying-certificate.pem 是导出的证书文件
 
+电脑bi'x
+
 上面输出的结果类似于:
 
 ```abnf
@@ -92,4 +94,4 @@ aXDrm30UE6+dWdQ3n0ePVLNcHV+ZrIqwka94M/t8HavZpm4y
 
 **拷贝文件**, 将生成好的证书文件拷贝到 `/system/etc/security/cacerts/` 目录下, 并且修改文件权限:
 
-手机可以通过   root explorer
+手机可以通过  root explorer 软件 授权root权限。将`faf57fe3.0` 放到 cacerts里。
