@@ -89,3 +89,7 @@ aXDrm30UE6+dWdQ3n0ePVLNcHV+ZrIqwka94M/t8HavZpm4y
 ```
 
 然后将 `charles-proxy-ssl-proxying-certificate.pem 文件重命名`为 `faf57fe3.0`(`faf57fe3`需要根据你自己生成 的结果进行调整)
+
+**拷贝文件**, 将生成好的证书文件拷贝到 `/system/etc/security/cacerts/` 目录下, 并且修改文件权限:
+
+手机可以通过   root explorer
