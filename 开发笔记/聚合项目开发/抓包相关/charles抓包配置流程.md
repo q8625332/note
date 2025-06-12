@@ -73,7 +73,7 @@ Charles 进入 `Help > SSL Proxying > Save Charles Root Certificate`, 导出 pe
 
 电脑必须装 open ssl软件
 
-
+[Win32/Win64 OpenSSL Installer for Windows - Shining Light Productions](https://slproweb.com/products/Win32OpenSSL.html "OpenSSL 下载地址")
 
 ```powershell
 openssl x509 -subject_hash_old -in charles-proxy-ssl-proxying-certificate.pem
