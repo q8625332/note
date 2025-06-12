@@ -71,13 +71,15 @@
 
 Charles 进入 `Help > SSL Proxying > Save Charles Root Certificate`, 导出 pem 格式证书.
 
+电脑必须装 open ssl软件
+
+
+
 ```powershell
 openssl x509 -subject_hash_old -in charles-proxy-ssl-proxying-certificate.pem
 ```
 
 > charles-proxy-ssl-proxying-certificate.pem 是导出的证书文件
-
-电脑bi'x
 
 上面输出的结果类似于:
 
