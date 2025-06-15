@@ -174,8 +174,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "23c3ea94cbcdfa0e",
+  "active": "96c6d6bb2c907843",
   "lastOpenFiles": [
+    "未命名",
+    "开发笔记/密文",
     "开发笔记/file/悬浮装口是可以固定的哈.md",
     "开发笔记/file/国内镜像地址，gitecode.md",
     "开发笔记/file/[国内镜像地址，gitecode.md",
@@ -203,7 +205,6 @@
     "开发笔记/聚合项目开发/java/GzipUtil字符串压缩工具.md",
     "开发笔记/聚合项目开发/springboot/okhttp-sse的使用笔记，链接其他sse服务器.md",
     "开发笔记/聚合项目开发/springboot/ip地址工具类.md",
-    "开发笔记/聚合项目开发/springboot/gateway+nacos秒级上下线.md",
     "开发笔记/file/Pasted image 20250604091756.png",
     "开发笔记/file/Pasted image 20250526121637.png",
     "开发笔记/file/Pasted image 20250526121606.png",
@@ -222,7 +223,6 @@
     "开发笔记/运维相关笔记/linux相关笔记",
     "开发笔记/运维相关笔记/docker相关笔记",
     "开发笔记/聚合项目开发/rocketMQ",
-    "开发笔记/聚合项目开发/python",
     "未命名 1.canvas"
   ]
 }
