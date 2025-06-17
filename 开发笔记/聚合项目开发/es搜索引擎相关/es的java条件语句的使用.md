@@ -175,6 +175,29 @@ return 0;
 
 // -----------------------------------------------
 // esUtil
+public static Aggregations getAggregationQuery(String indexName,SearchSourceBuilder searchSourceBuilder){  
+    if (CommonSwitcher.ENABLE_USE_ES_SERVER.isOff()) {  
+        return null;  
+    }  
+    RestHighLevelClient esClient = ESClient.getInstance();  
+    if (esClient == null) {  
+        return null;  
+    }  
+    try {  
+        SearchRequest searchRequest = new SearchRequest(indexName);  
+        searchRequest.source(searchSourceBuilder);  
+        SearchResponse searchResponse = esClient.search(searchRequest, RequestOptions.DEFAULT);  
+        RestStatus status = searchResponse.status();  
+        // 获取响应中的聚合信息  
+        Aggregations aggregations = searchResponse.getAggregations();  
+        if (status.getStatus() == RestStatus.OK.getStatus() && aggregations != null) {  
+            return aggregations;  
+        }  
+        return null;  
+    }catch (Exception e){  
+        LOGGER.error("getAggregationQuery error", e);  
+        return null;    }  
+}
 ```
 
 
