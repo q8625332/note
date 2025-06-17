@@ -11,7 +11,7 @@ SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 ## BoolQueryBuilder
 
 > BoolQueryBuilder条件语句的Builder
-> 
+> 构建查询的条件，比如范围查询，in，=等。
 
 
 ```java
@@ -36,6 +36,17 @@ boolQueryBuilder.must(QueryBuilders.termsQuery("userId.keyword", patternUpdateFl
 > rangeQuery
 > Elasticsearch Java 客户端中用来构建 **范围查询** 的方法，适用于查找某个字段的值在一定区间内的文档。它常用于时间、数字、价格等连续值的筛选。
 
+### 常用方法：
+
+- `.gte(value)`：大于等于（greater than or equal）
+    
+- `.gt(value)`：大于（greater than）
+    
+- `.lte(value)`：小于等于（less than or equal）
+    
+- `.lt(value)`：小于（less than）
+    
+- `.from(value)` / `.to(value)`：也可以用这两个方法设置范围（功能类似）
 
 ```java
 boolQueryBuilder.must(QueryBuilders.rangeQuery("updateTimestamp").gt(patternUpdateFlagDTO.getLastLooKFollowingTime()));
