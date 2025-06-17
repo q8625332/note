@@ -18,7 +18,6 @@ sourceBuilder.query(boolQueryBuilder);
 
 **简单的例子**
 
-
 ```java
 SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();  
 BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();  
@@ -44,8 +43,38 @@ try {
 } catch (Exception e) {  
     LOGGER.error("hasFollowedAuthorsPublishedNewPatterns error", e);  
     return false;}
-```
 
+// esUtil
+/**  
+ * 根据查询构造器获取文档总数  
+ * @param indexName           索引名字  
+ * @param searchSourceBuilder 查询构造器  
+ * @return 文档总数  
+ */  
+public static long countBySourceBuilder(String indexName, SearchSourceBuilder searchSourceBuilder) {  
+    try {  
+        RestHighLevelClient esClient = ESClient.getInstance();  
+        if (esClient == null) {  
+            return 0;  
+        }  
+        SearchRequest searchRequest = new SearchRequest(indexName);  
+        // 只获取总数，不返回实际文档  
+        searchSourceBuilder.size(0);  
+        searchRequest.source(searchSourceBuilder);  
+        SearchResponse searchResponse = esClient.search(searchRequest, RequestOptions.DEFAULT);  
+        RestStatus status = searchResponse.status();  
+        if (status.getStatus() == RestStatus.OK.getStatus()) {  
+            SearchHits hits = searchResponse.getHits();  
+            return hits.getTotalHits();  
+        } else {  
+            return 0;  
+        }  
+    } catch (Exception e) {  
+        LOGGER.error("countBySourceBuilder error", e);  
+        return 0;  
+    }  
+}
+```
 
 ## BoolQueryBuilder
 
