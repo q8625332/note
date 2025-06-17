@@ -15,7 +15,9 @@ GET /index/_search
 	"size": 0,
 	"query": {
 		"bool": {
-			
+			"term": {
+				accountId: ""
+			}
 		}
 	}
 }
