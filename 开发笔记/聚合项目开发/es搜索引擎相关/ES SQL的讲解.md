@@ -8,12 +8,15 @@ GET /pattern_store/_search
 
 **例子：**
 
-| 字段              | 描述       |
-| --------------- | -------- |
-| size            | 查询的数量大小  |
-| terminate_after | 查询到一条就停止 |
-| query           | 查询条件的构造体 |
-| bool            |          |
+| 字段                  | 描述           |
+| ------------------- | ------------ |
+| size                | 查询的数量大小      |
+| terminate_after     | 查询到一条就停止     |
+| query               | 查询条件的构造体     |
+| bool                | 条件语句         |
+| must                | 精准匹配         |
+| terms               | 多个数据匹配，类似 in |
+| *accountId*.keyword |              |
 
 
 ```es
