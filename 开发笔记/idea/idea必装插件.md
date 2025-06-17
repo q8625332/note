@@ -191,9 +191,12 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 > Rainbow Brackets 收费了，使用就安装开源的Rainbow Brackets Lite - Free and OpenSource
 
 ![[Pasted image 20250617143001.png]]
-》
+> 然后在安装变量改色
+>  Rainbow Variable
 
-显示效果
+![[Pasted image 20250617143116.png]]
+**显示效果**
+
 
 ## GsonFormatlPlus
 
