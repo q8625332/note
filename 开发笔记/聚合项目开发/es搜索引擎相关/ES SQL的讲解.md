@@ -17,7 +17,9 @@ GET /pattern_store/_search
 | must            | 精准匹配                                                                                |
 | terms           | 多个数据匹配，类似 in                                                                        |
 | *.keyword       | accountId.keyword 这个写法，代表全量匹配，就是字段需要全部命中，为什么要这么写呢？是因为es里面的字段是有分词器的，如果要全量匹配的话，需要指定好。 |
-| range           | 范围查询，如数字的fan'w                                                                      |
+| range           | 范围查询，如数字的范围查询，时间的范围查询。                                                              |
+| from            | 时间查询的开始                                                                             |
+| to              | 时间查询的结束                                                                             |
 
 
 ```es
