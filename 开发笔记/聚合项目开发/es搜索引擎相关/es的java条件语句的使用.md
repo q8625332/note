@@ -76,6 +76,10 @@ public static long countBySourceBuilder(String indexName, SearchSourceBuilder se
 }
 ```
 
+> 使用聚合方法的时候
+
+
+
 ## BoolQueryBuilder
 
 > BoolQueryBuilder条件语句的Builder
