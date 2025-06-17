@@ -11,11 +11,11 @@ SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
 ```
 
-> 查询相当于 = 
+>  **必须匹配（must）** 的查询条件，也就是逻辑上的 **AND** 条件
 
 
 ```java
 boolQueryBuilder.must()
-
-boolQueryBuilder.must(QueryBuilders.termsQuery("accountId.keyword", patternUpdateFlagDTO.getAccountIds()));
 ```
+
+>
