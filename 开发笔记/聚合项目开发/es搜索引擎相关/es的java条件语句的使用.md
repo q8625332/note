@@ -23,7 +23,12 @@ boolQueryBuilder.must()
 
 
 ```java
-boolQueryBuilder.must(QueryBuilders.termsQuery("accountId.keyword", patternUpdateFlagDTO.getAccountIds()));
+boolQueryBuilder.must(QueryBuilders.termsQuery("userId.keyword", patternUpdateFlagDTO.getAccountIds()));
 ```
 
-> 
+> rangeQuery
+
+
+```java
+boolQueryBuilder.must(QueryBuilders.rangeQuery("updateTimestamp").gt(patternUpdateFlagDTO.getLastLooKFollowingTime()));
+```
