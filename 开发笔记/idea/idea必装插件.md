@@ -188,6 +188,8 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 ## 安装代码的括号区分
 
 > 这个可以明显的帮我们实现括号的区分
+> Rainbow Brackets 收费了，使用就安装开源的# Rainbow Brackets Lite - Free and OpenSource
+> 
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210517100904654.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE3NjczMTk=,size_16,color_FFFFFF,t_70)
 显示效果
