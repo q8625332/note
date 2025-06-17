@@ -133,6 +133,9 @@ QueryBuilder query = QueryBuilders.rangeQuery("createTime")
 ```java
 // 添加sum聚合  
 sourceBuilder.aggregation(AggregationBuilders.sum("sum的别名").field("统计的字段"));
+
+// 例子：
+sourceBuilder.aggregation(AggregationBuilders.sum("totalFavorites").field("favoritesNum"));
 ```
 
 
