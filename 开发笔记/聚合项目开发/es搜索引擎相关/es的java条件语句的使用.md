@@ -8,6 +8,15 @@
 SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 ```
 
+> 将条件语句放入到查询中。
+
+
+```java
+// 条件语句在
+sourceBuilder.query(boolQueryBuilder);
+```
+
+
 ## BoolQueryBuilder
 
 > BoolQueryBuilder条件语句的Builder
