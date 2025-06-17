@@ -18,4 +18,9 @@ BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
 boolQueryBuilder.must()
 ```
 
->
+>  termsQuery
+
+
+```java
+boolQueryBuilder.must(QueryBuilders.termsQuery("accountId.keyword", patternUpdateFlagDTO.getAccountIds()));
+```
