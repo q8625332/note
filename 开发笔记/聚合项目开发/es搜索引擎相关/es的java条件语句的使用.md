@@ -2,12 +2,16 @@
 ## SearchSourceBuilder
 
 > SearchSourceBuilder搜索语句的Builder
+> 用于构建查询的基本逻辑，比如查询数据的大小，排序等。
 
 ```java
 SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 ```
 
+## BoolQueryBuilder
+
 > BoolQueryBuilder条件语句的Builder
+> 
 
 
 ```java
