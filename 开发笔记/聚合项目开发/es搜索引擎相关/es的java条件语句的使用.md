@@ -50,4 +50,10 @@ boolQueryBuilder.must(QueryBuilders.termsQuery("userId.keyword", patternUpdateFl
 
 ```java
 boolQueryBuilder.must(QueryBuilders.rangeQuery("updateTimestamp").gt(patternUpdateFlagDTO.getLastLooKFollowingTime()));
+
+// 时间范围查询
+QueryBuilder query = QueryBuilders.rangeQuery("createTime")
+    .from("2024-01-01T00:00:00")
+    .to("2024-12-31T23:59:59");
+
 ```
