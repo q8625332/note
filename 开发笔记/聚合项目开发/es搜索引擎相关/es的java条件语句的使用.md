@@ -19,8 +19,11 @@ boolQueryBuilder.must()
 ```
 
 >  termsQuery
+>  Elasticsearch Java 客户端中用于构建 **精确匹配多个值** 的查询条件。它的作用是：查询某个字段的值是否在你提供的一组值中，类似于 SQL 中的 `IN` 语句。
 
 
 ```java
 boolQueryBuilder.must(QueryBuilders.termsQuery("accountId.keyword", patternUpdateFlagDTO.getAccountIds()));
 ```
+
+> 
