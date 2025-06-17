@@ -11,4 +11,9 @@ SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
 ```
 
->
+> 查询相当于 = 
+
+
+```java
+boolQueryBuilder.must（
+```
