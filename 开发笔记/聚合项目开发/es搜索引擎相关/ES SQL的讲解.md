@@ -9,8 +9,11 @@ GET /pattern_store/_search
 **简单的查询**
 
 
-```
-
+```es
+GET /index/_search
+{
+"size": 0,
+}
 ```
 
 
