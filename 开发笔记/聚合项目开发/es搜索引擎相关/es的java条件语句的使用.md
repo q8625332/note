@@ -12,7 +12,7 @@ SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 
 
 ```java
-// 条件语句在
+// 条件语句在BoolQueryBuilder的方法里。可以参考BoolQueryBuilder的方法。
 sourceBuilder.query(boolQueryBuilder);
 ```
 
