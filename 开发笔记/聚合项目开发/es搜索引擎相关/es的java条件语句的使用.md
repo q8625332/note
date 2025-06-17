@@ -77,7 +77,12 @@ public static long countBySourceBuilder(String indexName, SearchSourceBuilder se
 ```
 
 > 使用聚合方法的时候
+> size可以传0
 
+
+```java
+sourceBuilder.size(0); // 不需要返回实际数据，只需要聚合结果
+```
 
 
 ## BoolQueryBuilder
