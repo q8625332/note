@@ -12,7 +12,12 @@ GET /pattern_store/_search
 ```es
 GET /index/_search
 {
-"size": 0,
+	"size": 0,
+	"query": {
+		"bool": {
+			
+		}
+	}
 }
 ```
 
