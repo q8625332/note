@@ -20,6 +20,7 @@ GET /pattern_store/_search
 | range           | 范围查询，如数字的范围查询，时间的范围查询。                                                              |
 | from            | 时间查询的开始                                                                             |
 | to              | 时间查询的结束                                                                             |
+| gt              |                                                                                     |
 
 
 ```es
