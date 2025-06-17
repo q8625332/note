@@ -136,6 +136,7 @@ QueryBuilder query = QueryBuilders.rangeQuery("createTime")
 ```
 
 > 聚合查询
+> Elasticsearch Java 客户端中构建聚合查询的一部分，常用于统计类场景，比如计算点赞总数、销售总额、浏览总量等
 > 比如 sum
 
 
@@ -145,6 +146,10 @@ sourceBuilder.aggregation(AggregationBuilders.sum("sum的别名").field("统计�
 
 // 例子：
 sourceBuilder.aggregation(AggregationBuilders.sum("totalFavorites").field("favoritesNum"));
+
+
+// 简单例子：
+
 ```
 
 
