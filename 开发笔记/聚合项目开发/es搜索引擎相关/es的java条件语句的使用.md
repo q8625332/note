@@ -147,9 +147,34 @@ sourceBuilder.aggregation(AggregationBuilders.sum("sum的别名").field("统计�
 // 例子：
 sourceBuilder.aggregation(AggregationBuilders.sum("totalFavorites").field("favoritesNum"));
 
-
+// ------------------------------------------
 // 简单例子：
+SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();  
+BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();  
+  
+// 添加accountId查询条件  
+boolQueryBuilder.must(QueryBuilders.termQuery("userId.keyword", accountId));  
+  
+// 添加状态条件  
+boolQueryBuilder.must(QueryBuilders.termsQuery("status",   
+Arrays.asList("active", "pending", "approved")));  
+    sourceBuilder.query(boolQueryBuilder);  
+sourceBuilder.size(0); // 不需要返回实际数据，只需要聚合结果  
+  
+// 添加sum聚合  
+sourceBuilder.aggregation(AggregationBuilders.sum("totalFavorites").field("favoritesCount"));  
+  
+Aggregations aggregations = EsUtil.getAggregationQuery(PatternEsConstant.INDEX_ALIAS, sourceBuilder);  
+if (aggregations != null) {  
+    Sum sum = aggregations.get("totalFavorites");  
+    if (sum != null) {  
+        return (long) sum.getValue();  
+    }  
+}  
+return 0;
 
+// -----------------------------------------------
+// esUtil
 ```
 
 
