@@ -1,3 +1,6 @@
+
+## SearchSourceBuilder
+
 > SearchSourceBuilder搜索语句的Builder
 
 ```java
@@ -27,6 +30,7 @@ boolQueryBuilder.must(QueryBuilders.termsQuery("userId.keyword", patternUpdateFl
 ```
 
 > rangeQuery
+> Elasticsearch Java 客户端中用来构建 **范围查询** 的方法，适用于查找某个字段的值在一定区间内的文档。它常用于时间、数字、价格等连续值的筛选。
 
 
 ```java
