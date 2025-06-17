@@ -18,12 +18,12 @@ GET /pattern_store/_search
 | terms           | 多个数据匹配，类似 in                                                                        |
 | *.keyword       | accountId.keyword 这个写法，代表全量匹配，就是字段需要全部命中，为什么要这么写呢？是因为es里面的字段是有分词器的，如果要全量匹配的话，需要指定好。 |
 | range           | 范围查询，如数字的范围查询，时间的范围查询。                                                              |
-| from            | 时间查询的开始                                                                             |
-| to              | 时间查询的结束                                                                             |
-| gt              | 大于                                                                                  |
-| gte             | 大于等于                                                                                |
-| lt              | 小于                                                                                  |
-| lte             | 小于等于                                                                                |
+| from            | 必须在range里，时间查询的开始                                                                   |
+| to              | 须在range里，时间查询的结束                                                                    |
+| gt              | 须在range里，大于                                                                         |
+| gte             | 须在range里，大于等于                                                                       |
+| lt              | 须在range里，小于                                                                         |
+| lte             | 须在range里，小于等于                                                                       |
 
 
 ```es
