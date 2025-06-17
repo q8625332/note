@@ -16,6 +16,36 @@ SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 sourceBuilder.query(boolQueryBuilder);
 ```
 
+**简单的例子**
+
+
+```java
+SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();  
+BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();  
+  
+// 添加accountId筛选条件  
+boolQueryBuilder.must(QueryBuilders.termsQuery("userId.keyword", patternUpdateFlagDTO.getAccountIds()));  
+  
+// 添加updateTimestamp时间筛选条件  
+boolQueryBuilder.must(QueryBuilders.rangeQuery("updated").gt(patternUpdateFlagDTO.getLastLooKFollowingTime()));  
+  
+sourceBuilder.query(boolQueryBuilder);  
+// 只需要判断是否存在，因此size设置为1  
+sourceBuilder.size(1);  
+// 不需要返回实际数据  
+sourceBuilder.fetchSource(false);  
+// 找到一个匹配项后立即停止查询，模拟SQL EXISTS行为  
+sourceBuilder.terminateAfter(1);  
+  
+try {  
+    // 调用EsUtil中获取总命中数的方法  
+    long count = EsUtil.countBySourceBuilder(PatternEsConstant.INDEX_ALIAS, sourceBuilder);  
+    return count > 0;  
+} catch (Exception e) {  
+    LOGGER.error("hasFollowedAuthorsPublishedNewPatterns error", e);  
+    return false;}
+```
+
 
 ## BoolQueryBuilder
 
