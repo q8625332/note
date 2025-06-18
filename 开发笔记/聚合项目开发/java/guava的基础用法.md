@@ -7,7 +7,7 @@ private static final RateLimiter RATE_LIMITER = RateLimiter.create(3);
 ```
 
 ## Hashing
-> ke'hu
+> 可以使用这个方法，取hash值
 
 ```java
 Hashing.murmur3_32().hashLong(circleId).asInt()
