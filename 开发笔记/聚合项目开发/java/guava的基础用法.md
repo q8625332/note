@@ -6,4 +6,9 @@
 private static final RateLimiter RATE_LIMITER = RateLimiter.create(3);
 ```
 
-ha
+## Hashing
+> ke'hu
+
+```java
+Hashing.murmur3_32().hashLong(circleId).asInt()
+```
