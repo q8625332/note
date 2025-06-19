@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/聚合项目开发/java/guava的基础用法.md",
+                "file": "开发笔记/聚合项目开发/java/Java基础用法.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "guava的基础用法"
+              "title": "Java基础用法"
             }
           }
         ]
@@ -174,8 +174,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "23c3ea94cbcdfa0e",
+  "active": "a03d251b713dbf0c",
   "lastOpenFiles": [
+    "开发笔记/聚合项目开发/java/guava的基础用法.md",
     "开发笔记/聚合项目开发/算法相关/分表算法.md",
     "开发笔记/聚合项目开发/python/pip安装超时怎么解决.md",
     "开发笔记/聚合项目开发/springboot/gateway+nacos秒级上下线.md",
@@ -184,7 +185,6 @@
     "开发笔记/聚合项目开发/springboot/RedissonClient-业务解决思路.md",
     "开发笔记/聚合项目开发/mysql/msyql随机查询-优化语句写法.md",
     "开发笔记/聚合项目开发/mysql/大表处理工具.md",
-    "开发笔记/聚合项目开发/java/guava的基础用法.md",
     "开发笔记/聚合项目开发/java/GzipUtil字符串压缩工具.md",
     "开发笔记/聚合项目开发/java/java处理版本号工具类.md",
     "开发笔记/聚合项目开发/java/java对象转xml.md",
