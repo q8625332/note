@@ -1,0 +1,1 @@
+[不能解锁、无法 ROOT 也能玩机：Shizuku 玩机工具支持列表（2023 年 9 月更新）](https://bbs.tatans.cn/topic/44305)
