@@ -2,7 +2,7 @@
 > 运行命令
 
 ```win
-
+winget install vfox
 ```
 
 
