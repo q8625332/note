@@ -1,4 +1,5 @@
-[fox官网](https://vfox.lhan.me/zh-hans/guides/intro.html)
+## 安装
+[快速入门 | vfox](https://vfox.dev/zh-hans/guides/quick-start.html)
 
 ```
 # add plugin for vfox
