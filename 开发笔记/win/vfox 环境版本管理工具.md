@@ -1,5 +1,12 @@
 ## 安装
-[快速入门 | vfox](https://vfox.dev/zh-hans/guides/quick-start.html)
+> 运行命令
+
+```win
+
+```
+
+
+[官网 | vfox](https://vfox.dev/zh-hans/guides/quick-start.html)
 
 ```
 # add plugin for vfox
