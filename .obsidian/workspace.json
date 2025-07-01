@@ -4,20 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "251562fdc111d0e9",
+        "id": "6a86c77439606f2e",
         "type": "tabs",
         "children": [
           {
-            "id": "626e0ecd2a020318",
+            "id": "1516667731b14aa5",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/workspace.json",
-                "staged": false
-              },
-              "icon": "git-pull-request",
-              "title": "Diff View (workspace.json)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -173,7 +170,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "626e0ecd2a020318",
+  "active": "1516667731b14aa5",
   "lastOpenFiles": [
     "开发笔记/idea/idea点击类文件，跳转该类对应的.class文件方法.md",
     "开发笔记/file/Pasted image 20250630151414.png",
