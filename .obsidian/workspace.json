@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6a86c77439606f2e",
+        "id": "7417ad3cca298a7e",
         "type": "tabs",
         "children": [
           {
-            "id": "1516667731b14aa5",
+            "id": "ceaba12968f296d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发笔记/聚合项目开发/es搜索引擎相关/es的java条件语句的使用.md",
-                "mode": "source",
+                "file": "开发笔记/idea/idea设置-个人笔记.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "es的java条件语句的使用"
+              "title": "idea设置-个人笔记"
             }
           }
         ]
@@ -174,20 +174,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1516667731b14aa5",
+  "active": "ceaba12968f296d0",
   "lastOpenFiles": [
-    "开发笔记/聚合项目开发/es搜索引擎相关/ES SQL的讲解.md",
-    "开发笔记/聚合项目开发/es搜索引擎相关/es的java条件语句的使用.md",
-    "开发笔记/运维相关笔记/KubeSphere使用的个人笔记.md",
+    "开发笔记/idea/idea快捷键.md",
+    "开发笔记/idea/idea设置-个人笔记.md",
     "开发笔记/idea/idea点击类文件，跳转该类对应的.class文件方法.md",
+    "开发笔记/聚合项目开发/es搜索引擎相关/es的java条件语句的使用.md",
+    "开发笔记/聚合项目开发/es搜索引擎相关/ES SQL的讲解.md",
+    "开发笔记/运维相关笔记/KubeSphere使用的个人笔记.md",
     "开发笔记/file/Pasted image 20250630151414.png",
     "开发笔记/file/Pasted image 20250630151054.png",
     "开发笔记/file/Pasted image 20250630151002.png",
     "开发笔记/聚合项目开发/java/OffsetUtil（工具类）.md",
-    "开发笔记/idea/idea设置-个人笔记.md",
     "开发笔记/idea/idea必装插件.md",
     "开发笔记/idea/idea的todo.md",
-    "开发笔记/idea/idea快捷键.md",
     "开发笔记/win/cmd命令.md",
     "开发笔记/聚合项目开发/抓包相关/charles抓包配置流程.md",
     "开发笔记/聚合项目开发/es搜索引擎相关",
