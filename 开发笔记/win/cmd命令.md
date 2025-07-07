@@ -9,3 +9,11 @@ netsh wlan show wirelesscapabilities
 
 > 就是底部的的组件栏
 
+
+```
+// 停止
+taskkill /f /im explorer.exe
+
+// 重新启动
+start explorer.exe
+```
