@@ -201,11 +201,18 @@ public static Aggregations getAggregationQuery(String indexName,SearchSourceBuil
 ```
 
 
-## id排序
+## _id  排序a
 
 > 当使用_id排序得时候，直接加大于小于得符合去直接和_id比较是会报错的。
+> 得使用SortBuilders和searchAfter的排序
 
 
 ```java
-
+sourceBuilder.sort(SortBuilders.fieldSort("createTimestamp").order(SortOrder.DESC));  
+sourceBuilder.sort(SortBuilders.fieldSort("_id").order(SortOrder.DESC));  
+  
+// 处理offset分页  
+if (lastId != null && lastCreateTimestamp != null) {  
+    sourceBuilder.searchAfter(new Object[]{lastCreateTimestamp, lastId});  
+}
 ```
