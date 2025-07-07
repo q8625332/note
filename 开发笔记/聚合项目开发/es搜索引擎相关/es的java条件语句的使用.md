@@ -203,4 +203,5 @@ public static Aggregations getAggregationQuery(String indexName,SearchSourceBuil
 
 ## id排序
 
-> 当使用_id排序得时候，直接加大于小于得符合去直接和_
+> 当使用_id排序得时候，直接加大于小于得符合去直接和_id比较是会报错的。
+
