@@ -16,6 +16,10 @@ Hashing.murmur3_32().hashLong(circleId).asInt()
 ## difference
 > 返回交集的数据
 
+```java
+Sets.difference(Sets.newHashSet(fromIds), Sets.newHashSet(userIds));
+```
+
 
 ## symmetricDifference
 > 返回没有交集的数据
