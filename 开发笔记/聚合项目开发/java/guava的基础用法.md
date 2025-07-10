@@ -13,9 +13,13 @@ private static final RateLimiter RATE_LIMITER = RateLimiter.create(3);
 Hashing.murmur3_32().hashLong(circleId).asInt()
 ```
 
+## difference
+> 返回交集的数据
+
+
 ## symmetricDifference
-> 返回没有jian'j
+> 返回没有交集的数据
 
 ```java
-Sets.symmetricDifference(Sets.newHashSet(fromIds), Sets.newHashSet(userIds)
+Sets.symmetricDifference(Sets.newHashSet(fromIds), Sets.newHashSet(userIds));
 ```
