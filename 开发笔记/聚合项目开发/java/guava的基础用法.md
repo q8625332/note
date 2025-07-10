@@ -12,3 +12,10 @@ private static final RateLimiter RATE_LIMITER = RateLimiter.create(3);
 ```java
 Hashing.murmur3_32().hashLong(circleId).asInt()
 ```
+
+## symmetricDifference
+> 返回没有jian'j
+
+```java
+Sets.symmetricDifference(Sets.newHashSet(fromIds), Sets.newHashSet(userIds)
+```
