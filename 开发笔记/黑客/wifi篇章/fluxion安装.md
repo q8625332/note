@@ -26,8 +26,10 @@ ip link set waln0 down
 ip link set waln0 promisc on
 # 关闭网卡的混合模式
 ip link set waln0 promisc off
-# 
-ip link set waln0 txqueuelen off
+# 设置网卡队列长度
+ip link set waln0 txqueuelen 1200
+# 设置网卡最大传输单元
+ip link set waln0 mtu 1200
 
 
 ```
