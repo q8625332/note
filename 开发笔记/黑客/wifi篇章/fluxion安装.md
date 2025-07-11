@@ -14,6 +14,6 @@ sudo ./fluxion.sh
 ```
 git clone https://gitee.com/youzicha123/fluxion.git
 
-LANG=en_US.UTF-8 sudo ./fluxion.sh
+LANG=en_US.UTF-8 sudo ./fluxion/fluxion.sh 
 
 ```
