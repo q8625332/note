@@ -29,7 +29,7 @@ ip link set waln0 promisc off
 # 设置网卡队列长度
 ip link set waln0 txqueuelen 1200
 # 设置网卡最大传输单元
-ip link set waln0 mtu 1200
+ip link set waln0 mtu 1400
 
 
 ```
