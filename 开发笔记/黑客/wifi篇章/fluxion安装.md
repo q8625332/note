@@ -24,6 +24,10 @@ ip link set waln0 up
 ip link set waln0 down
 # 开启网卡的混合模式
 ip link set waln0 promisc on
-ip link set waln0 promisc o
+# 关闭网卡的混合模式
+ip link set waln0 promisc off
+# 
+ip link set waln0 txqueuelen off
+
 
 ```
