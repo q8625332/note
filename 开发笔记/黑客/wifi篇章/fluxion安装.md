@@ -16,6 +16,7 @@ git clone https://gitee.com/youzicha123/fluxion.git
 
 LANG=en_US.UTF-8 sudo ./fluxion/fluxion.sh 
 
-ip 
+ip link
+ip link set waln0 
 
 ```
