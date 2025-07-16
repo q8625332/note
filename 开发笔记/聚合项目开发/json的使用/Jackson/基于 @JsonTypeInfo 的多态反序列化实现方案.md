@@ -6,6 +6,7 @@
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
+@JsonTypeInfo(use = JsonTypeInfo.Id.CLASS, include = JsonTypeInfo.As.PROPERTY, property = "@class")
 public abstract class BaseParam {
     private String fromUserId;
 
@@ -20,6 +21,7 @@ public abstract class BaseParam {
 ```
 
 ### `CommentParam.java`（子类示例）
+
 
 
 ```java
