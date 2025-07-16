@@ -101,9 +101,60 @@ public class BaseData<T> {
 public class RemotePatternCommunityActionChangeDTO {
 
     private BaseData<? extends BaseParam> data;
+    private TypeDTO type;
+    private ActionDTO action;
 
     // Getters and Setters
 }
 ```
 
 
+## ✅ 测试代码
+
+
+```java
+public static void main(String[] args) throws Exception {
+    // 构造数据
+    CommentParam param = new CommentParam();
+    param.setFromUserId("user123");
+    param.setPatternId("pattern456");
+    param.setCommentId("comment789");
+
+    BaseData<CommentParam> baseData = new BaseData<>(param);
+
+    RemotePatternCommunityActionChangeDTO dto = new RemotePatternCommunityActionChangeDTO();
+    dto.setData(baseData);
+    dto.setType(RemotePatternCommunityActionChangeDTO.TypeDTO.comment);
+    dto.setAction(RemotePatternCommunityActionChangeDTO.ActionDTO.add);
+
+    // 序列化
+    String json = JsonUtil.toJson(dto);
+    System.out.println("序列化结果:");
+    System.out.println(json);
+
+    // 反序列化
+    RemotePatternCommunityActionChangeDTO bean = JsonUtil.toBean(json, RemotePatternCommunityActionChangeDTO.class);
+    System.out.println("\n反序列化结果:");
+    System.out.println(JsonUtil.toJson(bean));
+}
+```
+
+
+## ✅ 输出示例
+
+
+```java
+{
+  "data": {
+    "value": {
+      "paramType": "COMMENT",
+      "fromUserId": "user123",
+      "patternId": "pattern456",
+      "commentId": "comment789"
+    },
+    "dataType": "COMMENT"
+  },
+  "type": "comment",
+  "action": "add"
+}
+```
