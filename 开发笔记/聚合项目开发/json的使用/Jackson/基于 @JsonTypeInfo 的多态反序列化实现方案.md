@@ -129,12 +129,11 @@ public static void main(String[] args) throws Exception {
 {
   "data": {
     "value": {
-      "paramType": "COMMENT",
+      "@class": "your.package.CommentParam",
       "fromUserId": "user123",
       "patternId": "pattern456",
       "commentId": "comment789"
-    },
-    "dataType": "COMMENT"
+    }
   },
   "type": "comment",
   "action": "add"
