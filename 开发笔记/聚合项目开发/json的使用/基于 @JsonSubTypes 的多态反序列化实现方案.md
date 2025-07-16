@@ -61,3 +61,49 @@ public class CommentParam extends BaseParam {
 ```
 
 
+### `BaseData.java`（泛型包装器）
+
+
+```java
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+public class BaseData<T> {
+
+    @JsonTypeInfo(
+        use = JsonTypeInfo.Id.NAME,
+        include = JsonTypeInfo.As.PROPERTY,
+        property = "dataType",
+        defaultImpl = BaseParam.class
+    )
+    private T value;
+
+    public BaseData() {}
+
+    public BaseData(T value) {
+        this.value = value;
+    }
+
+    public T getValue() {
+        return value;
+    }
+
+    public void setValue(T value) {
+        this.value = value;
+    }
+}
+```
+
+
+### 示例 DTO 类：`RemotePatternCommunityActionChangeDTO.java`
+
+
+```java
+public class RemotePatternCommunityActionChangeDTO {
+
+    private BaseData<? extends BaseParam> data;
+
+    // Getters and Setters
+}
+```
+
+
