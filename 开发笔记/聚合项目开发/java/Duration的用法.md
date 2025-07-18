@@ -21,3 +21,23 @@ System.out.println(duration.toMinutes());  // 2
 System.out.println(duration.toHours());    // 0
 System.out.println(duration.toDays());     // 0
 ```
+
+在 Java 的 `Duration` 中，你可能会看到类似 `PT1H30M45.123S` 这样的字符串表示形式，这就是 **ISO 8601 标准中用于表示持续时间（Duration）的格式** ，其中的 `PT` 是这个格式中的一个关键部分。
+
+## 🔍 一、什么是 PT？
+
+在 `Duration` 的字符串表示中：
+
+
+```java
+PT1H30M45S
+```
+
+
+- `PT` 是 **"Period Time"** 的缩写。
+- 它表示这个字符串描述的是一个 **时间持续长度（duration）** ，而不是一个具体的日期或时间点。
+- `PT` 后面的部分表示具体的持续时间，由以下单位组成：
+    - `H`：小时（Hour）
+    - `M`：分钟（Minute）
+    - `S`：秒（Second）
+    - `MS` 或 `.nnnnnnnnn`：毫秒或纳秒（在字符串中以小数点表示）
