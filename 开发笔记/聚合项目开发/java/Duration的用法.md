@@ -62,14 +62,14 @@ PnYnMnDTnHnMn.nS
 |S|秒（Second）|PT45S → 45秒|
 ## 🧩 三、Duration 的字符串格式示例
 
-||||
-|---|---|---|
-|`Duration.ofHours(1)`|`PT1H`|1小时|
-|`Duration.ofMinutes(30)`|`PT30M`|30分钟|
-|`Duration.ofSeconds(45)`|`PT45S`|45秒|
-|`Duration.ofSeconds(90)`|`PT1M30S`|1分30秒|
-|`Duration.ofMillis(1500)`|`PT1.5S`|1.5秒（即1秒500毫秒）|
-|`Duration.ofHours(2).plusMinutes(30)`|`PT2H30M`|2小时30分钟|
-|`Duration.ofDays(1)`|`PT24H`|1天（Java 中 Duration 以小时表示）|
+| DURATION表达式                           | 字符串表示     | 含义                        |
+| ------------------------------------- | --------- | ------------------------- |
+| `Duration.ofHours(1)`                 | `PT1H`    | 1小时                       |
+| `Duration.ofMinutes(30)`              | `PT30M`   | 30分钟                      |
+| `Duration.ofSeconds(45)`              | `PT45S`   | 45秒                       |
+| `Duration.ofSeconds(90)`              | `PT1M30S` | 1分30秒                     |
+| `Duration.ofMillis(1500)`             | `PT1.5S`  | 1.5秒（即1秒500毫秒）            |
+| `Duration.ofHours(2).plusMinutes(30)` | `PT2H30M` | 2小时30分钟                   |
+| `Duration.ofDays(1)`                  | `PT24H`   | 1天（Java 中 Duration 以小时表示） |
 
 > 注意：Java 的 `Duration` 不支持年（Y）和月（M）单位，只支持天、小时、分钟、秒等基于时间的单位。因此，`Duration` 的字符串格式始终以 `PT` 开头。
