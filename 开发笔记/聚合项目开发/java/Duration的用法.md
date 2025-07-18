@@ -14,5 +14,10 @@
 例如：
 
 ```java
-Duration(seconds: 5) // 表示5秒的时间间隔
+Duration duration = Duration.ofSeconds(125);
+
+System.out.println(duration.getSeconds()); // 125
+System.out.println(duration.toMinutes());  // 2
+System.out.println(duration.toHours());    // 0
+System.out.println(duration.toDays());     // 0
 ```
