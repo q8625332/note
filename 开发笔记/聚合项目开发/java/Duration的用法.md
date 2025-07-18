@@ -73,3 +73,29 @@ PnYnMnDTnHnMn.nS
 | `Duration.ofDays(1)`                  | `PT24H`   | 1天（Java 中 Duration 以小时表示） |
 
 > 注意：Java 的 `Duration` 不支持年（Y）和月（M）单位，只支持天、小时、分钟、秒等基于时间的单位。因此，`Duration` 的字符串格式始终以 `PT` 开头。
+
+## 🧪 四、Java 示例
+
+```java
+import java.time.Duration;
+
+public class DurationExample {
+    public static void main(String[] args) {
+        Duration d1 = Duration.ofHours(2).plusMinutes(30).plusSeconds(15);
+        System.out.println(d1); // 输出：PT2H30M15S
+
+        Duration d2 = Duration.ofMillis(1250);
+        System.out.println(d2); // 输出：PT1.25S
+
+        Duration d3 = Duration.ofDays(1);
+        System.out.println(d3); // 输出：PT24H
+    }
+}
+```
+
+## 🔄 五、如何解析 PT 格式的字符串为 Duration？
+
+```java
+Duration duration = Duration.parse("PT1H30M45S");
+System.out.println(duration); // PT1H30M45S
+```
