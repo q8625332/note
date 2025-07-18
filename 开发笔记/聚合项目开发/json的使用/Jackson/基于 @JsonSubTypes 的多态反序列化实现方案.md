@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
     @JsonSubTypes.Type(value = LikeParam.class, name = "LIKE")
     // 添加更多子类...
 })
-public abstract class BaseParam {
+public class BaseParam {
     private String fromUserId;
 
     public String getFromUserId() {
