@@ -28,6 +28,8 @@ System.out.println(duration.toDays());     // 0
 
 在 `Duration` 的字符串表示中：
 
+> 注意⚠️：PT720H
+
 
 ```java
 PT1H30M45S
