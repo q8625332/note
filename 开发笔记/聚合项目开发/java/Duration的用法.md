@@ -41,3 +41,22 @@ PT1H30M45S
     - `M`：分钟（Minute）
     - `S`：秒（Second）
     - `MS` 或 `.nnnnnnnnn`：毫秒或纳秒（在字符串中以小数点表示）
+
+## 📌 二、格式说明
+
+完整的格式如下：
+
+```java
+PnYnMnDTnHnMn.nS
+```
+
+|   |   |   |
+|---|---|---|
+|P|表示 Period 的开始（Duration 也用）|P1D|
+|Y|年（Year）|P2Y → 2年|
+|M|月（Month）|P3M → 3个月|
+|D|天（Day）|P10D → 10天|
+|T|表示“时间”部分开始（Time）|PT1H → 1小时|
+|H|小时（Hour）|PT2H → 2小时|
+|M|分钟（Minute）|PT30M → 30分钟|
+|S|秒（Second）|PT45S → 45秒|
