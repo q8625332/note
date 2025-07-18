@@ -28,7 +28,8 @@ System.out.println(duration.toDays());     // 0
 
 在 `Duration` 的字符串表示中：
 
-> 注意⚠️：PT720H
+> 注意⚠️：Duration的PT是只支持H,M,S的
+> 不支持D(天)
 
 
 ```java
