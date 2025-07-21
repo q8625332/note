@@ -15,3 +15,8 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v Fli
 
 ![[Pasted image 20250721093110.png]]
 
+如果想恢复，可以随时在这里点击“继续更新”。  
+  
+相较于使用软件，这个方法更原生、更简单。  
+  
+Win8或更老的系统无法使用这个方法，建议用软件禁用：[Winaero Tweaker](https://yaohuo.me/bbs-755790.html)
