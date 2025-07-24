@@ -183,3 +183,18 @@ public class AdminPageCircleReq extends ApiPageReq {
 </select>
 ```
 
+## 批量更新update的sql写法
+
+
+```xml
+UPDATE table  
+SET  
+`activitySort` =  
+<foreach collection="list" item="item" index="index" separator=" " open="CASE id" close="END">  
+    WHEN #{item.id} THEN #{item.activitySort}  
+</foreach>  
+WHERE id IN  
+<foreach collection="list" item="item" index="index" separator="," open="(" close=")">  
+    #{item.id}  
+</foreach>
+```
