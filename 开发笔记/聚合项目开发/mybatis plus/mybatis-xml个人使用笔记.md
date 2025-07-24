@@ -198,3 +198,16 @@ WHERE id IN
     #{item.id}  
 </foreach>
 ```
+
+> 效果
+
+
+```
+UPDATE table
+SET 
+    `activitySort` = CASE id
+        WHEN 1 THEN 10
+        WHEN 2 THEN 20
+    END
+WHERE id IN (1, 2)
+```
