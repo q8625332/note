@@ -22,7 +22,7 @@
 
 ![[14d450330e1e132e8e3aef9a579e778dd59395bf.gif]]
 
-##  obsidian-editing-toolbar Plugin
+##  Editing Toolbar
 > 菜单栏
 
 [github地址](https://github.com/PKM-er/obsidian-editing-toolbar)
