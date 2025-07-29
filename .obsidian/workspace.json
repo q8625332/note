@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Trie",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -177,7 +176,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a6614a6cc4ca89de",
+  "active": "96c6d6bb2c907843",
   "lastOpenFiles": [
     "开发笔记/聚合项目开发/java/DFA算法-关键字算法.md",
     "开发笔记/聚合项目开发/java/Duration的用法.md",
