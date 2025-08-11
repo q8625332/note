@@ -23,3 +23,19 @@ select
 row_number() over (partition by 字段 order by 字段 asc) as rn
 from table
 ```
+
+
+## 更新插入
+
+> 更新数据时，数据库没有数据则插入数据
+
+
+```sql
+INSERT INTO table_name (col1, col2, col3, ...)
+VALUES 
+  (val1, val2, val3, ...),
+  (val1b, val2b, val3b, ...)
+ON DUPLICATE KEY UPDATE
+  col2 = VALUES(col2),
+  col3 = VALUES(col3);
+```
