@@ -174,15 +174,10 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 效果显示
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2021051816165115.png)
 
+## Catppuccin Theme
+> 主题 很好看
 
-## 主题 Vuesion Theme
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/ec695be2dfb6cdc27d904c96a5f56ec5.png#pic_center)
-
-## Hiberbee Theme
-> 主题小黄蜂
-
-![[Pasted image 20250617142706.png]]
+![[Pasted image 20250818141943.png]]
 
 
 ## 安装代码的括号区分
