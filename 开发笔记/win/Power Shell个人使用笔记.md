@@ -3,9 +3,7 @@
 > 运行以下代码
 
 ```java
-get-ExecutionPolicy
-Set-ExecutionPolicy -Scope CurrentUser
-RemoteSigned
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 > 查看接口监听
