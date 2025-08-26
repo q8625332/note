@@ -26,6 +26,13 @@ D:\软件\Git\bin\bash.exe
 vim ~/.claude/settings.json
 ```
 
+或者手动打开
+
+```win
+// 打开系统文件
+C:\Users\%username%\.claude
+```
+
 
 ```text
 {
