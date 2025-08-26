@@ -1,4 +1,5 @@
 ## 安装
+
 > 运行命令
 
 ```win
@@ -22,4 +23,22 @@ vfox search java # view all for openjdk
 vfox search java graal # view all for graalvm
 
 vfox use 
+
+```
+
+## maven的小技巧
+
+
+```
+// 安装maven
+vfox install maven
+
+// 查询jdk和maven的安装目录
+mvn -v
+
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\Users\Administrator\.version-fox\cache\maven\current
+Java version: 1.8.0_342, vendor: Oracle Corporation, runtime: C:\Users\Administrator\.version-fox\cache\java\current\jre
+Default locale: zh_CN, platform encoding: GBK
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ```
