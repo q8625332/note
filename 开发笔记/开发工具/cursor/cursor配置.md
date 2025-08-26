@@ -9,3 +9,15 @@
 ```
 
 > 第二步：保存该文件，并重启cursor即可。
+
+# Cursor 修改布局
+
+> 使用vscode布局
+
+快捷键： `Ctrl + ,`  打开设置页面
+
+搜索框输入： `workbench.activityBar.orientation`
+
+根据图片 选择 `vertical`
+
+最后根据提示重启 `Cursor` 即可恢复同 `VS Code` 相同布局
