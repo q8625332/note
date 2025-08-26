@@ -33,6 +33,7 @@ vim ~/.claude/settings.json
 C:\Users\%username%\.claude
 ```
 
+**settings.json**
 
 ```text
 {
