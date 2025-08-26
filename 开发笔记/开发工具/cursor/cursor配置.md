@@ -4,8 +4,11 @@
 
 
 ```
-"java.jdt.ls.java.home": "你的 JDK 安装路径（对应 JAVA_HOME 变量值）",
+"java.jdt.ls.java.home": "你的 JDK 安装路径（对应 JAVA_HOME 变量值）"
+
 "java.configuration.maven.userSettings": "你的 Maven 配置文件 settings.xml 所在路径"
+
+"maven.settingsFile": "C:\\Users\\Administrator\\.m2\\conf\\dan_xiao_settings.xml"
 ```
 
 > 第二步：保存该文件，并重启cursor即可。
