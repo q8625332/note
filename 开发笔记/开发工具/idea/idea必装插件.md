@@ -211,11 +211,7 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 
 **使用效果**
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/691f70d134b1447db0121ffdf146b4ad.png)
-## 再换个卡哇伊的加载进度条 Nyan Progress Bar
 
-> 装上Nyan Progress Bar之后，进度条也变得活泼起来，多加载一会儿也无妨。
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/f81218bb6b1dcbc83f32b3c99b8d36e8.png#pic_center)
 ## 烟花为我绽放 active-power-mode-x
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/d8229fc87620b7f2f89ee758b78f9a80.gif#pic_center)
 ## Mario Progress Bar
