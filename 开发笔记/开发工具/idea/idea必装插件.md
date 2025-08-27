@@ -133,47 +133,6 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 ## RestfulToolkit: 快速定位controller层接口、接口测试
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210415153408815.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE3NjczMTk=,size_16,color_FFFFFF,t_70)
 
-## 安装Material Theme UI
-![在这里插入图片描述](https://img-blog.csdnimg.cn/60046e11d83c4ecdadb834f716723e55.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCY5Y-26aOO5YeM,size_20,color_FFFFFF,t_70,g_se,x_16)
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/16963b1c4a5545a78c071ddbb2c31e46.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCY5Y-26aOO5YeM,size_20,color_FFFFFF,t_70,g_se,x_16)
-**这个设置去掉**
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8f270ec2d0c54b2ebc865c7b05265d15.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCY5Y-26aOO5YeM,size_20,color_FFFFFF,t_70,g_se,x_16)
-
-## 安装主题
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210517094946117.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE3NjczMTk=,size_16,color_FFFFFF,t_70)
-
-这款主题也不错
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210517095005227.png)
-
-**安装主题的icon**
-
-> 原本的icon特别少
-> 安装一些好看的icon
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210517100214599.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE3NjczMTk=,size_16,color_FFFFFF,t_70)
-**icon的一些设置**
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210517100447882.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE3NjczMTk=,size_16,color_FFFFFF,t_70)
-**再给它来个背景图**
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210517101825988.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE3NjczMTk=,size_16,color_FFFFFF,t_70)
-
-> 本人选了个4k图片
-> 配置下透明度
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210517102023292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE3NjczMTk=,size_16,color_FFFFFF,t_70)
-
-> 完美的展示了idea的美化程度
-> 最终效果
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210517102106592.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE3NjczMTk=,size_16,color_FFFFFF,t_70)
-
-> 如果注释比较不明显
-
-设置这三个
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210518161632939.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE3NjczMTk=,size_16,color_FFFFFF,t_70)	
-效果显示
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2021051816165115.png)
-
 ## Catppuccin Theme
 > 主题 很好看
 
