@@ -8,6 +8,9 @@
 
 "maven.settingsFile": "C:\\Users\\Administrator\\.m2\\conf\\dan_xiao_settings.xml"
 
+//maven、gradle的配置文件变更后自动更新 
+"java.configuration.updateBuildConfiguration": "automatic",
+
 ```
 
 > 第二步：保存该文件，并重启cursor即可。
