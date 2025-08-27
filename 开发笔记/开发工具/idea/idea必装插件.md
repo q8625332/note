@@ -214,10 +214,7 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 
 ## 烟花为我绽放 active-power-mode-x
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/d8229fc87620b7f2f89ee758b78f9a80.gif#pic_center)
-## Mario Progress Bar
-![在这里插入图片描述](https://img-blog.csdnimg.cn/cbe46eb95b2d46b49dd2b894a6af4d12.png)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7169793f1b824796831e747787927fc0.png)
 ## Sticky Scroll
 
 > 可以实时看到滚动的方法
