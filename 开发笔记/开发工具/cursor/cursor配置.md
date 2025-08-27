@@ -28,3 +28,6 @@
 
 ![[Pasted image 20250827105706.png]]
 
+## mybatis jump to mapper xml
+
+mybatis跳转xml
