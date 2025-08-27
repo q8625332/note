@@ -169,10 +169,6 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 
 数据会直接覆盖到剪切板
 
-## Codota 代码自动补全
-当你对某个变量进行赋值的时候，Codota便会根据它学习到代码知识，给出相应的建议，使用的比例，如下图：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a272a64c545c4329bb83689ec1d02f4d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5bCY5Y-26aOO5YeM,size_20,color_FFFFFF,t_70,g_se,x_16)
-
 ##  AceJump
 
 > 在我们写代码的时候，双手都在键盘上敲击，突然动用鼠标，就感觉很异样的感觉，有没有不动用鼠标的方法呢，有AceJump就帮我们可以解决动用鼠标的问题。
