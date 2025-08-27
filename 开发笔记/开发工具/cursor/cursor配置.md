@@ -25,3 +25,8 @@
 根据图片 选择 `vertical`
 
 最后根据提示重启 `Cursor` 即可恢复同 `VS Code` 相同布局
+
+## 快捷键配置
+
+![[Pasted image 20250827105706.png]]
+
