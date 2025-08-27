@@ -152,7 +152,7 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 **显示效果**
 ![[Pasted image 20250617143157.png]]
 
-## GsonFormatlPlus
+## GsonFormatPlus
 
 > 将json直接转成java实体
 
