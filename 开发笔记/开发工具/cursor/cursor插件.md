@@ -15,3 +15,9 @@ Catppuccin for VSCode
 
 Catppuccin Icons for VSCode
 ```
+
+## 生成注释
+
+```
+koroFileHeader
+```
