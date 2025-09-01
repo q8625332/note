@@ -9,6 +9,12 @@ WSL2 需要较新的 Windows 版本。
 
 **`wsl --install`**
 
+安装完：设置wsl2
+
+```text
+wsl --set-default-version 2
+```
+
 WSL2 需要 CPU 的硬件虚拟化支持。绝大多数现代电脑都支持，但有时默认是关闭的。
 
 **如何检查？**
