@@ -22,7 +22,7 @@
 **解决办法**
 
 ```java
--DarchetypeCatalog=internal -Dfile.encoding=GBK
+-DarchetypeCatalog=internal -Dfile.encoding=UTF-8
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/af0855050afc4b7d942125af0dc8d1e3.png)
 这样就解决了
