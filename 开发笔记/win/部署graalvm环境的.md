@@ -47,3 +47,14 @@ sudo apt install build-essential libz-dev zlib1g-dev
 - `build-essential` 是一个元数据包，它会安装 GCC 编译器、make 等一系列构建 C/C++ 程序所需的基础工具。
 - `zlib1g-dev` 是 GraalVM 明确要求的依赖库。
 
+
+
+## maven打包命令
+
+
+```bash
+# -Pnative 打包native包
+# test运行的环境
+# -Dmaven.test.skip=true 跳过启动
+mvn -Pnative,test -Dmaven.test.skip=true package
+```
