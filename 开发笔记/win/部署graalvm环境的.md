@@ -58,3 +58,14 @@ sudo apt install build-essential libz-dev zlib1g-dev
 # -Dmaven.test.skip=true 跳过启动
 mvn clean package -Pnative,test -Dmaven.test.skip=true
 ```
+
+
+**graalvm侦察兵**
+
+> 可以帮忙看编译后的问题
+
+
+```bash
+# 确保你的 JAVA_HOME 指向 GraalVM
+java -agentlib:native-image-agent=config-output-dir=src/main/resources/META-INF/native-image -jar target/gateway-0.0.1-SNAPSHOT.jar
+```
