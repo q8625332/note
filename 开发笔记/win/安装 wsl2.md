@@ -74,3 +74,39 @@ sudo apt update && sudo apt upgrade
     - **在 Linux 中访问 Windows 文件**: 你的 Windows 盘符会自动挂载到 Linux 的 `/mnt/` 目录下。例如，你的 C 盘就是 `/mnt/c`，D 盘就是 `/mnt/d`。
 
 现在，你就可以在 WSL2 的 Ubuntu 环境中安装 GraalVM、Maven/Gradle、Java 等工具，享受原生 Linux 般的流畅开发体验了！
+
+
+## 错误背景分析
+
+> # 解决 WSL 安装报错误代码: 错误代码: Wsl/InstallDistro/Service/RegisterDistro/CreateVm/HCS/HCS_E_SERVICE_NOT_AVAILABLE
+
+
+**当在 Windows 系统执行 wsl --install 安装 Linux 的 Windows 子系统 (WSL) 时，可能遭遇以下关键错误：**
+
+该错误通常与 虚拟机平台 功能未正确启用或系统版本过低有关，本文将彻底解决该问题。
+
+## 第一阶段：基础功能验证
+
+### 步骤 1：启用核心组件
+
+1.按下 Win 键，搜索 appwiz.cpl 回车  
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/716f97f892e4410482f5b83b945dab48.png)
+
+2.选择 启用或关闭 Windows 功能  
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/87ffe65f4ec04606b8276bde1228715d.png)
+
+3.勾选以下两项（必须重启）：  
+✅ 虚拟机平台  
+✅ 适用于 Linux 的 Windows 子系统  
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/10fc97a107bf459ebf713065b64dfa0f.png)
+
+### 步骤 2：强制启用虚拟化功能
+
+在管理员模式下打开 PowerShell 或 Windows 命令提示符
+
+
+```bash
+dism.exe /Online /Enable-Feature /FeatureName:VirtualMachinePlatform /All
+```
+
+ 完结
