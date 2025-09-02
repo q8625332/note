@@ -3,7 +3,16 @@
 > 运行命令
 
 ```win
+win下安装
+
 winget install vfox
+```
+
+
+```linux
+linux下安装
+
+curl -sSL https://raw.githubusercontent.com/version-fox/vfox/main/install.sh | bash
 ```
 
 
