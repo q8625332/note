@@ -1,14 +1,15 @@
 >用vfox安装java环境后
 
-**下载native-image**
+安装graal
 
+
+```bash
+vfox search java graal
 ```
-gu install native-image
-```
 
-**出现下面这个就是安装成功了**
+安装maven
 
-![[Pasted image 20241219232516.png]]
+[[vfox 环境版本管理工具]]
 
 > 废弃使用原生的win开发环境c++来编译。
 > 因为过于笨重和庞大，复杂度太高。
