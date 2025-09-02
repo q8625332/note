@@ -83,6 +83,12 @@ sudo apt update && sudo apt upgrade
 
 **当在 Windows 系统执行 wsl --install 安装 Linux 的 Windows 子系统 (WSL) 时，可能遭遇以下关键错误：**
 
+
+```bash
+错误代码: Wsl/InstallDistro/Service/RegisterDistro/CreateVm/HCS/HCS_E_SERVICE_NOT_AVAILABLE
+```
+
+
 该错误通常与 虚拟机平台 功能未正确启用或系统版本过低有关，本文将彻底解决该问题。
 
 ## 第一阶段：基础功能验证
