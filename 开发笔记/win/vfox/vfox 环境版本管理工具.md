@@ -13,6 +13,15 @@ winget install vfox
 linux下安装
 
 curl -sSL https://raw.githubusercontent.com/version-fox/vfox/main/install.sh | bash
+
+第一步：添加 vfox 钩子到你的 .bashrc 文件
+
+echo 'eval "$(vfox activate bash)"' >> ~/.bashrc
+
+在当前终端里执行 `source ~/.bashrc` 来立即加载新的配置。
+
+source ~/.bashrc
+
 ```
 
 
