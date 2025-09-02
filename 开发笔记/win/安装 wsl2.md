@@ -116,3 +116,10 @@ dism.exe /Online /Enable-Feature /FeatureName:VirtualMachinePlatform /All
 ```
 
  完结
+
+## 切换root
+
+
+```bash
+sudo -s
+```
