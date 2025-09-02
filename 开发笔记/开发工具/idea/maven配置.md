@@ -6,5 +6,5 @@
 
 
 ```
--DarchetypeCatalog=internal -Dfile.encoding=GBK
+-DarchetypeCatalog=internal -Dfile.encoding=UTF-8
 ```
