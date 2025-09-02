@@ -56,5 +56,5 @@ sudo apt install build-essential libz-dev zlib1g-dev
 # -Pnative 打包native包
 # test运行的环境
 # -Dmaven.test.skip=true 跳过启动
-mvn -Pnative,test -Dmaven.test.skip=true package
+mvn clean package -Pnative,test -Dmaven.test.skip=true
 ```
