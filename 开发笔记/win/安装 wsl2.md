@@ -123,3 +123,15 @@ dism.exe /Online /Enable-Feature /FeatureName:VirtualMachinePlatform /All
 ```bash
 sudo -s
 ```
+
+
+## 进入对应的win目录
+
+
+```bash
+# 在 WSL2 终端中，你可以通过 `/mnt/c/` 访问 C 盘。
+# 例子：
+cp /mnt/c/Users/YourUser/Downloads/graalvm-demo.zip
+```
+
+**小技巧**：你可以直接在 Windows 文件资源管理器中，将 ZIP 文件拖拽到 VS Code (已连接到 WSL) 的文件浏览器中，然后右键解压，更直观。
