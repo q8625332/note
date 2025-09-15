@@ -84,7 +84,7 @@ body[theme-mode="dark"] {
 }
 body[theme-mode="dark"]::before {
   content: ''; 
-  background-image: url('https://cfi.ryanvan.com/file/1756685932186_146094-pin_pai-ai_qing-wen_ben-bai_se-3840x2160.jpg');
+  background-image: url('https://i0.hdslb.com/bfs/article/e74076167cbc86a52113f388313cc24a74664ced.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -144,6 +144,54 @@ body[theme-mode=dark] #chat,
 	backdrop-filter: blur(15px);
   background: rgba(41, 29, 34, 0.5);
 }
+
+/*  对话框的底色-- start */
+.message-content-container {
+  will-change: transform;
+  contain: layout paint style;
+  background:color-mix(
+    in srgb,
+    var(--color-background-soft),
+    transparent 10%
+  ) !important;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  border: none;
+  border-radius: var(--radius-dynamic);
+  position: relative;
+  z-index: 1;
+  outline: none;
+  transition: background-color var(--duration-normal) var(--easing-standard),
+    box-shadow var(--duration-normal) var(--easing-standard);
+  margin-block: 8px;
+  padding-inline: 12px;
+  padding-block: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding:14px !important;
+}
+.message-content-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--radius-dynamic);
+  background: var(--metal-gradient);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1;
+  border: 0.3px solid var(--border-color);
+  transition: opacity var(--duration-normal) var(--easing-standard);
+}
+.message-content-container:hover::before {
+  opacity: 0.7;
+  border-color: var(--border-hover-color);
+}
+
+/*  对话框的底色-- end */
 
 
 /*------------------------------------*\
