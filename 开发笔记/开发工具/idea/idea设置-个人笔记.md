@@ -56,13 +56,13 @@ User Parameters
 
 > 打开自定义设置
 
-![[Pasted image 20240320105132.png]]
+[![19b0efac712dd003f2865ebe337264282298.png](https://img.meituan.net/portalweb/19b0efac712dd003f2865ebe337264282298.png)](https://img.meituan.net/portalweb/19b0efac712dd003f2865ebe337264282298.png)
 
 > 对应的磁盘下建立
 
 *目录下建立以`.IntelliJIdea`*
 
-![[Pasted image 20240320105249.png]]
+[![990e44d49120d188f45d18f46af0eb3788261.png](https://img.meituan.net/portalweb/990e44d49120d188f45d18f46af0eb3788261.png)](https://img.meituan.net/portalweb/990e44d49120d188f45d18f46af0eb3788261.png)
 
 ```java
 idea.config.path=D:/.IntelliJIdea/config  
@@ -71,21 +71,21 @@ idea.system.path=D:/.IntelliJIdea/system
 
 ## 按键冲突了的解决办法
 
-![[Pasted image 20250410165812.png]]
+[![785e832ffa589763a902757c3dea63ec80445.png](https://img.meituan.net/portalweb/785e832ffa589763a902757c3dea63ec80445.png)](https://img.meituan.net/portalweb/785e832ffa589763a902757c3dea63ec80445.png)
 
 ## 行注释：
 
 > [!前言]
 > 在idea的初始化设置中，使用注释快捷键，会出现如下的情况，`//`注释符出现在行首，显得整体页面很乱
 
-![[Pasted image 20250801154639.png]]
+[![1cca0671bbb4da63283fab601988b72315004.png](https://img.meituan.net/portalweb/1cca0671bbb4da63283fab601988b72315004.png)](https://img.meituan.net/portalweb/1cca0671bbb4da63283fab601988b72315004.png)
 
 **想要的注释是（清晰美观）：**
 
-![[Pasted image 20250801154709.png]]
+[![810eb61de8846716d9652321302f315511501.png](https://img.meituan.net/portalweb/810eb61de8846716d9652321302f315511501.png)](https://img.meituan.net/portalweb/810eb61de8846716d9652321302f315511501.png)
 
 去掉红色的☑️
 
-![[Pasted image 20250801154851.png]]
+[![8f6cc34b077d9339fb1ccc2e2b6afbcc64643.png](https://img.meituan.net/portalweb/8f6cc34b077d9339fb1ccc2e2b6afbcc64643.png)](https://img.meituan.net/portalweb/8f6cc34b077d9339fb1ccc2e2b6afbcc64643.png)
 
 效果就如上。

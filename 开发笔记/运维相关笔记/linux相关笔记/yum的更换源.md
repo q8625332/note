@@ -26,7 +26,7 @@ cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
 curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 ```
 
-![[Pasted image 20241125144545.png]]
+[![1278b7957f10fcee0b6c42dc2751796219857.png](https://img.meituan.net/portalweb/1278b7957f10fcee0b6c42dc2751796219857.png)](https://img.meituan.net/portalweb/1278b7957f10fcee0b6c42dc2751796219857.png)
 
 #### 清理缓存并生成新的缓存：
 

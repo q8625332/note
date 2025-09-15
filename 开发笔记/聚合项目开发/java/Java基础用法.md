@@ -794,7 +794,7 @@ hotSearchOrgSortList.stream().sorted(Comparator.reverseOrder()).collect(Collecto
 ```
 ## stream groupingBy 保持原顺序
 
-![[Pasted image 20240228121212.png]]
+[![fcfec4c166b63fa2e600d195fbead3eb32329.png](https://img.meituan.net/portalweb/fcfec4c166b63fa2e600d195fbead3eb32329.png)](https://img.meituan.net/portalweb/fcfec4c166b63fa2e600d195fbead3eb32329.png)
 
 ```java
 //分组保留原有顺序

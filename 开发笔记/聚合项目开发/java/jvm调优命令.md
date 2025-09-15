@@ -41,7 +41,7 @@ jstat -gccause 147331 1000 100000
 > 运行结果
 
 
-![[Pasted image 20250509141013.png]]
+[![3e6668e5b3cc3ec5830386b2149193ad15019.png](https://img.meituan.net/portalweb/3e6668e5b3cc3ec5830386b2149193ad15019.png)](https://img.meituan.net/portalweb/3e6668e5b3cc3ec5830386b2149193ad15019.png)
 
 ### **列名与红框行数据对应解析**
 

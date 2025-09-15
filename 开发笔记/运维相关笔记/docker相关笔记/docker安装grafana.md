@@ -257,5 +257,5 @@ echo "建议下次检查时间: $NEXT_CHECK"
 
 ## grafana配置loki
 
-![[Pasted image 20250609142224.png]]
-![[Pasted image 20250609142858.png]]
+[![90411e12b85b0a7a7389be5cce4dc5e1100397.png](https://img.meituan.net/portalweb/90411e12b85b0a7a7389be5cce4dc5e1100397.png)](https://img.meituan.net/portalweb/90411e12b85b0a7a7389be5cce4dc5e1100397.png)
+[![a57af74b2231ead7c72ad1e1c4a83bf223082.png](https://img.meituan.net/portalweb/a57af74b2231ead7c72ad1e1c4a83bf223082.png)](https://img.meituan.net/portalweb/a57af74b2231ead7c72ad1e1c4a83bf223082.png)

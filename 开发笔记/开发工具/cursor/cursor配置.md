@@ -29,7 +29,7 @@
 
 ## 快捷键配置
 
-![[Pasted image 20250827105706.png]]
+[![ffb1550c83c5492cb84cd16a5235210215899.png](https://img.meituan.net/portalweb/ffb1550c83c5492cb84cd16a5235210215899.png)](https://img.meituan.net/portalweb/ffb1550c83c5492cb84cd16a5235210215899.png)
 
 ## mybatis jump to mapper xml
 

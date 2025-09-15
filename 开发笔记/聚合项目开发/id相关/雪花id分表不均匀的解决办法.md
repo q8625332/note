@@ -63,4 +63,4 @@ public void testDistribution() {
 
 **结果**
 
-![[Pasted image 20250813114814.png]]
+[![c0aa7cc6387afc3af8d82fb826f8a52c9764.png](https://img.meituan.net/portalweb/c0aa7cc6387afc3af8d82fb826f8a52c9764.png)](https://img.meituan.net/portalweb/c0aa7cc6387afc3af8d82fb826f8a52c9764.png)

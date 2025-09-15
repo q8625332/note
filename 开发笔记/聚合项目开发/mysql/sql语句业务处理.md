@@ -221,7 +221,7 @@ inner join sale_outbound_item soi on so.id = soi.outboundId
 >将color字段，由多个颜色一条数据，打成多条数据
 
 
-![[Pasted image 20240523174452.png]]
+[![ae7e6db3e10492a186ccdf4b04e392d78213.png](https://img.meituan.net/portalweb/ae7e6db3e10492a186ccdf4b04e392d78213.png)](https://img.meituan.net/portalweb/ae7e6db3e10492a186ccdf4b04e392d78213.png)
 
 *sql如下：*
 
@@ -238,7 +238,7 @@ json_table(p.color, '$[*]' columns (col varchar(50) path '$')) as c on true
 
 *结果如下图所示：*
 
-![[Pasted image 20240523175131.png]]
+[![e5e7d918a2c310679d0f70b1be836c1317746.png](https://img.meituan.net/portalweb/e5e7d918a2c310679d0f70b1be836c1317746.png)](https://img.meituan.net/portalweb/e5e7d918a2c310679d0f70b1be836c1317746.png)
 
 ## 当业务中出现要补充时间需要怎么处理呢
 
@@ -247,7 +247,7 @@ json_table(p.color, '$[*]' columns (col varchar(50) path '$')) as c on true
 
  **业务如下图：**
 
-![[Pasted image 20240628170648.png]]
+[![5d85e9fdf01e5453e8bd583c891f753025104.png](https://img.meituan.net/portalweb/5d85e9fdf01e5453e8bd583c891f753025104.png)](https://img.meituan.net/portalweb/5d85e9fdf01e5453e8bd583c891f753025104.png)
 
 > 首先我们需要一个日期生成的sql
 > 使用CTE的形式生成（但是仅仅是mysql8.0版本才支持的函数）
@@ -264,7 +264,7 @@ select monthStartDate from  months;
 ```
 >结果如下：
 
-![[Pasted image 20240628171227.png]]
+[![548e894382e71d4f88c6716e5df00cff11612.png](https://img.meituan.net/portalweb/548e894382e71d4f88c6716e5df00cff11612.png)](https://img.meituan.net/portalweb/548e894382e71d4f88c6716e5df00cff11612.png)
 
 > 数据笛卡尔积的实现，为什么要这么用呢？原因是：比如你拿了这个时间去连表，但是页面上面又要显示一个客户需要多个日期展示的时候，单纯日期去连表就显然不够，需要对客户和日期做一个笛卡尔积。可以通过`CROSS JOIN`函数来实现
 > 代码实现如下：
@@ -320,7 +320,7 @@ GROUP BY c.id;
 >detailsStr字段是用来将数据合并串联的，整个月份都是用逗号隔开，里面的不同数据是通过 | 字符隔开。
 >效果如下：
 
-![[Pasted image 20240628172101.png]]
+[![fe9a2de4a23a5fe0527c2256af35e71118737.png](https://img.meituan.net/portalweb/fe9a2de4a23a5fe0527c2256af35e71118737.png)](https://img.meituan.net/portalweb/fe9a2de4a23a5fe0527c2256af35e71118737.png)
 
 ## group_concat如果需要去重
 

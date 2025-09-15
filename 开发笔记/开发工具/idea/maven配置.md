@@ -2,7 +2,7 @@
 
 > 加上以下参数就不会乱码了
 
-![[Pasted image 20250826104909.png]]
+[![9cda368f2ed5268f957bc83c3a56927044471.png](https://img.meituan.net/portalweb/9cda368f2ed5268f957bc83c3a56927044471.png)](https://img.meituan.net/portalweb/9cda368f2ed5268f957bc83c3a56927044471.png)
 
 
 ```
