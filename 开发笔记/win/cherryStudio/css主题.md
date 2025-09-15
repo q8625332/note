@@ -84,7 +84,7 @@ body[theme-mode="dark"] {
 }
 body[theme-mode="dark"]::before {
   content: ''; 
-  background-image: url('https://img5.wallpaperscreen.com/space-galaxy-nebula-clouds-scenery-ai-art-51_185-wallpaper-4k-wallpaperscreen.com.jpg');
+  background-image: url('https://cfi.ryanvan.com/file/1756685932186_146094-pin_pai-ai_qing-wen_ben-bai_se-3840x2160.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
