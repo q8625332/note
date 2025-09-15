@@ -111,7 +111,7 @@
 
 ### 绘制表格
 
-![[Pasted image 20240117111342.png]]
+[![f5c18d3b94f092d6d87328f00d3b21f1156757.png](https://img.meituan.net/portalweb/f5c18d3b94f092d6d87328f00d3b21f1156757.png)](https://img.meituan.net/portalweb/f5c18d3b94f092d6d87328f00d3b21f1156757.png)
 
 - 用符号 | 作为列分割。| 和其他字符之间要加空格。
 - 表头和表体使用 **----** 进行分割，其中 **-** 的数量应≥3。
@@ -135,7 +135,7 @@
 - 内部脚注：^[脚注内容]
 
 
-![[Pasted image 20240117111505.png]]
+[![5500b6aeaadabda2e069eabf3cf8d573205965.png](https://img.meituan.net/portalweb/5500b6aeaadabda2e069eabf3cf8d573205965.png)](https://img.meituan.net/portalweb/5500b6aeaadabda2e069eabf3cf8d573205965.png)
 
 ### **内部链接**
 
@@ -155,9 +155,9 @@
 
 多个空格用 " ; " 符号分开
 
-![[Pasted image 20240117111759.png]]
+[![0ea61f2457bc0a149d8d9b8dd5693b8228501.png](https://img.meituan.net/portalweb/0ea61f2457bc0a149d8d9b8dd5693b8228501.png)](https://img.meituan.net/portalweb/0ea61f2457bc0a149d8d9b8dd5693b8228501.png)
 
-![[Pasted image 20240117111805.png]]
+[![a026e9f56a4f120f0529ef8effd1c707118596.png](https://img.meituan.net/portalweb/a026e9f56a4f120f0529ef8effd1c707118596.png)](https://img.meituan.net/portalweb/a026e9f56a4f120f0529ef8effd1c707118596.png)
 
 
 ## 使用技巧与设置
@@ -165,15 +165,15 @@
 >给关系图谱里的节点设置颜色的方法如图所示，Ob在0.12版本后就出了“颜色组”这个功能。
 >首先在关系图的设置里点开“颜色组”，然后点击“新建颜色组”，通过不同的检索方式将节点分类，然后对分好类的颜色组上色就行了。
 
-![[Pasted image 20240117111921.png]]
+[![37b9ab38399521545228bce0edd772b620236.png](https://img.meituan.net/portalweb/37b9ab38399521545228bce0edd772b620236.png)](https://img.meituan.net/portalweb/37b9ab38399521545228bce0edd772b620236.png)
 
 **颜色组的5种分类方式**
 
-![[Pasted image 20240117111934.png]]
+[![be8c9e58389acb512825c0c9418f057328596.png](https://img.meituan.net/portalweb/be8c9e58389acb512825c0c9418f057328596.png)](https://img.meituan.net/portalweb/be8c9e58389acb512825c0c9418f057328596.png)
 
 **示例**
 
-![[Pasted image 20240117112004.png]]
+[![7aadca126bbc87b1c6ebf2ce5bff0eec359388.png](https://img.meituan.net/portalweb/7aadca126bbc87b1c6ebf2ce5bff0eec359388.png)](https://img.meituan.net/portalweb/7aadca126bbc87b1c6ebf2ce5bff0eec359388.png)
 
 ## 优秀项目分享
 
@@ -181,6 +181,6 @@
 
 **希腊神话图谱**
 
-![[Pasted image 20240117112050.png]]
+[![ecb427421e8999d0d7b99304484986f2560881.png](https://img.meituan.net/portalweb/ecb427421e8999d0d7b99304484986f2560881.png)](https://img.meituan.net/portalweb/ecb427421e8999d0d7b99304484986f2560881.png)
 
 下载地址：[Lihaogx/graph-note-of-greek-myth: 希腊神话读书笔记 (github.com)](https://github.com/Lihaogx/graph-note-of-greek-myth)
