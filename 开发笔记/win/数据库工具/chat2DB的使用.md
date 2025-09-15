@@ -4,7 +4,7 @@
 
 ## 配置自定义ai
 
-![[Pasted image 20250815170525.png]]
+[![c7bdf0243c9fda08d0abbc130dbc0daf7452.png](https://img.meituan.net/portalweb/c7bdf0243c9fda08d0abbc130dbc0daf7452.png)](https://img.meituan.net/portalweb/c7bdf0243c9fda08d0abbc130dbc0daf7452.png)
 
 apiHost：
 
