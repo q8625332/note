@@ -5,14 +5,14 @@
 
 [github地址](https://github.com/ganesshkumar/obsidian-table-editor)
 
-![[910a7354e4568bf7acf4a25f52df2f67d28f3a20.gif]]
+[![67c957d1bc10ae5fa6afc429da8d7847551165.gif](https://img.meituan.net/portalweb/67c957d1bc10ae5fa6afc429da8d7847551165.gif)](https://img.meituan.net/portalweb/67c957d1bc10ae5fa6afc429da8d7847551165.gif)
 
 ## floating toc
 
 > 标题的级别越高，线越长
 
 
-![[Pasted image 20250510161609.png]]
+[![8a5bb784ec97a9fbb426c8e32c3fbf4c417153.png](https://img.meituan.net/portalweb/8a5bb784ec97a9fbb426c8e32c3fbf4c417153.png)](https://img.meituan.net/portalweb/8a5bb784ec97a9fbb426c8e32c3fbf4c417153.png)
 
 ## Markdown Table Editor
 
@@ -20,13 +20,13 @@
 
 [github地址](https://github.com/ganesshkumar/obsidian-table-editor)
 
-![[14d450330e1e132e8e3aef9a579e778dd59395bf.gif]]
+[![b6e135d94e87d1008ada17bd60bca716424350.gif](https://img.meituan.net/portalweb/b6e135d94e87d1008ada17bd60bca716424350.gif)](https://img.meituan.net/portalweb/b6e135d94e87d1008ada17bd60bca716424350.gif)
 
 ##  Editing Toolbar
 > 菜单栏
 
 [github地址](https://github.com/PKM-er/obsidian-editing-toolbar)
 
-![[Pasted image 20250510155840.png]]
+[![2255678f78d54e2efaac8c7f7c99462826783.png](https://img.meituan.net/portalweb/2255678f78d54e2efaac8c7f7c99462826783.png)](https://img.meituan.net/portalweb/2255678f78d54e2efaac8c7f7c99462826783.png)
 
 
