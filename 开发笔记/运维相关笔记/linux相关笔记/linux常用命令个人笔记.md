@@ -55,6 +55,9 @@ du -h <文件夹名字>
 某个命令 >> 日志文件.txt
 某个命令 > 日志文件.txt
 
+# `crontab -l` 是一个用于管理 定时任务（Cron Jobs）** 的 Linux/Unix 命令。它的作用是 **列出当前用户已设置的所有定时任务。
+crontab -l
+
 ```
 ## 查看linux基本信息
 
