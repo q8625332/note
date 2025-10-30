@@ -49,3 +49,20 @@ https://[账号]-[空间].hf.space
 // 完整地址
 https://chenyehua-my-z-ai2-api-python.hf.space
 ```
+
+
+覆盖启动端口的写法：
+
+
+```
+# 使用官方的 mumujie/mumuainovel:latest 版本作为基础镜像
+FROM mumujie/mumuainovel:latest
+
+# 设置工作目录为 /app
+WORKDIR /app
+
+EXPOSE 7860
+
+# 覆盖启动命令，指定端口为7860
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
+```
