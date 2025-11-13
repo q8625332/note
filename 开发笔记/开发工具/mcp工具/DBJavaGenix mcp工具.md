@@ -55,3 +55,46 @@ npx dbjavagenix-mcp-server
 请先连接数据库，分析表结构，然后生成完整的Java代码。
 ```
 
+## bat脚本
+
+```
+@echo off
+setlocal enabledelayedexpansion
+chcp 65001 >nul 2>&1
+title 简化版启动器
+
+cls
+echo ====================================
+echo     简化版 dbjavagenix 启动器
+echo ====================================
+echo.
+
+echo [信息] 跳过复杂检查，直接尝试运行...
+echo.
+
+REM 简单检查 Node.js
+where node >nul 2>&1
+if !ERRORLEVEL! NEQ 0 (
+    echo [错误] 未找到 Node.js，请先安装！
+    echo 下载地址: https://nodejs.org/
+    pause
+    exit /b 1
+)
+
+echo [信息] Node.js 已安装
+echo.
+
+echo [执行] 正在运行: npx dbjavagenix-mcp-server
+echo 按 Ctrl+C 可以随时终止
+echo.
+
+REM 直接运行，不做过多检查
+npx dbjavagenix-mcp-server
+
+echo.
+echo [完成] 程序已退出，退出代码: !ERRORLEVEL!
+echo.
+pause
+endlocal
+
+```
