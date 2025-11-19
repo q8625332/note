@@ -55,14 +55,15 @@ https://chenyehua-my-z-ai2-api-python.hf.space
 
 
 ```
-# 使用官方的 mumujie/mumuainovel:latest 版本作为基础镜像
-FROM mumujie/mumuainovel:latest
+FROM ghcr.io/chenyme/grok2api:latest
 
-# 设置工作目录为 /app
 WORKDIR /app
+
+ENV STORAGE_MODE=file
 
 EXPOSE 7860
 
-# 覆盖启动命令，指定端口为7860
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
+# 传递配置参数
+CMD ["python", "-m", "uvicorn", "main:app","--host", "0.0.0.0", "--port", "7860"]
+
 ```
