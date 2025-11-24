@@ -181,19 +181,17 @@ body[theme-mode=dark] #chat,
   bottom: 0;
   border-radius: var(--radius-dynamic);
   background: var(--metal-gradient);
-  opacity: 0.4;
+  opacity: 0.4;  /* ← 改这里，从 0.4 改成 0.15 */
   pointer-events: none;
   z-index: -1;
   border: 0.3px solid var(--border-color);
   transition: opacity var(--duration-normal) var(--easing-standard);
 }
 .message-content-container:hover::before {
-  opacity: 0.7;
+  opacity: 0.7;  /* ← 改这里，从 0.7 改成 0.3 */
   border-color: var(--border-hover-color);
 }
-
 /*  对话框的底色-- end */
-
 
 /*------------------------------------*\
   输入框样式与动效
