@@ -87,12 +87,14 @@ GUID可以使用在线GUID地址在线生成，然后替换{GUID}就行。
 
 4.提交
 
-需要在[此处下载](https://github.com/ilanyu/ReverseProxy/releases/tag/v1.4)自己机器系统相对应的工具，如图：
+旧的（可能不可以用）需要在[此处下载](https://github.com/ilanyu/ReverseProxy/releases/tag/v1.4)自己机器系统相对应的工具，如图：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/7acfd3f30b544949a78976302be51758.png)
 下载好了后，进行安装打开（激活插件时，程序保持启动，激活成功后可关闭），如图：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/0a1d66bc50e747ae8f14d534f659fd60.png)
 再次执行上面的操作步骤即可。
+
+新的（可以用） [发行版 · yu-xiaoyao/jrebel-license-active-server](https://github.com/yu-xiaoyao/jrebel-license-active-server/releases)
 
 
 1.前置步骤均一致，在填入Team URL时，填入以下内容
