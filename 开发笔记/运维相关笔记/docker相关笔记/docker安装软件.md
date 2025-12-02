@@ -1,3 +1,11 @@
+> 搜索镜像
+
+
+```
+docker search --no-trunc ffmpeg
+```
+
+
 **强烈**-**建议使用**-**阿里云的docker加速镜像**。不然拉取镜像的速度太慢了*
 
 > win电脑安装docker出现pull不下来的问题
