@@ -1,11 +1,13 @@
 > 抓包的时候遇到问题，Http协议接口是可以正常抓到的，但https一直显示unknown（未知）
 
-[![21b7ad13ee8e45ee6aa0f13fd2bd2d2b45557.png](https://img.meituan.net/portalweb/21b7ad13ee8e45ee6aa0f13fd2bd2d2b45557.png)](https://img.meituan.net/portalweb/21b7ad13ee8e45ee6aa0f13fd2bd2d2b45557.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/f99f569c01e54356aa09e8d45584474a.png)
+
 > 发生原因：默认情况下，Charles只能抓取http的包，手机上面访问app接口的时候会出现unknown，是因为返回https接口需要证书信任
 
 ### 第一步：确认证书安装
 
-[![ed86508e4aef3aae41c3866c78ec7d6d117910.png](https://img.meituan.net/portalweb/ed86508e4aef3aae41c3866c78ec7d6d117910.png)](https://img.meituan.net/portalweb/ed86508e4aef3aae41c3866c78ec7d6d117910.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/7be0d259018740c3aca48c526e8c1c42.png)
+
 
 > 配置charles证书：打开charles，Help-->SSL Proxy-->install Charles Root Certificate，
 
@@ -13,18 +15,19 @@
 
 **1.1点击安装证书**
 
-[![602ced45dd36d314a37b5f7949dba67331143.png](https://img.meituan.net/portalweb/602ced45dd36d314a37b5f7949dba67331143.png)](https://img.meituan.net/portalweb/602ced45dd36d314a37b5f7949dba67331143.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/0e01651dd464452f9db4cf3e979a0153.png)
+
 **1.2  选择存储位置，看个人情况，存储位置为当前用户或本地计算机均可**
 
-[![986db090a006a43ccc09c6c0ef53c90330098.png](https://img.meituan.net/portalweb/986db090a006a43ccc09c6c0ef53c90330098.png)](https://img.meituan.net/portalweb/986db090a006a43ccc09c6c0ef53c90330098.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/b0a54814f40d4fafbae77e17a394ce70.png)
 
 **1.3 选择将所有的证书都放入下列储存，注意一定要选择[受信任的根证书版本机构]，接下来下一步下一步即可按成证书认证。**
 
-[![8d7799edfe183f3100e6fff20781257a53638.png](https://img.meituan.net/portalweb/8d7799edfe183f3100e6fff20781257a53638.png)](https://img.meituan.net/portalweb/8d7799edfe183f3100e6fff20781257a53638.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/7e18e0cf6bbf437e8f31fe5c8d61662c.png)
 
 ### 第二步：确认手机设备证书安装
 
-[![215304566d6982a81dc69e79bfecdccd29977.png](https://img.meituan.net/portalweb/215304566d6982a81dc69e79bfecdccd29977.png)](https://img.meituan.net/portalweb/215304566d6982a81dc69e79bfecdccd29977.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/63520377303f4e70a704e0832e6568de.png)
 
 点击charles，Help-->SSL Proxy--> Install charles root certificate on a Mobile Device or remote browser…，打开浏览器登录网址：chls.pro/ssl 安装证书。
 
@@ -32,7 +35,7 @@
 
 备注：如果浏览器访问地址chls.pro/ssl无法下载时，可打开链接https://www.charlesproxy.com/assets/legacy-ssl/charles.crt下载charles证书
 
-[![b206cdd396ef43f11fa91b5285937ee140598.png](https://img.meituan.net/portalweb/b206cdd396ef43f11fa91b5285937ee140598.png)](https://img.meituan.net/portalweb/b206cdd396ef43f11fa91b5285937ee140598.png)
+![](https://i-blog.csdnimg.cn/direct/d3d06e4bb4134a4a95e2065d50d8568f.png)
 
 再画个重点，本人问题就出在此安装完并没有信任证书，于是访问http协议接口出现红色unknown，设置路径：**通用-关于本机里面设置信任该证书**。
 
