@@ -78,14 +78,14 @@ idea.system.path=D:/.IntelliJIdea/system
 > [!前言]
 > 在idea的初始化设置中，使用注释快捷键，会出现如下的情况，`//`注释符出现在行首，显得整体页面很乱
 
-[![1cca0671bbb4da63283fab601988b72315004.png](https://img.meituan.net/portalweb/1cca0671bbb4da63283fab601988b72315004.png)](https://img.meituan.net/portalweb/1cca0671bbb4da63283fab601988b72315004.png)
+[![1cca0671bbb4da63283fab601988b72315004.png](https://i-blog.csdnimg.cn/direct/eb79a1a220b54f59ba00db3724df5d52.png)
 
 **想要的注释是（清晰美观）：**
 
-[![810eb61de8846716d9652321302f315511501.png](https://img.meituan.net/portalweb/810eb61de8846716d9652321302f315511501.png)](https://img.meituan.net/portalweb/810eb61de8846716d9652321302f315511501.png)
+[![810eb61de8846716d9652321302f315511501.png](https://i-blog.csdnimg.cn/direct/ad09dfc9a0fd4e5d83fb12a983e311ac.png)](https://img.meituan.net/portalweb/810eb61de8846716d9652321302f315511501.png)
 
 去掉红色的☑️
 
-[![8f6cc34b077d9339fb1ccc2e2b6afbcc64643.png](https://img.meituan.net/portalweb/8f6cc34b077d9339fb1ccc2e2b6afbcc64643.png)](https://img.meituan.net/portalweb/8f6cc34b077d9339fb1ccc2e2b6afbcc64643.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/b981db7ea3734b4892c4e5dc1932057f.png)
 
 效果就如上。
