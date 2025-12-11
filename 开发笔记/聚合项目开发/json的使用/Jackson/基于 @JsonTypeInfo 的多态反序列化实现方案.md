@@ -139,3 +139,38 @@ public static void main(String[] args) throws Exception {
   "action": "add"
 }
 ```
+
+## 响应之后不想让用户知道有`@class`的报名如何处理呢?
+
+
+```
+首先需要在 序列化子类加上
+@JsonTypeInfo(use = JsonTypeInfo.Id.CLASS, include = JsonTypeInfo.As.PROPERTY, property = "@class")
+然后在新建Views实体类，重新制定忽略策略
+@JsonView(Views.Internal.class) // 只在内部视图序列化
+@JsonProperty("@class")
+```
+
+**使用例子：**
+
+
+```
+// 定义视图
+public class Views {
+    public static class Public {}
+    public static class Internal extends Public {}
+}
+
+// DTO 类
+@JsonTypeInfo(use = JsonTypeInfo.Id.CLASS, include = JsonTypeInfo.As.PROPERTY, property = "@class")
+public class ArticleHomeOffsetRespDTO {
+    
+    @JsonView(Views.Internal.class) // 只在内部视图序列化
+    @JsonProperty("@class")
+    private String clazz;
+    
+    private String title;
+    // ...
+}
+
+```
