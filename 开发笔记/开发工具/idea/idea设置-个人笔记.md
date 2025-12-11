@@ -82,7 +82,7 @@ idea.system.path=D:/.IntelliJIdea/system
 
 **想要的注释是（清晰美观）：**
 
-[![810eb61de8846716d9652321302f315511501.png](https://i-blog.csdnimg.cn/direct/ad09dfc9a0fd4e5d83fb12a983e311ac.png)](https://img.meituan.net/portalweb/810eb61de8846716d9652321302f315511501.png)
+[![810eb61de8846716d9652321302f315511501.png](https://i-blog.csdnimg.cn/direct/ad09dfc9a0fd4e5d83fb12a983e311ac.png)
 
 去掉红色的☑️
 
