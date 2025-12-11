@@ -12,4 +12,4 @@
 ./mkcert-v1.4.4-windows-amd64.exe test.livekit.ljq.com(自己的域名)
 ```
 
-![93506fb54546317858f1fd4c7a4a95f313531.png](https://img.meituan.net/portalweb/93506fb54546317858f1fd4c7a4a95f313531.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/06e710903ba64b1abe690c5c14346431.png)

@@ -146,13 +146,12 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 > 这个可以明显的帮我们实现括号的区分
 > Rainbow Brackets 收费了，使用就安装开源的Rainbow Brackets Lite - Free and OpenSource
 
-[![e259be613340b6b19c376016620cc7f36289.png](https://img.meituan.net/portalweb/e259be613340b6b19c376016620cc7f36289.png)](https://img.meituan.net/portalweb/e259be613340b6b19c376016620cc7f36289.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/49d62efee3fc409abcc2f56f55444ce9.png)
 > 然后在安装变量改色
 >  Rainbow Variable
 
-[![9723547fb11124221a9c17b9eebe24326450.png](https://img.meituan.net/portalweb/9723547fb11124221a9c17b9eebe24326450.png)](https://img.meituan.net/portalweb/9723547fb11124221a9c17b9eebe24326450.png)
-**显示效果**
-[![21aa617424a36582afea564ae96119f379962.png](https://img.meituan.net/portalweb/21aa617424a36582afea564ae96119f379962.png)](https://img.meituan.net/portalweb/21aa617424a36582afea564ae96119f379962.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/9d0ebb90f22542789c0cfb6b64ad8b9a.png)
+
 
 ## GsonFormatPlus
 
@@ -232,4 +231,4 @@ jrebel激活之后默认是联网使用的 , 在该模式下 , jrebel会一直�
 
 sql控制台中点击「sql」图标生成SQL
 
-[![6178f2a67df2bbe58bba49b9099518bc56370.png](https://img.meituan.net/portalweb/6178f2a67df2bbe58bba49b9099518bc56370.png)](https://img.meituan.net/portalweb/6178f2a67df2bbe58bba49b9099518bc56370.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/37093c19ea294c54a08add1fef255764.png)

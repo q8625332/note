@@ -111,7 +111,7 @@
 
 ### 绘制表格
 
-[![f5c18d3b94f092d6d87328f00d3b21f1156757.png](https://img.meituan.net/portalweb/f5c18d3b94f092d6d87328f00d3b21f1156757.png)](https://img.meituan.net/portalweb/f5c18d3b94f092d6d87328f00d3b21f1156757.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d7a3ffc7ca0e4c769594bba7ae27ae87.png)
 
 - 用符号 | 作为列分割。| 和其他字符之间要加空格。
 - 表头和表体使用 **----** 进行分割，其中 **-** 的数量应≥3。
@@ -165,7 +165,7 @@
 >给关系图谱里的节点设置颜色的方法如图所示，Ob在0.12版本后就出了“颜色组”这个功能。
 >首先在关系图的设置里点开“颜色组”，然后点击“新建颜色组”，通过不同的检索方式将节点分类，然后对分好类的颜色组上色就行了。
 
-[![37b9ab38399521545228bce0edd772b620236.png](https://img.meituan.net/portalweb/37b9ab38399521545228bce0edd772b620236.png)](https://img.meituan.net/portalweb/37b9ab38399521545228bce0edd772b620236.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/472b8699c7f54e39b09e15e175f6ebe0.png)
 
 **颜色组的5种分类方式**
 
@@ -173,7 +173,7 @@
 
 **示例**
 
-[![7aadca126bbc87b1c6ebf2ce5bff0eec359388.png](https://img.meituan.net/portalweb/7aadca126bbc87b1c6ebf2ce5bff0eec359388.png)](https://img.meituan.net/portalweb/7aadca126bbc87b1c6ebf2ce5bff0eec359388.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/6cecff3673394f06b598a4a3f1ae1c84.png)
 
 ## 优秀项目分享
 
@@ -181,6 +181,6 @@
 
 **希腊神话图谱**
 
-[![ecb427421e8999d0d7b99304484986f2560881.png](https://img.meituan.net/portalweb/ecb427421e8999d0d7b99304484986f2560881.png)](https://img.meituan.net/portalweb/ecb427421e8999d0d7b99304484986f2560881.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/f20d6a474aef45b9b76c95ffae696ddb.png)
 
 下载地址：[Lihaogx/graph-note-of-greek-myth: 希腊神话读书笔记 (github.com)](https://github.com/Lihaogx/graph-note-of-greek-myth)

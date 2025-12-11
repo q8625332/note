@@ -56,13 +56,13 @@ User Parameters
 
 > 打开自定义设置
 
-[![19b0efac712dd003f2865ebe337264282298.png](https://img.meituan.net/portalweb/19b0efac712dd003f2865ebe337264282298.png)](https://img.meituan.net/portalweb/19b0efac712dd003f2865ebe337264282298.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/3fad9bea9a8f4dc897da402baa12a047.png)
 
 > 对应的磁盘下建立
 
 *目录下建立以`.IntelliJIdea`*
 
-[![990e44d49120d188f45d18f46af0eb3788261.png](https://img.meituan.net/portalweb/990e44d49120d188f45d18f46af0eb3788261.png)](https://img.meituan.net/portalweb/990e44d49120d188f45d18f46af0eb3788261.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/6d91003e71ba472e8cf98593b1b553bb.png)
 
 ```java
 idea.config.path=D:/.IntelliJIdea/config  
@@ -71,7 +71,7 @@ idea.system.path=D:/.IntelliJIdea/system
 
 ## 按键冲突了的解决办法
 
-[![785e832ffa589763a902757c3dea63ec80445.png](https://img.meituan.net/portalweb/785e832ffa589763a902757c3dea63ec80445.png)](https://img.meituan.net/portalweb/785e832ffa589763a902757c3dea63ec80445.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/aec9bbb2a4ea4e598b6d11cd18d30aeb.png)
 
 ## 行注释：
 

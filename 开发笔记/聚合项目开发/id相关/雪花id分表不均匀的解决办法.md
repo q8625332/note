@@ -63,4 +63,4 @@ public void testDistribution() {
 
 **结果**
 
-[![c0aa7cc6387afc3af8d82fb826f8a52c9764.png](https://img.meituan.net/portalweb/c0aa7cc6387afc3af8d82fb826f8a52c9764.png)](https://img.meituan.net/portalweb/c0aa7cc6387afc3af8d82fb826f8a52c9764.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/da5de9052d5d43a08a34ecee8724202b.png)

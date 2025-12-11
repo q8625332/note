@@ -1,6 +1,6 @@
 **配置图：**
 
-[![af2ba1e4d913becf8fa7e333fcec2c6425465.png](https://img.meituan.net/portalweb/af2ba1e4d913becf8fa7e333fcec2c6425465.png)](https://img.meituan.net/portalweb/af2ba1e4d913becf8fa7e333fcec2c6425465.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d0a39f1d752445d5b302bc1c0cacf202.png)
 
 **地址：**
 

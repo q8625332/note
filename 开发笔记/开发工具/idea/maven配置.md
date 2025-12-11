@@ -2,7 +2,7 @@
 
 > 加上以下参数就不会乱码了
 
-![876ef3fa78d7a55f28af3ee4a927f3bf30531.png](https://img.meituan.net/portalweb/876ef3fa78d7a55f28af3ee4a927f3bf30531.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/0aafd039d20a45efab40ad14403e1a33.png)
 
 ```
 -DarchetypeCatalog=internal -Dfile.encoding=UTF-8

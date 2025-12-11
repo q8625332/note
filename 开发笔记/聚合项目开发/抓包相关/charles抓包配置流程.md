@@ -46,13 +46,14 @@
 > 直接填 *
 > 主机和端口都需要填*
 
-[![fe568aafb862eb597d9aa0da5072abfb37640.png](https://img.meituan.net/portalweb/fe568aafb862eb597d9aa0da5072abfb37640.png)](https://img.meituan.net/portalweb/fe568aafb862eb597d9aa0da5072abfb37640.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/e69cd448e4e541219a1e97d39fc803d8.png)
 
-[![646d0c0e1ee9c9e088ae956bea7ee4dc127981.png](https://img.meituan.net/portalweb/646d0c0e1ee9c9e088ae956bea7ee4dc127981.png)](https://img.meituan.net/portalweb/646d0c0e1ee9c9e088ae956bea7ee4dc127981.png)
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/b3ca449e31d04a4396afa383f830ce69.png)
 
 ### 第四步 手机配置代理访问，接下来就不详细叙述了，相信各位小伙伴都是OK的
 
-[![cb5ea76aed38d68dbbe076aea974b6ad50207.png](https://img.meituan.net/portalweb/cb5ea76aed38d68dbbe076aea974b6ad50207.png)](https://img.meituan.net/portalweb/cb5ea76aed38d68dbbe076aea974b6ad50207.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/21a84336108f4dc1b93d0e9b7d3501d7.png)
 
 完成以上操作，恭喜你就完成Charles抓取HTTP(S)数据包的所有配置了，查看Charles,我们可以看到数据包的内容了。 
 

@@ -43,7 +43,7 @@ kubectl describe secret -n kubernetes-dashboard $(kubectl get secret -n kubernet
 
 ## Kubernetes部署环境准备
 
-[![46a066ffbb3161719d8f64a74d6d314c33086.png](https://img.meituan.net/portalweb/46a066ffbb3161719d8f64a74d6d314c33086.png)](https://img.meituan.net/portalweb/46a066ffbb3161719d8f64a74d6d314c33086.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d14a97720e304167b3a71f1eb509ad97.png)
 
 输入如下命令来永久开启端口
 

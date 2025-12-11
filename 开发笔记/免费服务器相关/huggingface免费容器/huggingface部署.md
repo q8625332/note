@@ -1,6 +1,6 @@
 ## 创建容器
 
-[![25e0de6f9fe1e7b67022719f1d198c6d209215.png](https://img.meituan.net/portalweb/25e0de6f9fe1e7b67022719f1d198c6d209215.png)](https://img.meituan.net/portalweb/25e0de6f9fe1e7b67022719f1d198c6d209215.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/2001183749cb4454974848a3251cca95.png)
 ## 拉取git
 
 可以通过git，但是部署需要创建Dockerfile文件

@@ -41,7 +41,7 @@ jstat -gccause 147331 1000 100000
 > 运行结果
 
 
-[![3e6668e5b3cc3ec5830386b2149193ad15019.png](https://img.meituan.net/portalweb/3e6668e5b3cc3ec5830386b2149193ad15019.png)](https://img.meituan.net/portalweb/3e6668e5b3cc3ec5830386b2149193ad15019.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/6c8aa765212447b7ada0226788ab8d31.png)
 
 ### **列名与红框行数据对应解析**
 

@@ -10,11 +10,11 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v Fli
 ```
 
 
-[![5ec9729b0d728deb938acfee56323583155643.png](https://img.meituan.net/portalweb/5ec9729b0d728deb938acfee56323583155643.png)](https://img.meituan.net/portalweb/5ec9729b0d728deb938acfee56323583155643.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/fda01c0b13ec44b1bdb39040954c46f3.png)
 
 之后你就可以在 Windows 更新设置——高级选项里面，选择暂停到10000天后更新了：
 
-[![2e77cd9edcf10edeab2aed5a6a496067137539.png](https://img.meituan.net/portalweb/2e77cd9edcf10edeab2aed5a6a496067137539.png)](https://img.meituan.net/portalweb/2e77cd9edcf10edeab2aed5a6a496067137539.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/71d45b443bf74290b9566803065b85db.png)
 
 如果想恢复，可以随时在这里点击“继续更新”。  
   
