@@ -197,6 +197,10 @@ LocalDateTime.ofEpochSecond(d.getTradeDate() / 1000, 0, ZoneOffset.ofHours(8));
 OffsetDateTime.now(ZoneOffset.ofHours(8)).plus(wechatCustomMiniappDomainProperties.getCcVerifyPayExpireTime().toMillis(), ChronoUnit.MILLIS).toString()
 // RFC3339 转 LocalDateTime 格式
 OffsetDateTime.parse(wxPayUnifiedOrderV3Request.getTimeExpire()).toLocalDateTime()
+
+// 北京时间 ZoneOffset.ofHours(8)是不考虑DST(夏令时)，北京时间主要使用上海的就可以
+LocalDateTime localDateTime = LocalDateTime.parse(time, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));  
+ZonedDateTime zonedDateTime = localDateTime.atZone(ZoneId.of("Asia/Shanghai"));
 ```
 
 ## 例子-计算时间（可以参考）
