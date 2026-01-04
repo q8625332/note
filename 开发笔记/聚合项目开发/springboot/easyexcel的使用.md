@@ -156,7 +156,8 @@ class MergeRange {
 
 > 数据格式依旧是List<List<Object>>格式
 
-```java
+
+``` java
 public List<List<Object>> trendExcel(AUnionDailyReq aUnionDailyReq) {
         aUnionDailyReq.setPageNo(1);
         aUnionDailyReq.setPageSize(999999);
@@ -188,6 +189,7 @@ public List<List<Object>> trendExcel(AUnionDailyReq aUnionDailyReq) {
         }
         return all;
 ```
+
 
 > 导出代码
 
