@@ -211,3 +211,27 @@ SET
     END
 WHERE id IN (1, 2)
 ```
+
+
+## 插入和更新语法
+
+open_flag 是 tinyint(1)
+created,updated 是 datetime
+
+在xml使用时，实体类是openFlag boolean的，created 是date，在插入sql的时候参数是：
+
+false,"2026-01-06 19:50:36","2026-01-06 19:50:36"。会插入异常，最好处理一下类型。
+CAST(#{po.openFlag} AS UNSIGNED)，CAST(#{po.created} AS DATETIME)
+
+```
+INSERT INTO notice_open_config
+(account_id, module, notice_type, business_type, open_flag, created, updated)
+VALUES
+(#{po.accountId}, #{po.module}, #{po.noticeType}, #{po.businessType}, 
+ CAST(#{po.openFlag} AS UNSIGNED), 
+ CAST(#{po.created} AS DATETIME), 
+ CAST(#{po.updated} AS DATETIME))
+ON DUPLICATE KEY UPDATE
+open_flag = CAST(#{po.openFlag} AS UNSIGNED),
+updated = CAST(#{po.updated} AS DATETIME)
+```
