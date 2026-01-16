@@ -231,3 +231,11 @@ ON DUPLICATE KEY UPDATE
 open_flag = CAST(#{po.openFlag} AS UNSIGNED),
 updated = CAST(#{po.updated} AS DATETIME)
 ```
+
+
+## 枚举的使用
+
+
+```
+<if test="sortRule != null and sortRule != '' and sortRule == @com.ljq.enums.PostSortRule@liked.name()"></if>
+```
