@@ -166,11 +166,7 @@ public class AdminPageCircleReq extends ApiPageReq {
 **运行效果**
 
 ```java
-2023-02-03 14:34:27.503 DEBUG 18964 --- [           main]  c.u.c.s.c.m.CcaCircleMapper.adminPage    : ==>  Preparing: SELECT COUNT(1) FROM cca_circle c LEFT JOIN cca_circle_statis cs ON c.id = cs.circle_id 
-2023-02-03 14:34:27.530 DEBUG 18964 --- [           main]  c.u.c.s.c.m.CcaCircleMapper.adminPage    : ==> Parameters: 
-2023-02-03 14:34:27.557 DEBUG 18964 --- [           main]  c.u.c.s.c.m.CcaCircleMapper.adminPage    : ==>  Preparing: select c.id as id, c.`name` as `name`, c.created as created, c.create_id as create_id, c.create_name as create_name, cs.user_number as user_number, cs.post_number as post_number from cca_circle c left join cca_circle_statis cs on c.id = cs.circle_id order by created desc LIMIT ?,? 
-2023-02-03 14:34:27.558 DEBUG 18964 --- [           main]  c.u.c.s.c.m.CcaCircleMapper.adminPage    : ==> Parameters: 0(Long), 0(Long)
-2023-02-03 14:34:27.564 DEBUG 18964 --- [           main]  c.u.c.s.c.m.CcaCircleMapper.adminPage    : <==      Total: 0
+select c.id as id, c.`name` as `name`, c.created as created, c.create_id as create_id, c.create_name as create_name, cs.user_number as user_number, cs.post_number as post_number from cca_circle c left join cca_circle_statis cs on c.id = cs.circle_id order by created desc LIMIT 0,0
 ```
 
 需要返回 boolean类型
