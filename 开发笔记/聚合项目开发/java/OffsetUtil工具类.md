@@ -99,7 +99,13 @@ public class OffsetUtil {
 
     public static class OffsetBuilder {
         private final Map<String, Object> params = Maps.newHashMap();
-
+		
+		public OffsetBuilder add(boolean ifAdd, String key, Object value) {  
+		    if (!ifAdd) return this;  
+		    params.put(key, value);  
+		    return this;  
+		}
+		
         public OffsetBuilder add(String key, Object value) {
             params.put(key, value);
             return this;
