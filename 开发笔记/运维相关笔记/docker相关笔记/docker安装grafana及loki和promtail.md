@@ -145,6 +145,16 @@ docker run -d --name=loki -p 3100:3100 \
   -v /path/to/loki-data/:/data/loki/ \
   grafana/loki:2.6.1 \
   -config.file=/etc/loki/loki.yaml
+  
+# 增加开机自启
+docker run -d --name=loki -p 3100:3100 \
+  --restart=always \
+  --user=root \
+  -v /path/to/loki-config.yaml:/etc/loki/loki.yaml \
+  -v /path/to/loki-data/:/data/loki/ \
+  grafana/loki:2.6.1 \
+  -config.file=/etc/loki/loki.yaml
+
 ```
 
 **查询loki文件大小，检测sh**
