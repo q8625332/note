@@ -50,6 +50,25 @@ docker run -d --name=promtail \
  -p 9080:9080 \
  grafana/promtail:2.6.1 \
  -config.file=/etc/promtail/config.yml
+ 
+ # 方式1：always
+docker run -d --name=promtail \
+  --restart=always \
+  -v /path/to/promtail-config.yaml:/etc/promtail/config.yml \
+  -v /hytto/deploy/gfw/rpc_services/logs/:/hytto/deploy/gfw/rpc_services/logs/ \
+  -p 9080:9080 \
+  grafana/promtail:2.6.1 \
+  -config.file=/etc/promtail/config.yml
+
+# 方式2：unless-stopped
+docker run -d --name=promtail \
+  --restart=unless-stopped \
+  -v /path/to/promtail-config.yaml:/etc/promtail/config.yml \
+  -v /hytto/deploy/gfw/rpc_services/logs/:/hytto/deploy/gfw/rpc_services/logs/ \
+  -p 9080:9080 \
+  grafana/promtail:2.6.1 \
+  -config.file=/etc/promtail/config.yml
+
 ```
 
 ## 安装loki
