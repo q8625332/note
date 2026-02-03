@@ -193,31 +193,16 @@ public class OffsetUtil {
     }
 
     /* ---------- 私有方法 ---------- */
-
-    @SuppressWarnings("unchecked")
-    private static <T> T convertValue(Object value, Class<T> clazz) {
-        if (value == null) return null;
-
-        try {
-            if (clazz == Long.class) {
-                return (T) (value instanceof Long ? value : Long.valueOf(value.toString()));
-            } else if (clazz == Integer.class) {
-                return (T) (value instanceof Integer ? value : Integer.valueOf(value.toString()));
-            } else if (clazz == String.class) {
-                return (T) value.toString();
-            } else if (clazz == Boolean.class) {
-                return (T) (value instanceof Boolean ? value : Boolean.valueOf(value.toString()));
-            } else if (clazz == Double.class) {
-                return (T) (value instanceof Double ? value : Double.valueOf(value.toString()));
-            } else if (clazz == Float.class) {
-                return (T) (value instanceof Float ? value : Float.valueOf(value.toString()));
-            }
-            return (T) value;
-        } catch (Exception e) {
-            throw new IllegalArgumentException(
-                    String.format("Convert value '%s' to %s failed", value, clazz.getSimpleName()), e);
-        }
-    }
+    // ConvertUtils 这个方法是apache common的工具类
+	private static <T> T convertValue(Object value, Class<T> clazz) {  
+		if (value == null) return null;  
+		try {  
+			return clazz.cast(ConvertUtils.convert(value, clazz));  
+		} catch (Exception e) {  
+			throw new IllegalArgumentException(  
+					String.format("Cannot convert '%s' to %s", value, clazz.getSimpleName()), e);  
+		}  
+	}
 
     /* ---------- AES加密解密方法 ---------- */
     
