@@ -134,3 +134,11 @@ kill 9 进程号
 
 ```
 
+## 查看机器内存是否够用
+
+
+```
+free -h
+```
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/89f540e8fb3747329acbc2db3137cb63.png)
