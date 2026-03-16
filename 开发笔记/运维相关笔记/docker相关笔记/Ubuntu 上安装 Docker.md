@@ -35,7 +35,7 @@ sudo apt update
 
 ### 安装 Docker CE
 
-```text
+```
 sudo apt install docker-ce docker-ce-cli containerd.io
 ```
 
