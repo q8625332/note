@@ -3,7 +3,6 @@
 
 然后在设置中配置要用到的数据。
 
-
 ## Variables and secrets
 
 ### Variables
@@ -54,7 +53,11 @@ value:
 
 ```
 
-创建部署文件。
+获取qqbot密钥：[使用 QQBot接入 OpenClaw 的”养虾”指南](https://docs.qq.com/doc/DS2FmdkJZZEJJWEFF?no_promotion=1&is_blank_or_template=blank)
+
+[q.qq.com](https://q.qq.com/qqbot/openclaw/login.html)
+
+## 创建部署文件。
 
 ## Dockerfile
 
