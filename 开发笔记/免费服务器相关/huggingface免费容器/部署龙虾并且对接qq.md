@@ -365,3 +365,13 @@ exec openclaw gateway run \
   ${OPENCLAW_GATEWAY_TOKEN:+--token "${OPENCLAW_GATEWAY_TOKEN}"} \
   --allow-unconfigured
 ```
+
+## 龙虾保活机制
+
+
+```
+卧龙，设置一个防休眠的激活任务， 守护模式:通过定时任务保护你的HuggingFace空间不休眠。
+
+触发频率：10 分钟  
+激活方式：防止直接活跃导致，你自己的HuggingFace Space空间被收回。空间地址是：https://chenyehua-openclaw-ljq.hf.space
+```
