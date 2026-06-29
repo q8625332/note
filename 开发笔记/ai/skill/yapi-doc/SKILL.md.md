@@ -1,5 +1,3 @@
-下面是已改为通用版后的 skill 内容，已去除特定模块、特定团队、特定 token、特定项目名等绑定信息。
-
 ```markdown
 ---
 name: yapi-doc
