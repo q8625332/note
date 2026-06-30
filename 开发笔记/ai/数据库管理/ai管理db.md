@@ -17,9 +17,6 @@
 ```
 
 // 初始化 url  mysql://账号:密码@链接:3306/数据库
-// readonly代表是否可以使用ddl执行。
-// 使用过一次后，密码会存储在passwordRef
-
 {  
   "databases": {  
     "test-app-remote": {  
@@ -40,3 +37,10 @@
     }
 }
 ```
+
+| 字段          | 描述                        |
+| ----------- | ------------------------- |
+| url         | mysql://账号:密码@链接:3306/数据库 |
+| readonly    | readonly代表是否可以使用ddl执行     |
+| passwordRef | 使用过一次后，密码会存储在passwordRef  |
+| blacklist   | 禁止的列表，是不允许ai干这些活          |
