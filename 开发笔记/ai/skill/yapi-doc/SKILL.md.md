@@ -34,6 +34,12 @@ GET {YAPI_HOST}/api/project/get?token={token}
 - 项目名称
 - 其他项目配置
 
+**换行处理硬性规则：**
+
+- `markdown` 和 `desc` 中所有代码块必须使用真实换行符（LF/CRLF），禁止把字面量 `\n`、PowerShell 反引号换行 `` `n``、或字符串拼接后的 `n` 写进 YApi 内容。
+- 构造 `desc` 的 `<pre><code>...</code></pre>` 时，先用真实多行文本生成代码内容，再做 HTML 转义；不要在单引号字符串中手写 `` `n``，否则 YApi 会展示成一行或直接显示 `n`。
+- 同步后必须调用 `GET /api/interface/get?id={id}&token={token}` 验证：`markdown` 中代码块保留换行，`desc` 中 `<pre><code>` 内也保留真实换行且不包含字面量 `` `n`` 或 `\\n`。
+
 ## 工作流程
 
 ### 第一步：分析代码，提取接口信息
