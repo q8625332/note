@@ -1,14 +1,4 @@
 
-
-## 需要安装专属插件：
-
-
-```
-opencode-codegraph
-```
-
-
-
 ## 修改配置：AGENTS.md
 
 C://Users/Administrator//.confiq//opencodel//AGENTS.md
