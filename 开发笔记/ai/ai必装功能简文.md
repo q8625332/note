@@ -17,6 +17,12 @@ OpenSpec 管规格，superpowers 管执行
 
  [ GitNexus](https://github.com/abhigyanpatwari/GitNexus)
 
+记得在项目里初始化命令
+
+```
+gitnexus analyze
+```
+
 ### 压缩上下文
 
 [[rtk]]
@@ -28,6 +34,13 @@ OpenSpec 管规格，superpowers 管执行
 ### 项目检索视图
 
 [[code graph （结构视图）]]
+
+记得在项目里初始化命令
+
+```
+codegraph init
+```
+
 
 ### 极简代码写法（马尾辫）
 
