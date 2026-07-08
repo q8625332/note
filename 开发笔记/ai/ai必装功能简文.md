@@ -13,6 +13,10 @@
 OpenSpec 管规格，superpowers 管执行
 ```
 
+### 陈年老项目也可以开始熟悉的git 图谱
+
+ [ GitNexus](https://github.com/abhigyanpatwari/GitNexus)
+
 ### 压缩上下文
 
 [[rtk]]
