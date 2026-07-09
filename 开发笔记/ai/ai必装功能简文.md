@@ -50,6 +50,16 @@ codegraph init
 
 [[ssh-skill]]
 
+
+
+---
+### 前端
+
 ui
 
-[nextlevelbuilder/ui-ux-pro-max-skill: An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
+[ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
+
+### 动画特效
+
+[gsap-skills](https://github.com/greensock/gsap-skills)
+
