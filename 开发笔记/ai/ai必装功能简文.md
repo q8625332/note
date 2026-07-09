@@ -11,6 +11,9 @@
 安装：@url:https://github.com/Fission-AI/OpenSpec 到hermes agent上。
 安装 @url:https://github.com/obra/superpowers 到hermes agent上。
 OpenSpec 管规格，superpowers 管执行
+
+项目上执行：
+openspec init
 ```
 
 ### 压缩上下文
