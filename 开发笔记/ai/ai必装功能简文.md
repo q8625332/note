@@ -34,6 +34,13 @@ openspec init
 codegraph init
 ```
 
+[[gitnexus]]
+
+
+```
+gitnexus analyze
+```
+
 
 ### 极简代码写法（马尾辫）
 
