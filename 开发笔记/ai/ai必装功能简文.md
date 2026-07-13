@@ -66,3 +66,10 @@ ui
 
 [gsap-skills](https://github.com/greensock/gsap-skills)
 
+
+---
+### 可以使hermes agent更聪明，增加记忆
+
+[garrytan/gstack：使用Garry Tan的Claude代码配置：23个有主见的工具，分别担任CEO、设计师、工程经理、发布经理、文档工程师和质量保证](https://github.com/garrytan/gstack)
+
+[加里坦/格雷恩：加里那个有主见的开放爪/赫尔墨斯特工大脑](https://github.com/garrytan/gbrain)
