@@ -60,6 +60,14 @@ gitnexus analyze
 
 [[ssh-skill]]
 
+### 防止ai死循环
+
+
+```
+将：loop-design-check的skill @url:https://github.com/affaan-m/ECC/tree/main/skills/loop-design-check  安装当前ai。
+```
+
+
 
 
 ---
