@@ -20,6 +20,15 @@ openspec init
 
 [[rtk]]
 
+### 减少ai废话
+
+[[让ai回答的更准确，减少ai输出。]]
+
+```
+安装 @url:https://github.com/JuliusBrussee/caveman 到hermes agent上。
+```
+
+
 ### 数据库操控工具
 
 [[ai管理db]]
