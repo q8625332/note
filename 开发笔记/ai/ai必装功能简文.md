@@ -12,6 +12,9 @@
 安装 @url:https://github.com/obra/superpowers 到hermes agent上。
 OpenSpec 管规格，superpowers 管执行
 
+直接接管 comet -> OpenSpec 管规格，superpowers 管执行
+安装 @url:https://github.com/rpamis/comet 到hermes agent.
+
 项目上执行：
 openspec init
 ```
