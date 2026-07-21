@@ -151,3 +151,11 @@ ui
 ```
 安装 @url:https://github.com/garrytan/gbrain 到当前ai上。
 ```
+
+
+---
+### 办公
+
+```
+安装 https://github.com/iOfficeAI/OfficeCli  到当前ai上。
+```
