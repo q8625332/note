@@ -4,6 +4,12 @@
 
 
 ```
+
+安装 @url:https://github.com/colbymchenry/codegraph 到当前ai上。
+
+```
+
+```
 # macOS / Linux
 
 curl -fsSL https://raw.githubusercontent.com/colbymchenry/codegraph/main/install.sh | sh
