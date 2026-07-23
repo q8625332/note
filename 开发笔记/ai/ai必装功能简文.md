@@ -114,7 +114,12 @@ gitnexus analyze
 将：loop-design-check的skill @url:https://github.com/affaan-m/ECC/tree/main/skills/loop-design-check  安装当前ai。
 ```
 
+### 自动寻找skill
 
+
+```
+安装 https://github.com/vercel-labs/skills/tree/main/skills/find-skills 到当前ai上。
+```
 
 
 ---
