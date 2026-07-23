@@ -116,6 +116,7 @@ gitnexus analyze
 
 ### 自动寻找skill
 
+> 自动寻找好用的skill
 
 ```
 安装 https://github.com/vercel-labs/skills/tree/main/skills/find-skills 到当前ai上。
