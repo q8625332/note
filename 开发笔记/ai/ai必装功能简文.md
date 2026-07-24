@@ -25,7 +25,7 @@ openspec init
 [[rtk]]
 
 ```
-安装 @url:https://github.com/JuliusBrussee/caveman 到当前ai上。
+安装 @url:https://github.com/rtk-ai/rtk 到当前ai上。
 ```
 
 
