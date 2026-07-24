@@ -1,6 +1,9 @@
 
 ## [ssh-skill](https://github.com/badseal/ssh-skill)
 
+文件在
+
+> .ssh 的目录下，config
 
 ```
 # ===== dx-192.168.1.29 =====
