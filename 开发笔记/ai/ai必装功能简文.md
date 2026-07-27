@@ -165,3 +165,10 @@ ui
 ```
 安装 https://github.com/iOfficeAI/OfficeCli  到当前ai上。
 ```
+
+### ai 调用浏览器
+
+```
+安装 https://github.com/browser-use/browser-harness  到当前 ai 让操作浏览器更方便。
+```
+
