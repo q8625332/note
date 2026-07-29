@@ -122,6 +122,12 @@ gitnexus analyze
 安装 https://github.com/vercel-labs/skills/tree/main/skills/find-skills 到当前ai上。
 ```
 
+### 解决git合并冲突的skill
+
+```
+安装 https://github.com/mattpocock/skills --skill resolving-merge-conflicts 到当前ai上。
+```
+
 
 ---
 ### 前端
