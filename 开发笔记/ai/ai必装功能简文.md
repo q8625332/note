@@ -34,6 +34,13 @@ openspec init
 安装  https://github.com/oraios/serena 到当前ai上
 ```
 
+关闭自动弹窗
+
+```
+要停止以后自动弹窗，把 `C:\Users\Administrator\.serena\serena_config.yml` 的 `web_dashboard_open_on_launch` 改成 `false`；不需要 Dashboard 的话直接将 `web_dashboard` 改成 `false`。
+```
+
+
 ### 减少ai废话
 
 [[让ai回答的更准确，减少ai输出。]]
