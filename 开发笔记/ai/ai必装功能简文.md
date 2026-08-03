@@ -28,6 +28,11 @@ openspec init
 安装 @url:https://github.com/rtk-ai/rtk 到当前ai上。
 ```
 
+### ai 工具箱（编程助手，让ai更懂得编程）
+
+```
+安装  https://github.com/oraios/serena 到当前ai上
+```
 
 ### 减少ai废话
 
