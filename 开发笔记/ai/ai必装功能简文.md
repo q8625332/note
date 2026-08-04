@@ -140,6 +140,12 @@ gitnexus analyze
 安装 https://github.com/mattpocock/skills --skill resolving-merge-conflicts 到当前ai上。
 ```
 
+### 修复bug skill
+
+```
+安装 https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnosing-bugs/SKILL.md 到当前ai上。
+```
+
 
 ---
 ### 前端
