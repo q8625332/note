@@ -161,6 +161,19 @@ ui
 ```
 
 
+### taste-skill 前端ui设计
+
+```
+安装 @url:https://github.com/Leonxlnx/taste-skill 到当前ai上。
+```
+
+### 约束前端ui，里面内置了反面案例
+
+```
+安装 @url:https://github.com/pbakaus/impeccable 到当前ai上。
+```
+
+
 ---
 ### 可以使hermes agent更聪明，增加记忆
 
