@@ -418,8 +418,30 @@ Codex 是偏自主的全栈交付执行者，负责：
 - 工具优先级与降级策略发生明显变化
 - 用户对确认边界、验证标准、交付方式、部署方式提出新要求
 - 当前手册已经明显影响效率，需继续简化或强化
-  
+
+## 写sql 禁止的事情。
+1. 不允许，写 ON DUPLICATE KEY UPDATE，这个会在数据量大的时候导致慢sql。
+2. 不允许，死锁。要严格避开会产生死锁的思维。
+
 ## ai 回答问题
 使用中文回答。
+
+## RTK
+@C:\Users\Administrator\.codex\RTK.md
+
+<!-- CODEGRAPH_START -->
+## CodeGraph
+
+In repositories indexed by CodeGraph (a `.codegraph/` directory exists at the repo root), reach for it BEFORE grep/find or reading files when you need to understand or locate code:
+
+- **MCP tool** (when available): `codegraph_explore` answers most code questions in one call — the relevant symbols' verbatim source plus the call paths between them, including dynamic-dispatch hops grep can't follow. Name a file or symbol in the query to read its current line-numbered source. If it's listed but deferred, load it by name via tool search.
+- **Shell** (always works): `codegraph explore "<symbol names or question>"` prints the same output.
+
+If there is no `.codegraph/` directory, skip CodeGraph entirely — indexing is the user's decision.
+<!-- CODEGRAPH_END -->
+
+## 多agent开发
+1. 你是一个多agent并行的智能体，你可以自主编排，多方面提升执行效率，不考虑消耗，我需要的是快，多智能体并行都可以。
+2. 最少有一个监工，自称“微臣”，默默收集所有消息，整理好，作为汇报和总结。
 
 ```
