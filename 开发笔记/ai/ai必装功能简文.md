@@ -1,5 +1,12 @@
 > 使ai能更快的完成工作。
 
+### 安装微信监控
+
+```
+使用 CodexBridge（推荐） ·1.打开 Codex App，发送指令： [https://github.com/Gan-Xing/CodexBridge](https://github.com/Gan-Xing/CodexBridge) 帮我对接个人微信 。2. 等待安装依赖，扫码登录微信（二维码过期可 让 Codex重新生成） ，3. 发送 /h 查看帮助，开始对话 。
+```
+
+
 ### skill-creator 创建skill
 
 ```
