@@ -1,5 +1,11 @@
 > 使ai能更快的完成工作。
 
+### skill-creator 创建skill
+
+```
+安装 @url:https://github.com/anthropics/skills --skill skill-creator 到当前ai上。
+```
+
 ### 硬核开发
 
 > **个人项目：先 superpowers**
