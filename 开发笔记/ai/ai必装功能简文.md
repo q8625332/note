@@ -62,6 +62,19 @@ openspec init
 安装 @url:https://github.com/JuliusBrussee/caveman 到当前ai上。
 ```
 
+### oh-my-openagent 编程
+
+```
+安装 https://github.com/code-yeongyu/oh-my-openagent 到当前ai上。
+```
+
+
+### 长期记忆
+
+```
+安装 https://github.com/rohitg00/agentmemory 到当前ai上。
+```
+
 
 ### 数据库操控工具
 
