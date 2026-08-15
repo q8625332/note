@@ -41,6 +41,12 @@ openspec init
 安装 @url:https://github.com/rtk-ai/rtk 到当前ai上。
 ```
 
+### java开发的可以使用一下，这个遵循阿里巴巴开发手册，黄山版
+
+```
+安装 https://github.com/Sxuan-Coder/alibaba-java-development-guide 到当前ai。
+```
+
 ### ai 工具箱（编程助手，让ai更懂得编程）
 
 ```
