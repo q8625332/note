@@ -43,3 +43,10 @@ pi install npm:@narumitw/pi-btw
 ```
 npm:pi-rtk-optimizer
 ```
+
+### infinity-harness 长期任务束缚
+
+
+```
+pi install npm:infinity-harness
+```
