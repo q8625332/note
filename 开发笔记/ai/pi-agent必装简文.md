@@ -49,3 +49,9 @@ npm:pi-rtk-optimizer
 ```
 pi install npm:infinity-harness
 ```
+
+billion-context 十亿上下文 
+
+```
+pi install npm:billion-context-pi
+```
