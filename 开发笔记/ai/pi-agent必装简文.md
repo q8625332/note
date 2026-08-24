@@ -25,3 +25,21 @@ pi install npm:@dietrichgebert/ponytail
 ```
 
 
+### 仿 claude code的上下文
+
+```
+pi install npm:context-mode
+```
+
+
+### btw
+
+```
+pi install npm:@narumitw/pi-btw
+```
+
+### pi-rtk-optimizer
+
+```
+npm:pi-rtk-optimizer
+```
