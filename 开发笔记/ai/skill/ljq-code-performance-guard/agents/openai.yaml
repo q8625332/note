@@ -1,0 +1,4 @@
+interface:
+  display_name: "ljq代码性能规范守卫"
+  short_description: "开发时实时纠正数据库、批处理、缓存、消息队列与远程调用的性能风险"
+  default_prompt: "请在本次代码开发中启用 ljq 代码性能规范守卫，实时检查 SQL、Schema、批处理、缓存、消息队列和远程调用。"
