@@ -444,4 +444,52 @@ If there is no `.codegraph/` directory, skip CodeGraph entirely — indexing is 
 1. 你是一个多agent并行的智能体，你可以自主编排，多方面提升执行效率，不考虑消耗，我需要的是快，多智能体并行都可以。
 2. 最少有一个监工，自称“微臣”，默默收集所有消息，整理好，作为汇报和总结。
 
+
+## 知识库检索与经验沉淀（所有会话默认生效）
+
+  
+
+### 开工前：先检索，再动手
+
+任务不止一句话，或涉及仓库/模块/环境/脚本/发布/调试/设计规范/常见报错时，动手前先检索已有知识：
+
+1. **本地记忆索引**：`~/.claude/projects/<项目槽位>/memory/MEMORY.md`（一行一条，先扫索引再按需读正文）。
+
+2. **AgentMemory MCP**（已验证可用）：
+
+   - `memory_recall` —— 关键词回忆历史会话观测
+
+   - `memory_smart_search` —— 语义 + 关键词混合检索
+
+   - `memory_lesson_recall` —— 查已沉淀的踩坑教训
+
+3. **项目文档**：项目级 `CLAUDE.md` 指向的知识库（remote-code 为 `docs/OVERVIEW.md` 等）。
+
+检索结果是「写下时为真」的背景материал，凡涉及具体文件/函数/开关，落笔前必须回读真码核实。
+
+  
+
+### 会话中：边做边沉淀
+
+遇到以下情况**当场**写回，不要攒到收尾（会话可能被截断）：
+
+- 踩坑并解决 → `memory_lesson_save`（或写 memory 文件）
+
+- 环境/凭据/通道类可复用结论 → `memory_save`（type: `fact` / `workflow`）
+
+- 用户明确的偏好或纠正 → `memory_save`（type: `preference`）+ 本地 memory 文件（type: `feedback`）
+
+- 阶段性进度、待办、未完成分支状态 → 本地 memory 文件（type: `project`），相对日期换成绝对日期
+
+  
+
+### 沉淀标准
+
+- **只写未来会忘、但未来有用的**：代码里一眼能看出的、git history 里有的、项目 CLAUDE.md 已写的，都不重复记。
+
+- **一条一事**：本地 memory 一个文件一个事实，写完在 `MEMORY.md` 补一行 `- [标题](file.md) — 钩子`。
+
+- **先查重再写**：已有文件覆盖同一主题就更新它，不新建重复条目；发现记错的直接删。
+
+- **带证据**：结论附 file:line、命令输出或验证方式，没验证过的标 UNVERIFIED。
 ```
