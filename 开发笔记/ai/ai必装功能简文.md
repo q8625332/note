@@ -241,3 +241,9 @@ ui
 安装 https://github.com/browser-use/browser-harness  到当前 ai 让操作浏览器更方便。
 ```
 
+### 微软浏览器的mcp
+
+
+```
+https://github.com/syunnrai123/Edge-DevTools-MCP 安装到当前ai，看看可以不调用的通。微软的edge。
+```
