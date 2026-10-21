@@ -228,6 +228,15 @@ ui
 ```
 
 
+## context-mode
+
+> 减少不必要的上下文
+
+```
+帮我看下，可以安装到当前ai吗？ https://github.com/mksglu/context-mode
+```
+
+
 ---
 ### 办公
 
