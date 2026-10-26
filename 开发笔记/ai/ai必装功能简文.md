@@ -244,6 +244,15 @@ ui
 安装 https://github.com/iOfficeAI/OfficeCli  到当前ai上。
 ```
 
+### ai浏览器（专门为ai制作的）
+
+```
+安装 https://github.com/lexmount/moli/tree/main/skills 下面的 skills，
+根据 skills 指引下载并安装最新版预编译 Moli 二进制，然后用 moli-webfetch
+抓取 https://example.com 并把结果给我。
+```
+
+
 ### ai 调用浏览器
 
 ```
