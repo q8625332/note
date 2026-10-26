@@ -256,3 +256,9 @@ ui
 ```
 https://github.com/syunnrai123/Edge-DevTools-MCP 安装到当前ai，看看可以不调用的通。微软的edge。
 ```
+
+### Windows-MCP 
+
+```
+安装 https://github.com/CursorTouch/Windows-MCP  到当前ai上。
+```
