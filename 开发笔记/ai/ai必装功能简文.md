@@ -213,6 +213,15 @@ ui
 
 
 ---
+## 产品原型
+
+
+```
+安装一下： emilkowalski/skills@prototype 到当前ai上。
+```
+
+
+---
 ### 可以使hermes agent更聪明，增加记忆
 
 [garrytan/gstack：使用Garry Tan的Claude代码配置：23个有主见的工具，分别担任CEO、设计师、工程经理、发布经理、文档工程师和质量保证](https://github.com/garrytan/gstack)
